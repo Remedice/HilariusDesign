@@ -1,0 +1,11 @@
+# Build config for the full Next.js runtime on Netlify.
+# Do NOT set a `publish` directory: the Next runtime plugin manages output
+# (.next). Pinning `publish = "out/"` is a leftover from the old static export
+# and breaks SSR/middleware AND Netlify Forms. This file overrides any stale
+# publish-directory set in the Netlify UI.
+
+[build]
+  command = "next build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

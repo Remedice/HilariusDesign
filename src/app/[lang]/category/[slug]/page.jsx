@@ -1,6 +1,7 @@
 import Category from "../../../../views/Category/Category";
 import { routesConfig } from "../../../../router/routesConfig";
 import { buildMetadata, pickStatic } from "../../../../i18n/seo";
+import { buildBreadcrumb, jsonLdHtml } from "../../../../i18n/schema";
 
 export function generateStaticParams() {
   const langs = routesConfig.i18n.supported;
@@ -20,6 +21,21 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default function CategoryPage() {
-  return <Category />;
+export default async function CategoryPage({ params }) {
+  const { lang, slug } = await params;
+  const cat = routesConfig.categories.find((c) => c.slug === slug);
+  const crumbs = buildBreadcrumb(lang, [
+    { name: pickStatic(routesConfig.copy.nav, "home", lang) || "Home", path: "/" },
+    { name: pickStatic(cat, "title", lang) || slug, path: `/category/${slug}` }
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(crumbs) }}
+      />
+      <Category />
+    </>
+  );
 }

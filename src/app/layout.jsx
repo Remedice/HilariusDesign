@@ -3,6 +3,7 @@ import "../styles/fonts.css";
 import "../styles/global.css";
 import { headers } from "next/headers";
 import { SITE_URL } from "../i18n/seo";
+import { buildOrganization, buildWebSite, jsonLdHtml } from "../i18n/schema";
 import { DEFAULT_LOCALE, isLocale } from "../i18n/locales";
 
 export const metadata = {
@@ -30,6 +31,14 @@ export default async function RootLayout({ children }) {
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://p.typekit.net" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://use.typekit.net/zko8kch.css" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(buildOrganization(lang)) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(buildWebSite(lang)) }}
+        />
       </head>
       <body>
         {/* Hidden form for Netlify Forms detection at build time */}

@@ -1,6 +1,7 @@
 import Page from "../../../views/Page/Page";
 import { texts } from "../../../router/texts";
 import { buildMetadata, pickStatic } from "../../../i18n/seo";
+import { buildFaqPage, jsonLdHtml } from "../../../i18n/schema";
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
@@ -13,6 +14,15 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default function FaqPage() {
-  return <Page pageKey="faq" />;
+export default async function FaqPage({ params }) {
+  const { lang } = await params;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(buildFaqPage(lang)) }}
+      />
+      <Page pageKey="faq" />
+    </>
+  );
 }
