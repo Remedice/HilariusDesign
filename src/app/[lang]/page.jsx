@@ -7,7 +7,7 @@ const HOME_TITLE = {
   en: "Hilarius Design - Cardboard corporate gifts and packaging",
   de: "Hilarius Design - Werbegeschenke und Verpackungen aus Karton",
   fr: "Hilarius Design - Cadeaux d'affaires et emballages en carton",
-  es: "Hilarius Design - Regalos corporativos y embalajes en carton"
+  es: "Hilarius Design - Regalos corporativos y embalajes en cartón"
 };
 
 export async function generateMetadata({ params }) {

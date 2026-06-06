@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
@@ -25,23 +26,34 @@ function useIsMobile(breakpoint = 860) {
   return isMobile;
 }
 
-function RevealImg({ src, alt, loading, decoding, className, onReveal }) {
+function RevealImg({ src, alt, sizes, className, onReveal }) {
   const ref = useRef(null);
+  const revealedRef = useRef(false);
 
   useEffect(() => {
-    if (ref.current?.complete) onReveal?.();
-  }, []);
+    revealedRef.current = false;
+  }, [src]);
+
+  function revealOnce() {
+    if (revealedRef.current) return;
+    revealedRef.current = true;
+    onReveal?.();
+  }
+
+  useEffect(() => {
+    if (ref.current?.complete) revealOnce();
+  });
 
   return (
-    <img
+    <Image
       ref={ref}
       src={src}
       alt={alt}
-      loading={loading}
-      decoding={decoding}
+      fill
+      sizes={sizes}
       className={className}
-      onLoad={onReveal}
-      onError={onReveal}
+      onLoad={revealOnce}
+      onError={revealOnce}
     />
   );
 }
@@ -61,8 +73,7 @@ function MobileCatCard({ c }) {
             <RevealImg
               src={c.src}
               alt=""
-              loading="lazy"
-              decoding="async"
+              sizes="100vw"
               className={`revealImg ${imgLoaded ? "isLoaded" : ""}`}
               onReveal={() => setImgLoaded(true)}
             />

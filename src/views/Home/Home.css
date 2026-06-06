@@ -103,7 +103,7 @@
 
 .homeMobileCatMedia img{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: contain;
 }
@@ -124,16 +124,7 @@
 
 .homeMobileCatTitle,
 .homeMobileCatSub {
-  opacity: 0;
-  transition: opacity 1350ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.homeMobileCatTitle {
-  transition-delay: 150ms;
-}
-
-.homeMobileCatSub {
-  transition-delay: 280ms;
+  opacity: 1;
 }
 
 .homeMobileCatCard.isIn .homeMobileCatTitle {
@@ -154,6 +145,12 @@
 
 /* Mobile: slower + smoother reveal */
 @media (max-width: 860px){
+  .homeMobileCatCard.homeRevealBlock{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   .homeRevealBlock{
     transform: translateY(10px);
     transition: opacity 1350ms cubic-bezier(0.22, 1, 0.36, 1),

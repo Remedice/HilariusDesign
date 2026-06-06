@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { routesConfig } from "../../router/routesConfig";
@@ -75,7 +76,7 @@ export default function Header() {
       <header className="header">
         <div className="headerInner">
           <Link href={localizedHref("/", lang)} className="brand" aria-label="Hilarius Design">
-            <img className="brandLogo" src="/logo.svg" alt="" width="34" height="34" />
+            <Image className="brandLogo" src="/logo.svg" alt="" width={34} height={34} priority />
           </Link>
 
           {/* Desktop nav */}

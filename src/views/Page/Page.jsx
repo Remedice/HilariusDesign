@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
@@ -27,11 +28,13 @@ function AboutPage({ page }) {
     <section className="aboutLayout">
       <div className="aboutLeft">
         <div className={`aboutImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
-          <img
+          <Image
             src="/over-wim.webp"
             alt="Wim Hilarius"
             className="aboutImg"
-            fetchPriority="high"
+            fill
+            priority
+            sizes="(max-width: 860px) 100vw, 45vw"
           />
         </div>
       </div>
@@ -151,11 +154,13 @@ function ContactPage({ page }) {
     <div className="contactLayout">
       <div className="contactInfo">
         <div className={`contactImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
-          <img
+          <Image
             src="/contact-image.webp"
             alt="Hilarius Design contact"
             className="contactImg"
-            fetchPriority="high"
+            fill
+            priority
+            sizes="(max-width: 860px) 100vw, 50vw"
           />
         </div>
 

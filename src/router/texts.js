@@ -34,21 +34,21 @@ export const texts = {
       fr: {
         leadTitle: "Hilarius Design",
         leadBody:
-          "Conception et production de cadeaux d'affaires originaux, give-aways et emballages en carton recycle. Des idees intelligentes, un design clair, adapte a votre identite visuelle.",
-        secondTitle: "De l'idee a la realisation",
+          "Conception et production de cadeaux d'affaires originaux, give-aways et emballages en carton recyclé. Des idées intelligentes, un design clair, adapté à votre identité visuelle.",
+        secondTitle: "De l'idée à la réalisation",
         secondBody:
-          "Des accessoires de bureau en carton et modeles de transport aux emballages haut de gamme pour le vin, dossiers et jeux. Hilarius Design allie simplicite et impact, du concept a la production.",
-        hoverHint: "Voir la categorie",
-        extraLabel: "Selection"
+          "Des accessoires de bureau en carton et modèles de transport aux emballages haut de gamme pour le vin, dossiers et jeux. Hilarius Design allie simplicité et impact, du concept à la production.",
+        hoverHint: "Voir la catégorie",
+        extraLabel: "Sélection"
       },
       es: {
         leadTitle: "Hilarius Design",
         leadBody:
-          "Diseno y produccion de regalos corporativos originales, give-aways y embalajes en carton reciclado. Ideas inteligentes, diseno claro y adaptado a su identidad visual.",
-        secondTitle: "De la idea a la realizacion",
+          "Diseño y producción de regalos corporativos originales, give-aways y embalajes en cartón reciclado. Ideas inteligentes, diseño claro y adaptado a su identidad visual.",
+        secondTitle: "De la idea a la realización",
         secondBody:
-          "Desde accesorios de escritorio y modelos de transporte hasta embalajes premium para vino, carpetas y juegos. Hilarius Design combina sencillez e impacto, del concepto a la produccion.",
-        hoverHint: "Ver categoria",
+          "Desde accesorios de escritorio y modelos de transporte hasta embalajes premium para vino, carpetas y juegos. Hilarius Design combina sencillez e impacto, del concepto a la producción.",
+        hoverHint: "Ver categoría",
         extraLabel: "Destacado"
       }
     }
@@ -82,19 +82,19 @@ export const texts = {
           cta: "Meine Arbeit ansehen"
         },
         fr: {
-          title: "A propos de Wim",
+          title: "À propos de Wim",
           heading: "Wim Hilarius",
-          intro: "Design en carton recycle, avec une signature claire.",
+          intro: "Design en carton recyclé, avec une signature claire.",
           body:
-            "Chez Hilarius Design, tout tourne autour de l'inventivite, du savoir-faire et d'une simplicite reflechie. Depuis plus de quarante ans, je conçois des produits ou creativite et construction se rencontrent : cadeaux d'affaires, emballages, modeles de transport et elements d'interieur, tous fabriques en carton recycle.\n\nLe carton est un materiau souvent sous-estime. Il est leger, solide, durable et forme la base de produits qui se remarquent sans en faire trop. Chaque creation commence par une idee : comment rendre un objet a la fois intelligent, beau et realisable ?\n\nDe la premiere esquisse a la production, j'accompagne tout le processus. Le resultat est toujours un produit juste dans le detail et adapte a votre marque.",
+            "Chez Hilarius Design, tout tourne autour de l'inventivité, du savoir-faire et d'une simplicité réfléchie. Depuis plus de quarante ans, je conçois des produits où créativité et construction se rencontrent : cadeaux d'affaires, emballages, modèles de transport et éléments d'intérieur, tous fabriqués en carton recyclé.\n\nLe carton est un matériau souvent sous-estimé. Il est léger, solide, durable et forme la base de produits qui se remarquent sans en faire trop. Chaque création commence par une idée : comment rendre un objet à la fois intelligent, beau et réalisable ?\n\nDe la première esquisse à la production, j'accompagne tout le processus. Le résultat est toujours un produit juste dans le détail et adapté à votre marque.",
           cta: "Voir mon travail"
         },
         es: {
           title: "Sobre Wim",
           heading: "Wim Hilarius",
-          intro: "Diseno en carton reciclado, con una firma clara.",
+          intro: "Diseño en cartón reciclado, con una firma clara.",
           body:
-            "En Hilarius Design todo gira en torno al ingenio, la artesania y la sencillez bien pensada. Desde hace mas de cuarenta anos diseno productos en los que creatividad y construccion se unen: regalos corporativos, embalajes, modelos de transporte y elementos de interior, todos fabricados en carton reciclado.\n\nEl carton es un material que a menudo se subestima. Es ligero, resistente, sostenible y forma la base de productos que destacan sin necesidad de exagerar. Cada diseno empieza con una idea: como puede algo ser inteligente, bello y producible al mismo tiempo?\n\nDesde el primer boceto hasta la produccion acompano todo el proceso. El resultado es siempre un producto cuidado al detalle y adecuado para su marca.",
+            "En Hilarius Design todo gira en torno al ingenio, la artesanía y la sencillez bien pensada. Desde hace más de cuarenta años diseño productos en los que creatividad y construcción se unen: regalos corporativos, embalajes, modelos de transporte y elementos de interior, todos fabricados en cartón reciclado.\n\nEl cartón es un material que a menudo se subestima. Es ligero, resistente, sostenible y forma la base de productos que destacan sin necesidad de exagerar. Cada diseño empieza con una idea: ¿cómo puede algo ser inteligente, bello y producible al mismo tiempo?\n\nDesde el primer boceto hasta la producción acompaño todo el proceso. El resultado es siempre un producto cuidado al detalle y adecuado para su marca.",
           cta: "Ver mi trabajo"
         }
       }
@@ -170,45 +170,45 @@ export const texts = {
         },
         fr: {
           title: "FAQ",
-          intro: "Questions frequentes sur la conception, la production et la livraison.",
+          intro: "Questions fréquentes sur la conception, la production et la livraison.",
           items: [
             {
-              q: "Quelle est la quantite minimale ?",
-              a: "Cela depend du produit et de la finition. Contactez-nous, nous vous conseillerons en fonction de votre objectif et de votre budget."
+              q: "Quelle est la quantité minimale ?",
+              a: "Cela dépend du produit et de la finition. Contactez-nous, nous vous conseillerons en fonction de votre objectif et de votre budget."
             },
             {
-              q: "Pouvez-vous aussi realiser un prototype ?",
-              a: "Oui. Un prototype permet d'evaluer la forme, l'ajustement et la presentation avant de passer a une production plus large."
+              q: "Pouvez-vous aussi réaliser un prototype ?",
+              a: "Oui. Un prototype permet d'évaluer la forme, l'ajustement et la présentation avant de passer à une production plus large."
             },
             {
               q: "Proposez-vous aussi l'impression et la finition ?",
-              a: "Oui. L'impression et la finition sont adaptees a l'application, a l'identite visuelle et au rendu souhaite."
+              a: "Oui. L'impression et la finition sont adaptées à l'application, à l'identité visuelle et au rendu souhaité."
             },
             {
-              q: "Quel est le delai de livraison ?",
-              a: "Le delai depend de la complexite, de la quantite et de la finition. Apres concertation, nous donnons toujours un planning realiste."
+              q: "Quel est le délai de livraison ?",
+              a: "Le délai dépend de la complexité, de la quantité et de la finition. Après concertation, nous donnons toujours un planning réaliste."
             }
           ]
         },
         es: {
           title: "FAQ",
-          intro: "Preguntas frecuentes sobre diseno, produccion y entrega.",
+          intro: "Preguntas frecuentes sobre diseño, producción y entrega.",
           items: [
             {
-              q: "Cual es la cantidad minima?",
-              a: "Depende del producto y del acabado. Pongase en contacto con nosotros y le asesoraremos segun su objetivo y presupuesto."
+              q: "¿Cuál es la cantidad mínima?",
+              a: "Depende del producto y del acabado. Póngase en contacto con nosotros y le asesoraremos según su objetivo y presupuesto."
             },
             {
-              q: "Tambien pueden hacer un prototipo?",
-              a: "Si. Un prototipo ayuda a evaluar la forma, el encaje y la presentacion antes de escalar la produccion."
+              q: "¿También pueden hacer un prototipo?",
+              a: "Sí. Un prototipo ayuda a evaluar la forma, el encaje y la presentación antes de escalar la producción."
             },
             {
-              q: "Tambien ofrecen impresion y acabado?",
-              a: "Si. La impresion y el acabado se adaptan al uso, a la identidad visual y al aspecto deseado."
+              q: "¿También ofrecen impresión y acabado?",
+              a: "Sí. La impresión y el acabado se adaptan al uso, a la identidad visual y al aspecto deseado."
             },
             {
-              q: "Cual es el plazo de entrega?",
-              a: "El plazo depende de la complejidad, la cantidad y el acabado. Tras la coordinacion, siempre ofrecemos una planificacion realista."
+              q: "¿Cuál es el plazo de entrega?",
+              a: "El plazo depende de la complejidad, la cantidad y el acabado. Tras la coordinación, siempre ofrecemos una planificación realista."
             }
           ]
         }
@@ -252,21 +252,21 @@ export const texts = {
         },
         fr: {
           title: "Contact",
-          intro: "Contactez-nous pour des idees, des prototypes ou un devis.",
+          intro: "Contactez-nous pour des idées, des prototypes ou un devis.",
           formLabels: {
             name: "Nom",
             email: "Adresse e-mail",
             message: "Message",
             send: "Envoyer",
-            success: "Merci pour votre message. Nous vous repondrons des que possible."
+            success: "Merci pour votre message. Nous vous répondrons dès que possible."
           }
         },
         es: {
           title: "Contacto",
-          intro: "Pongase en contacto para ideas, prototipos o un presupuesto.",
+          intro: "Póngase en contacto para ideas, prototipos o un presupuesto.",
           formLabels: {
             name: "Nombre",
-            email: "Correo electronico",
+            email: "Correo electrónico",
             message: "Mensaje",
             send: "Enviar",
             success: "Gracias por su mensaje. Nos pondremos en contacto lo antes posible."

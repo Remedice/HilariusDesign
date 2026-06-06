@@ -61,22 +61,22 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
     fr: {
       title: t,
       description:
-        "Conception et production en carton recycle. Sobre, fonctionnel et entierement adaptable a votre marque.",
+        "Conception et production en carton recyclé. Sobre, fonctionnel et entièrement adaptable à votre marque.",
       body:
-        "Utilisation\nA quoi sert ce produit ?\n\nDetails\nFormat / variantes\nFinition (par ex. decoupe, film, vernis)\nPersonnalisation / branding\n\nProduction\nQuantite (indicative)\nDelai (indicatif)\n\nRemarque\nContexte supplementaire ou souhaits du client",
+        "Utilisation\nÀ quoi sert ce produit ?\n\nDétails\nFormat / variantes\nFinition (par ex. découpe, film, vernis)\nPersonnalisation / branding\n\nProduction\nQuantité (indicative)\nDélai (indicatif)\n\nRemarque\nContexte supplémentaire ou souhaits du client",
       type: categoryDefaults?.fr?.type ?? "Cadeau d'affaires / Carton",
       year: categoryDefaults?.fr?.year ?? "",
-      materials: "Carton recycle"
+      materials: "Carton recyclé"
     },
     es: {
       title: t,
       description:
-        "Diseno y produccion en carton reciclado. Limpio, funcional y totalmente adaptable a su marca.",
+        "Diseño y producción en cartón reciclado. Limpio, funcional y totalmente adaptable a su marca.",
       body:
-        "Uso\nPara que se utiliza este producto?\n\nDetalles\nFormato / variantes\nAcabado (p. ej. troquelado, lamina, barniz)\nPersonalizacion / marca\n\nProduccion\nTirada (indicativa)\nPlazo de entrega (indicativo)\n\nNota\nContexto adicional o deseos del cliente",
-      type: categoryDefaults?.es?.type ?? "Regalo corporativo / Carton",
+        "Uso\n¿Para qué se utiliza este producto?\n\nDetalles\nFormato / variantes\nAcabado (p. ej. troquelado, lámina, barniz)\nPersonalización / marca\n\nProducción\nTirada (indicativa)\nPlazo de entrega (indicativo)\n\nNota\nContexto adicional o deseos del cliente",
+      type: categoryDefaults?.es?.type ?? "Regalo corporativo / Cartón",
       year: categoryDefaults?.es?.year ?? "",
-      materials: "Carton reciclado"
+      materials: "Cartón reciclado"
     }
   };
 };
@@ -172,7 +172,7 @@ export const routesConfig = {
         en: { home: "Home", menu: "Menu", portfolio: "Portfolio" },
         de: { home: "Start", menu: "Menü", portfolio: "Portfolio" },
         fr: { home: "Accueil", menu: "Menu", portfolio: "Portfolio" },
-        es: { home: "Inicio", menu: "Menu", portfolio: "Portfolio" }
+        es: { home: "Inicio", menu: "Menú", portfolio: "Portfolio" }
       }
     },
     common: {
@@ -180,7 +180,7 @@ export const routesConfig = {
         nl: { notFound: "Niet gevonden", backHome: "Terug naar Home" },
         en: { notFound: "Not found", backHome: "Back to Home" },
         de: { notFound: "Nicht gefunden", backHome: "Zur Startseite" },
-        fr: { notFound: "Introuvable", backHome: "Retour a l'accueil" },
+        fr: { notFound: "Introuvable", backHome: "Retour à l'accueil" },
         es: { notFound: "No encontrado", backHome: "Volver al inicio" }
       }
     },
@@ -190,8 +190,8 @@ export const routesConfig = {
         nl: { colProject: "Product", colType: "Type", colYear: "Jaar", scrollHint: "Scroll voor producten" },
         en: { colProject: "Project", colType: "Type", colYear: "Year", scrollHint: "Scroll for products" },
         de: { colProject: "Projekt", colType: "Typ", colYear: "Jahr", scrollHint: "Scroll für Produkte" },
-        fr: { colProject: "Produit", colType: "Type", colYear: "Annee", scrollHint: "Faites defiler les produits" },
-        es: { colProject: "Producto", colType: "Tipo", colYear: "Ano", scrollHint: "Desplace para ver productos" }
+        fr: { colProject: "Produit", colType: "Type", colYear: "Année", scrollHint: "Faites défiler les produits" },
+        es: { colProject: "Producto", colType: "Tipo", colYear: "Año", scrollHint: "Desplácese para ver productos" }
       }
     },
     project: {
@@ -199,8 +199,8 @@ export const routesConfig = {
         nl: { prev: "Vorig project", next: "Volgend project", year: "Jaar", type: "Type", materials: "Materiaal" },
         en: { prev: "Previous", next: "Next", year: "Year", type: "Type", materials: "Materials" },
         de: { prev: "Vorheriges", next: "Nächstes", year: "Jahr", type: "Typ", materials: "Material" },
-        fr: { prev: "Precedent", next: "Suivant", year: "Annee", type: "Type", materials: "Materiau" },
-        es: { prev: "Anterior", next: "Siguiente", year: "Ano", type: "Tipo", materials: "Material" }
+        fr: { prev: "Précédent", next: "Suivant", year: "Année", type: "Type", materials: "Matériau" },
+        es: { prev: "Anterior", next: "Siguiente", year: "Año", type: "Tipo", materials: "Material" }
       }
     }
   },
@@ -212,7 +212,7 @@ export const routesConfig = {
         nl: { label: "Over Hilarius Design", labelMobile: "Over HD" },
         en: { label: "About Hilarius Design", labelMobile: "About HD" },
         de: { label: "Über Hilarius Design", labelMobile: "Über HD" },
-        fr: { label: "A propos de Hilarius Design", labelMobile: "A propos HD" },
+        fr: { label: "À propos de Hilarius Design", labelMobile: "À propos HD" },
         es: { label: "Sobre Hilarius Design", labelMobile: "Sobre HD" }
       }
     },
@@ -238,7 +238,7 @@ export const routesConfig = {
         en: { title: "Desk accessories", subtitle: "Desk calendars, (wall) clocks and more.", titleLine1: "Desk", titleLine2: "accessories", titleLine3: "" },
         de: { title: "Schreibtisch", subtitle: "Schreibtischkalender, (Wand-)Uhren und mehr.", titleLine1: "Schreibtisch", titleLine2: "Zubehör", titleLine3: "" },
         fr: { title: "Accessoires de bureau", subtitle: "Calendriers de bureau, horloges murales et plus.", titleLine1: "Accessoires", titleLine2: "de bureau", titleLine3: "" },
-        es: { title: "Accesorios de escritorio", subtitle: "Calendarios de escritorio, relojes de pared y mas.", titleLine1: "Accesorios", titleLine2: "de escritorio", titleLine3: "" }
+        es: { title: "Accesorios de escritorio", subtitle: "Calendarios de escritorio, relojes de pared y más.", titleLine1: "Accesorios", titleLine2: "de escritorio", titleLine3: "" }
       }
     },
     {
@@ -257,7 +257,7 @@ export const routesConfig = {
         nl: { title: "Boeken & Mappen", subtitle: "Stalenboeken, (info)mappen en boekjes.", titleLine1: "Boeken", titleLine2: "& mappen", titleLine3: "" },
         en: { title: "Books & Folders", subtitle: "Sample books, folders and booklets.", titleLine1: "Books", titleLine2: "& folders", titleLine3: "" },
         de: { title: "Bücher & Mappen", subtitle: "Musterbücher, Mappen und Booklets.", titleLine1: "Bücher", titleLine2: "& Mappen", titleLine3: "" },
-        fr: { title: "Livres & Dossiers", subtitle: "Catalogues d'echantillons, dossiers et livrets.", titleLine1: "Livres", titleLine2: "& dossiers", titleLine3: "" },
+        fr: { title: "Livres & Dossiers", subtitle: "Catalogues d'échantillons, dossiers et livrets.", titleLine1: "Livres", titleLine2: "& dossiers", titleLine3: "" },
         es: { title: "Libros & Carpetas", subtitle: "Muestrarios, carpetas y folletos.", titleLine1: "Libros", titleLine2: "& carpetas", titleLine3: "" }
       }
     },
@@ -268,7 +268,7 @@ export const routesConfig = {
         en: { title: "Games", subtitle: "Board games, throwing games, puzzles and more.", titleLine1: "Games", titleLine2: "", titleLine3: "" },
         de: { title: "Spiele", subtitle: "Brettspiele, Wurfspiele, Puzzles und mehr.", titleLine1: "Spiele", titleLine2: "", titleLine3: "" },
         fr: { title: "Jeux", subtitle: "Jeux de plateau, jeux de lancer, puzzles et plus.", titleLine1: "Jeux", titleLine2: "", titleLine3: "" },
-        es: { title: "Juegos", subtitle: "Juegos de mesa, juegos de lanzamiento, puzzles y mas.", titleLine1: "Juegos", titleLine2: "", titleLine3: "" }
+        es: { title: "Juegos", subtitle: "Juegos de mesa, juegos de lanzamiento, puzzles y más.", titleLine1: "Juegos", titleLine2: "", titleLine3: "" }
       }
     },
     {
@@ -277,8 +277,8 @@ export const routesConfig = {
         nl: { title: "The Art Of Board", subtitle: "Ideeën van karton.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" },
         en: { title: "The Art Of Board", subtitle: "Ideas made of board.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" },
         de: { title: "The Art Of Board", subtitle: "Ideen aus Karton.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" },
-        fr: { title: "The Art Of Board", subtitle: "Idees en carton.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" },
-        es: { title: "The Art Of Board", subtitle: "Ideas hechas de carton.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" }
+        fr: { title: "The Art Of Board", subtitle: "Idées en carton.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" },
+        es: { title: "The Art Of Board", subtitle: "Ideas hechas de cartón.", titleLine1: "The Art", titleLine2: "Of Board", titleLine3: "" }
       }
     },
     {
@@ -287,7 +287,7 @@ export const routesConfig = {
         nl: { title: "Interieur & Exterieur", subtitle: "Displays, maquettes en ruimtelijke presentaties.", titleLine1: "Interieur", titleLine2: "& exterieur", titleLine3: "" },
         en: { title: "Interior & Exterior", subtitle: "Displays, scale models and spatial presentations.", titleLine1: "Interior", titleLine2: "& exterior", titleLine3: "" },
         de: { title: "Innen & Außen", subtitle: "Displays, Modelle und räumliche Präsentationen.", titleLine1: "Innen", titleLine2: "& außen", titleLine3: "" },
-        fr: { title: "Interieur & Exterieur", subtitle: "Displays, maquettes et presentations spatiales.", titleLine1: "Interieur", titleLine2: "& exterieur", titleLine3: "" },
+        fr: { title: "Intérieur & Extérieur", subtitle: "Displays, maquettes et présentations spatiales.", titleLine1: "Intérieur", titleLine2: "& extérieur", titleLine3: "" },
         es: { title: "Interior & Exterior", subtitle: "Displays, maquetas y presentaciones espaciales.", titleLine1: "Interior", titleLine2: "& exterior", titleLine3: "" }
       }
     },
@@ -297,8 +297,8 @@ export const routesConfig = {
         nl: { title: "Eindejaarsgeschenken", subtitle: "Sfeervolle producten voor het einde van het jaar.", titleLine1: "Eindejaars-", titleLine2: "geschenken", titleLine3: "" },
         en: { title: "Year-end Gifts", subtitle: "Festive products for the end of the year.", titleLine1: "Year-end", titleLine2: "gifts", titleLine3: "" },
         de: { title: "Jahresendgeschenke", subtitle: "Stimmungsvolle Produkte für das Jahresende.", titleLine1: "Jahresend-", titleLine2: "geschenke", titleLine3: "" },
-        fr: { title: "Cadeaux de fin d'annee", subtitle: "Produits festifs pour la fin de l'annee.", titleLine1: "Cadeaux", titleLine2: "de fin d'annee", titleLine3: "" },
-        es: { title: "Regalos de fin de ano", subtitle: "Productos festivos para el final del ano.", titleLine1: "Regalos", titleLine2: "de fin de ano", titleLine3: "" }
+        fr: { title: "Cadeaux de fin d'année", subtitle: "Produits festifs pour la fin de l'année.", titleLine1: "Cadeaux", titleLine2: "de fin d'année", titleLine3: "" },
+        es: { title: "Regalos de fin de año", subtitle: "Productos festivos para el final del año.", titleLine1: "Regalos", titleLine2: "de fin de año", titleLine3: "" }
       }
     }
   ],
@@ -342,7 +342,7 @@ export const routesConfig = {
         nl: { type: "Transportmodel / Relatiegeschenk" },
         en: { type: "Transport model / Gift" },
         de: { type: "Transportmodell / Geschenk" },
-        fr: { type: "Modele de transport / Cadeau" },
+        fr: { type: "Modèle de transport / Cadeau" },
         es: { type: "Modelo de transporte / Regalo" }
       }
     ),
@@ -442,8 +442,8 @@ export const routesConfig = {
         nl: { type: "Kunstwerk / Karton" },
         en: { type: "Art piece / Board" },
         de: { type: "Kunstwerk / Pappe" },
-        fr: { type: "Oeuvre / Carton" },
-        es: { type: "Obra / Carton" }
+        fr: { type: "Œuvre / Carton" },
+        es: { type: "Obra / Cartón" }
       }
     ),
 
@@ -459,7 +459,7 @@ export const routesConfig = {
         nl: { type: "Interieur / Exterieur" },
         en: { type: "Interior / Exterior" },
         de: { type: "Innen / Außen" },
-        fr: { type: "Interieur / Exterieur" },
+        fr: { type: "Intérieur / Extérieur" },
         es: { type: "Interior / Exterior" }
       }
     ),
@@ -474,8 +474,8 @@ export const routesConfig = {
         nl: { type: "Eindejaarsgeschenk" },
         en: { type: "Year-end gift" },
         de: { type: "Jahresendgeschenk" },
-        fr: { type: "Cadeau de fin d'annee" },
-        es: { type: "Regalo de fin de ano" }
+        fr: { type: "Cadeau de fin d'année" },
+        es: { type: "Regalo de fin de año" }
       }
     )
   ]

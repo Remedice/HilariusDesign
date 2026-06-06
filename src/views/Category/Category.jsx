@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useMemo, useRef, useState, useCallback } from "react";
+import NextImage from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -193,14 +194,14 @@ export default function Category() {
           <div className="catHeroMedia">
             <div className="catHeroStack">
               {heroSrc ? (
-                <img
+                <NextImage
                   key={heroFadeKey}
                   className="catHeroImg"
                   src={heroSrc}
                   alt={currentProject ? pick(currentProject, "title") : ""}
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority="high"
+                  fill
+                  priority
+                  sizes="(max-width: 860px) 0px, 50vw"
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
               ) : null}
@@ -268,11 +269,12 @@ export default function Category() {
               }}
             >
               {p.cover ? (
-                <img
+                <NextImage
                   src={p.cover}
                   alt={pick(p, "title")}
-                  loading="eager"
-                  decoding="async"
+                  fill
+                  sizes="100vw"
+                  priority={i === 0}
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
               ) : null}

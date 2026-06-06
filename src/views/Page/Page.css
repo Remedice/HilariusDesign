@@ -60,6 +60,7 @@
 }
 
 .aboutImgWrap{
+  position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow:hidden;
@@ -262,6 +263,7 @@
 }
 
 .contactImgWrap{
+  position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;

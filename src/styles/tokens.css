@@ -1,7 +1,7 @@
 :root{
   --bg: #ffffff;
   --text: rgba(10, 10, 10, 0.92);
-  --muted: rgba(10, 10, 10, 0.55);
+  --muted: rgba(10, 10, 10, 0.62);
   --line: rgba(10, 10, 10, 0.14);
 
   --page-pad: clamp(18px, 5vw, 64px);

@@ -1,29 +1,41 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import WorldOfBoard from "../WorldOfBoard/WorldOfBoard.jsx";
 import "./HomeMosaic.css";
 
 // Handles the case where the image loads before React attaches onLoad (SSR/cache).
-function RevealImg({ src, alt, loading, decoding, fetchPriority, className, onReveal }) {
+function RevealImg({ src, alt, priority, sizes, className, onReveal }) {
   const ref = useRef(null);
+  const revealedRef = useRef(false);
 
   useEffect(() => {
-    if (ref.current?.complete) onReveal?.();
-  }, []);
+    revealedRef.current = false;
+  }, [src]);
+
+  function revealOnce() {
+    if (revealedRef.current) return;
+    revealedRef.current = true;
+    onReveal?.();
+  }
+
+  useEffect(() => {
+    if (ref.current?.complete) revealOnce();
+  });
 
   return (
-    <img
+    <Image
       ref={ref}
       src={src}
       alt={alt}
-      loading={loading}
-      decoding={decoding}
-      fetchPriority={fetchPriority}
+      fill
+      priority={priority}
+      sizes={sizes}
       className={className}
-      onLoad={onReveal}
-      onError={onReveal}
+      onLoad={revealOnce}
+      onError={revealOnce}
     />
   );
 }
@@ -69,9 +81,8 @@ export default function HomeMosaic({ tiles }) {
                 <RevealImg
                   src={t.src}
                   alt={t.alt || ""}
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority={i === 1 ? "high" : "auto"}
+                  priority={i === 1}
+                  sizes={t.size === "s3" ? "33vw" : "25vw"}
                   className={`revealImg ${isLoaded ? "isLoaded" : ""}`}
                   onReveal={() => setLoaded((p) => ({ ...p, [t.key]: true }))}
                 />

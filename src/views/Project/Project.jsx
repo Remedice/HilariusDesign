@@ -62,6 +62,8 @@ function ImgBox({ src, alt }) {
 
   return (
     <div className="imgBox">
+      {/* Keep a native img here so the collage preserves each product image's natural ratio. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         ref={imgRef}
         src={src}
