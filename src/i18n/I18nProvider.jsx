@@ -1,52 +1,27 @@
 "use client";
 
-import React, { createContext, useCallback, useEffect, useMemo, useState } from "react";
+import React, { createContext, useCallback, useMemo } from "react";
 import { routesConfig } from "../router/routesConfig";
+import { pickStatic } from "./seo";
 
 export const I18nContext = createContext({
   lang: "nl",
-  setLang: () => {},
   pick: (obj, field) => obj?.[field]
 });
 
-export default function I18nProvider({ children }) {
+export default function I18nProvider({ lang: langProp, children }) {
   const supported = routesConfig.i18n?.supported ?? ["nl", "en", "de", "fr", "es"];
-  const fallback = routesConfig.i18n?.fallback ?? "nl";
-
   const defaultLang = routesConfig.i18n?.default ?? "nl";
-  const [lang, setLangState] = useState(defaultLang);
 
-  useEffect(() => {
-    const saved = localStorage.getItem("hd_lang");
-    if (saved && supported.includes(saved) && saved !== defaultLang) {
-      setLangState(saved);
-    }
-  }, []);
+  // URL is the single source of truth (passed from [lang]/layout). Pure and
+  // prop-driven: no effects, no localStorage -> no hydration mismatch. The
+  // <html lang> attribute is set server-side in the root layout; the language
+  // cookie is managed by the middleware.
+  const lang = supported.includes(langProp) ? langProp : defaultLang;
 
-  const setLang = useCallback((next) => {
-    if (!supported.includes(next)) return;
-    setLangState(next);
-    localStorage.setItem("hd_lang", next);
-  }, [supported]);
+  const pick = useCallback((obj, field) => pickStatic(obj, field, lang), [lang]);
 
-  useEffect(() => {
-    document.documentElement.lang = lang;
-  }, [lang]);
-
-  // pick(obj, "title") => obj.i18n[lang].title || obj.i18n.nl.title || obj.title
-  const pick = useCallback(
-    (obj, field) => {
-      if (!obj) return "";
-      const fromI18n =
-        obj.i18n?.[lang]?.[field] ??
-        obj.i18n?.[fallback]?.[field];
-      if (fromI18n !== undefined) return fromI18n;
-      return obj[field] ?? "";
-    },
-    [lang, fallback]
-  );
-
-  const value = useMemo(() => ({ lang, setLang, pick }), [lang, setLang, pick]);
+  const value = useMemo(() => ({ lang, pick }), [lang, pick]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

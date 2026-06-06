@@ -5,13 +5,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
+import { localizedHref } from "../../i18n/href";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
 import { ChevronDown, Menu, X } from "lucide-react";
 import "./Header.css";
 
 export default function Header() {
-  const { pick } = useContext(I18nContext);
+  const { pick, lang } = useContext(I18nContext);
   const pathname = usePathname();
+
+  // pathname now carries a lang prefix (e.g. /en/about/) -> strip it for active state.
+  const activePath = useMemo(() => {
+    const parts = (pathname || "/").split("/").filter(Boolean);
+    if (parts.length && routesConfig.i18n.supported.includes(parts[0])) parts.shift();
+    return "/" + parts.join("/");
+  }, [pathname]);
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [portfolioOpen, setPortfolioOpen] = useState(false);
@@ -66,7 +74,7 @@ export default function Header() {
     <>
       <header className="header">
         <div className="headerInner">
-          <Link href="/" className="brand" aria-label="Hilarius Design">
+          <Link href={localizedHref("/", lang)} className="brand" aria-label="Hilarius Design">
             <img className="brandLogo" src="/logo.svg" alt="" width="34" height="34" />
           </Link>
 
@@ -77,7 +85,7 @@ export default function Header() {
               onMouseEnter={openPortfolio}
               onMouseLeave={scheduleClosePortfolio}
             >
-              <Link href="/" className="navItem">
+              <Link href={localizedHref("/", lang)} className="navItem">
                 <span className="navLabel">
                   {pick(routesConfig.copy.nav, "portfolio")}
                   <span className="navUnderline" />
@@ -94,7 +102,7 @@ export default function Header() {
                 <div className="megaInner" ref={megaInnerRef}>
                   {categories.map((c) => (
                     <div key={c.slug} className="megaCol">
-                      <Link href={`/category/${c.slug}`} className="megaTitle">
+                      <Link href={localizedHref(`/category/${c.slug}`, lang)} className="megaTitle">
                         <span className="megaTitleLabel">
                           {pick(c, "title")}
                           <span className="megaUnderline" />
@@ -104,7 +112,7 @@ export default function Header() {
 
                       <div className="megaItems">
                         {(mega.get(c.slug) ?? []).map((p) => (
-                          <Link key={p.id} href={`/project/${p.id}`} className="megaItem">
+                          <Link key={p.id} href={localizedHref(`/project/${p.id}`, lang)} className="megaItem">
                             <span className="megaItemLabel">
                               {pick(p, "title")}
                               <span className="megaUnderlineThin" />
@@ -121,8 +129,8 @@ export default function Header() {
             {nav.map((item) => (
               <Link
                 key={item.path}
-                href={item.path}
-                className={`navItem${pathname === item.path ? " active" : ""}`}
+                href={localizedHref(item.path, lang)}
+                className={`navItem${activePath === item.path ? " active" : ""}`}
               >
                 <span className="navLabel">
                   {pick(item, "label")}
@@ -139,8 +147,8 @@ export default function Header() {
             {nav.map((item) => (
               <Link
                 key={item.path}
-                href={item.path}
-                className={`navMobileInlineLink${pathname === item.path ? " active" : ""}`}
+                href={localizedHref(item.path, lang)}
+                className={`navMobileInlineLink${activePath === item.path ? " active" : ""}`}
               >
                 {pick(item, "labelMobile") || pick(item, "label")}
               </Link>
@@ -198,13 +206,13 @@ export default function Header() {
 
                       <div id={`cat-${c.slug}`} className={`mobileAccPanel ${isOpen ? "open" : ""}`}>
                         <div className="mobileAccPanelInner">
-                          <Link href={`/category/${c.slug}`} className="mobileAccAll">
+                          <Link href={localizedHref(`/category/${c.slug}`, lang)} className="mobileAccAll">
                             {pick(c, "subtitle")}
                           </Link>
 
                           <div className="mobileAccProducts">
                             {items.map((p) => (
-                              <Link key={p.id} href={`/project/${p.id}`} className="mobileAccProduct">
+                              <Link key={p.id} href={localizedHref(`/project/${p.id}`, lang)} className="mobileAccProduct">
                                 {pick(p, "title")}
                               </Link>
                             ))}

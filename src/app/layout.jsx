@@ -1,9 +1,12 @@
 import "../styles/tokens.css";
 import "../styles/fonts.css";
 import "../styles/global.css";
-import ClientProviders from "../components/ClientProviders";
+import { headers } from "next/headers";
+import { SITE_URL } from "../i18n/seo";
+import { DEFAULT_LOCALE, isLocale } from "../i18n/locales";
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Hilarius Design",
     template: "%s - Hilarius Design"
@@ -12,9 +15,15 @@ export const metadata = {
   icons: { icon: "/logo.svg" }
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  // The active language comes from the URL (/{lang}/...). The middleware mirrors
+  // it into an x-lang request header so this server-rendered root layout can set
+  // <html lang> correctly. Falls back to NL (the bare-domain default).
+  const headerLang = (await headers()).get("x-lang");
+  const lang = headerLang && isLocale(headerLang) ? headerLang : DEFAULT_LOCALE;
+
   return (
-    <html lang="nl">
+    <html lang={lang}>
       <head>
         <link rel="dns-prefetch" href="https://use.typekit.net" />
         <link rel="dns-prefetch" href="https://p.typekit.net" />
@@ -29,7 +38,7 @@ export default function RootLayout({ children }) {
           <input type="email" name="email" />
           <textarea name="message"></textarea>
         </form>
-        <ClientProviders>{children}</ClientProviders>
+        {children}
       </body>
     </html>
   );

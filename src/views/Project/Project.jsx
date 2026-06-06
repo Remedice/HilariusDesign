@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
+import { localizedHref } from "../../i18n/href";
 import { ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
 import "./Project.css";
 
@@ -118,7 +119,7 @@ function Collage({ images, title }) {
 
 export default function Project() {
   const { id } = useParams();
-  const { pick } = useContext(I18nContext);
+  const { pick, lang } = useContext(I18nContext);
 
   const project = useMemo(
     () => routesConfig.projects.find((p) => p.id === id),
@@ -150,7 +151,7 @@ export default function Project() {
         <h1 className="projTitle">
           {pick(routesConfig.copy.common, "notFound")}
         </h1>
-        <Link href="/" className="projBack">
+        <Link href={localizedHref("/", lang)} className="projBack">
           {pick(routesConfig.copy.common, "backHome")}
         </Link>
       </section>
@@ -167,7 +168,7 @@ export default function Project() {
   return (
     <section className="proj">
       <div className="breadcrumb">
-        <Link href="/" className="uLink crumbLink">
+        <Link href={localizedHref("/", lang)} className="uLink crumbLink">
           <span className="uLinkLabel">
             {pick(routesConfig.copy.nav, "home")}
             <span className="uUnderline" />
@@ -177,7 +178,7 @@ export default function Project() {
 
         {category ? (
           <>
-            <Link href={`/category/${category.slug}`} className="uLink crumbLink">
+            <Link href={localizedHref(`/category/${category.slug}`, lang)} className="uLink crumbLink">
               <span className="uLinkLabel">
                 {pick(category, "title")}
                 <span className="uUnderline" />
@@ -207,7 +208,7 @@ export default function Project() {
       <div className="pn">
         <div className="pnLeft">
           {nav.prev ? (
-            <Link href={`/project/${nav.prev.id}`} className="pnLink" scroll={false}>
+            <Link href={localizedHref(`/project/${nav.prev.id}`, lang)} className="pnLink" scroll={false}>
               <span className="pnIcon" aria-hidden="true">
                 <ArrowLeft strokeWidth={1.8} />
               </span>
@@ -221,7 +222,7 @@ export default function Project() {
         </div>
 
         <Link
-          href={category ? `/category/${category.slug}` : "/"}
+          href={localizedHref(category ? `/category/${category.slug}` : "/", lang)}
           className="pnCenter"
           aria-label="Back to category"
         >
@@ -230,7 +231,7 @@ export default function Project() {
 
         <div className="pnRight">
           {nav.next ? (
-            <Link href={`/project/${nav.next.id}`} className="pnLink right" scroll={false}>
+            <Link href={localizedHref(`/project/${nav.next.id}`, lang)} className="pnLink right" scroll={false}>
               <span className="pnText">
                 {pick(routesConfig.copy.project, "next")}
               </span>

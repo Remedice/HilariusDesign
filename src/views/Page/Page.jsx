@@ -4,6 +4,7 @@ import { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
+import { localizedHref } from "../../i18n/href";
 import { Plus } from "lucide-react";
 import "./Page.css";
 
@@ -18,7 +19,7 @@ function useFadeIn(delay = 0) {
 
 /* About */
 function AboutPage({ page }) {
-  const { pick } = useContext(I18nContext);
+  const { pick, lang } = useContext(I18nContext);
   const imgVisible = useFadeIn(100);
   const textVisible = useFadeIn(300);
 
@@ -41,7 +42,7 @@ function AboutPage({ page }) {
         <p className="aboutIntro">{pick(page, "intro")}</p>
         <div className="aboutBody">{pick(page, "body")}</div>
 
-        <Link href="/" className="aboutCta">
+        <Link href={localizedHref("/", lang)} className="aboutCta">
           <span className="aboutCtaLabel">{pick(page, "cta")}</span>
           <span className="aboutCtaArrow">→</span>
         </Link>

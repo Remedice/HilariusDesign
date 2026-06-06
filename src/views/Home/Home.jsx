@@ -4,6 +4,7 @@ import { useContext, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
+import { localizedHref } from "../../i18n/href";
 import HomeMosaic from "../../components/HomeMosaic/HomeMosaic.jsx";
 import WorldOfBoard from "../../components/WorldOfBoard/WorldOfBoard.jsx";
 import { getImage } from "../../router/images";
@@ -54,7 +55,7 @@ function MobileCatCard({ c }) {
       ref={ref}
       className={`homeMobileCatCard homeRevealBlock ${isRevealed ? "isIn" : ""}`}
     >
-      <Link href={`/category/${c.slug}`} className="homeMobileCatLink">
+      <Link href={c.href} className="homeMobileCatLink">
         <div className="homeMobileCatMedia" aria-hidden="true">
           {c.src ? (
             <RevealImg
@@ -98,7 +99,7 @@ function HomeMobile({ categories, wobHref }) {
 }
 
 export default function Home() {
-  const { pick } = useContext(I18nContext);
+  const { pick, lang } = useContext(I18nContext);
   const isMobile = useIsMobile(860);
 
   const { tiles, mobileCategories, wobHref } = useMemo(() => {
@@ -114,14 +115,14 @@ export default function Home() {
     const hideOnHome = ["the-art-of-board", "interieur-exterieur"];
     const wobCat = c.find((cat) => cat.slug === "the-art-of-board");
     const baseTiles = [
-      { key: "wob", type: "wob", size: "s3", to: "/category/the-art-of-board", label: wobCat ? pick(wobCat, "title") : "", sub: wobCat ? pick(wobCat, "subtitle") : "" },
+      { key: "wob", type: "wob", size: "s3", to: localizedHref("/category/the-art-of-board", lang), label: wobCat ? pick(wobCat, "title") : "", sub: wobCat ? pick(wobCat, "subtitle") : "" },
       ...c
         .filter((cat) => !hideOnHome.includes(cat.slug))
         .map((cat, i) => ({
           key: `c${i}`,
           type: "image",
           size: i < 2 ? "s3" : "s2",
-          to: `/category/${cat.slug}`,
+          to: localizedHref(`/category/${cat.slug}`, lang),
           src: coverFor(cat.slug),
           label: pick(cat, "title"),
           sub: pick(cat, "subtitle")
@@ -130,15 +131,16 @@ export default function Home() {
 
     const cats = c.filter((cat) => cat.slug !== "interieur-exterieur" && cat.slug !== "the-art-of-board").map((cat) => ({
       slug: cat.slug,
+      href: localizedHref(`/category/${cat.slug}`, lang),
       src: coverFor(cat.slug),
       title: pick(cat, "title"),
       sub: pick(cat, "subtitle")
     }));
 
-    const wobHref = wobCat ? `/category/${wobCat.slug}` : "/category/the-art-of-board";
+    const wobHref = localizedHref(wobCat ? `/category/${wobCat.slug}` : "/category/the-art-of-board", lang);
 
     return { tiles: baseTiles, mobileCategories: cats, wobHref };
-  }, [pick]);
+  }, [pick, lang]);
 
   if (isMobile) {
     return <HomeMobile categories={mobileCategories} wobHref={wobHref} />;

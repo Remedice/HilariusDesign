@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
+import { localizedHref } from "../../i18n/href";
 import "./Category.css";
 
 async function preloadAndDecode(src) {
@@ -25,7 +26,7 @@ const AUTO_DELAY = 4000;
 
 export default function Category() {
   const { slug } = useParams();
-  const { pick } = useContext(I18nContext);
+  const { pick, lang } = useContext(I18nContext);
 
   const category = useMemo(
     () => routesConfig.categories.find((c) => c.slug === slug),
@@ -164,7 +165,7 @@ export default function Category() {
       <section className="catPage">
         <div className="catTop">
           <h1 className="catTitle">{pick(routesConfig.copy.common, "notFound")}</h1>
-          <Link className="catBack" href="/">{pick(routesConfig.copy.common, "backHome")}</Link>
+          <Link className="catBack" href={localizedHref("/", lang)}>{pick(routesConfig.copy.common, "backHome")}</Link>
         </div>
       </section>
     );
@@ -185,7 +186,7 @@ export default function Category() {
       {/* ─── Desktop ────────────────────────────────────────────── */}
       <div className="catLayout">
         <Link
-          href={currentProject ? `/project/${currentProject.id}` : "#"}
+          href={currentProject ? localizedHref(`/project/${currentProject.id}`, lang) : "#"}
           className="catHero"
           aria-label="Open project"
         >
@@ -228,7 +229,7 @@ export default function Category() {
               {projects.map((p) => (
                 <Link
                   key={p.id}
-                  href={`/project/${p.id}`}
+                  href={localizedHref(`/project/${p.id}`, lang)}
                   className={`catRow ${p.id === activeId ? "active" : ""}`}
                   onMouseEnter={() => hoverProject(p)}
                   onFocus={() => hoverProject(p)}
@@ -255,7 +256,7 @@ export default function Category() {
           {projects.map((p, i) => (
             <Link
               key={p.id}
-              href={`/project/${p.id}`}
+              href={localizedHref(`/project/${p.id}`, lang)}
               className="catMobileImgCell"
               data-index={i}
               onTouchStart={(e) => {
@@ -297,7 +298,7 @@ export default function Category() {
         ) : null}
 
         <Link
-          href={mobileProject ? `/project/${mobileProject.id}` : "#"}
+          href={mobileProject ? localizedHref(`/project/${mobileProject.id}`, lang) : "#"}
           className="catMobileInfo"
         >
           <div key={activeIndex} className="catMobileName">
