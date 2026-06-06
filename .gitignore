@@ -38,6 +38,7 @@ repomix.instructions.md
 .repomixignore
 
 CLAUDE.md
+AGENTS.md
 .claude/
 .claudeignore
 .codex

@@ -1,9 +1,11 @@
 "use client";
 
 import { useContext, useEffect, useId, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { routesConfig } from "../../router/routesConfig";
+import { getImageSize } from "../../router/images";
 import { I18nContext } from "../../i18n/I18nProvider";
 import { localizedHref } from "../../i18n/href";
 import { ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
@@ -54,6 +56,7 @@ function LogoSkeleton() {
 function ImgBox({ src, alt }) {
   const imgRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
+  const { width, height } = getImageSize(src);
 
   useEffect(() => {
     setLoaded(false);
@@ -62,13 +65,13 @@ function ImgBox({ src, alt }) {
 
   return (
     <div className="imgBox">
-      {/* Keep a native img here so the collage preserves each product image's natural ratio. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         ref={imgRef}
         src={src}
         alt={alt}
-        decoding="async"
+        width={width}
+        height={height}
+        sizes="(max-width: 860px) 50vw, 30vw"
         className={loaded ? "isLoaded" : ""}
         onLoad={() => setLoaded(true)}
         onError={() => setLoaded(true)}
