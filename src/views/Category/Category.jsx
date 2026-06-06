@@ -201,6 +201,8 @@ export default function Category() {
                   alt={currentProject ? pick(currentProject, "title") : ""}
                   fill
                   priority
+                  fetchPriority="high"
+                  quality={70}
                   sizes="(max-width: 860px) 0px, 50vw"
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
@@ -275,6 +277,8 @@ export default function Category() {
                   fill
                   sizes="100vw"
                   priority={i === 0}
+                  fetchPriority={i === 0 ? "high" : undefined}
+                  quality={65}
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
               ) : null}

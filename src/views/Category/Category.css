@@ -222,32 +222,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 2px;
   padding: 8px 0 0;
 }
 
 .catDot{
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 0;
   border: 0;
   padding: 0;
   cursor: pointer;
-  background: rgba(10, 10, 10, 0.18);
-  transition: background 220ms ease, transform 220ms ease;
+  background: transparent;
   position: relative;
   flex-shrink: 0;
 }
 
-.catDot::before{
+.catDot::after{
   content: "";
   position: absolute;
-  inset: -8px;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.28);
+  transform: translate(-50%, -50%);
+  transition: background 220ms ease, transform 220ms ease;
 }
 
-.catDotActive{
+.catDotActive::after{
   background: rgba(10, 10, 10, 0.80);
-  transform: scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 /* ─── Mobile info row (title + arrow) ────────────────────────── */

@@ -72,6 +72,7 @@ function ImgBox({ src, alt }) {
         width={width}
         height={height}
         sizes="(max-width: 860px) 50vw, 30vw"
+        quality={70}
         className={loaded ? "isLoaded" : ""}
         onLoad={() => setLoaded(true)}
         onError={() => setLoaded(true)}
