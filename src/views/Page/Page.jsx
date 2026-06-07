@@ -30,12 +30,13 @@ function AboutPage({ page }) {
         <div className={`aboutImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
           <Image
             src="/over-wim.webp"
-            alt="Wim Hilarius"
+            alt=""
             className="aboutImg"
             fill
             priority
             fetchPriority="high"
             sizes="(max-width: 860px) 100vw, 45vw"
+            onError={(e) => (e.currentTarget.style.display = "none")}
           />
         </div>
       </div>
@@ -157,12 +158,13 @@ function ContactPage({ page }) {
         <div className={`contactImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
           <Image
             src="/contact-image.webp"
-            alt="Hilarius Design contact"
+            alt=""
             className="contactImg"
             fill
             priority
             fetchPriority="high"
             sizes="(max-width: 860px) 100vw, 50vw"
+            onError={(e) => (e.currentTarget.style.display = "none")}
           />
         </div>
 
