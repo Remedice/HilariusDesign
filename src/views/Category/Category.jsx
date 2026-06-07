@@ -54,7 +54,6 @@ function MobileProjectImage({ src, alt, priority }) {
         priority={priority}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? undefined : "lazy"}
-        quality={65}
         onLoad={() => setLoaded(true)}
         onError={(e) => {
           e.currentTarget.style.display = "none";
@@ -305,7 +304,6 @@ export default function Category() {
                   fill
                   priority
                   fetchPriority="high"
-                  quality={70}
                   sizes="(max-width: 860px) 0px, 50vw"
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />

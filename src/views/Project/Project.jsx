@@ -72,7 +72,6 @@ function ImgBox({ src, alt, priority = false }) {
         width={width}
         height={height}
         sizes="(max-width: 860px) 50vw, 30vw"
-        quality={70}
         priority={priority}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? undefined : "lazy"}
