@@ -82,14 +82,23 @@ function ImgBox({ src, alt }) {
   );
 }
 
-function Collage({ images, title }) {
+const projectAltSuffix = {
+  nl: "project van Hilarius Design in gerecycled karton",
+  en: "project by Hilarius Design in recycled board",
+  de: "Projekt von Hilarius Design aus recycelter Pappe",
+  fr: "projet par Hilarius Design en carton recyclé",
+  es: "proyecto de Hilarius Design en cartón reciclado"
+};
+
+function Collage({ images, title, lang }) {
   const count = images.length;
   if (count === 0) return null;
+  const primaryAlt = [title, projectAltSuffix[lang] ?? projectAltSuffix.en].filter(Boolean).join(" - ");
 
   if (count === 1) {
     return (
       <div className="collage collage--1">
-        <ImgBox src={images[0]} alt={title} />
+        <ImgBox src={images[0]} alt={primaryAlt} />
       </div>
     );
   }
@@ -98,7 +107,7 @@ function Collage({ images, title }) {
     return (
       <div className="collage collage--2">
         {images.slice(0, 2).map((src, i) => (
-          <ImgBox key={src} src={src} alt={i === 0 ? title : ""} />
+          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
         ))}
       </div>
     );
@@ -108,7 +117,7 @@ function Collage({ images, title }) {
     return (
       <div className="collage collage--3">
         {images.slice(0, 3).map((src, i) => (
-          <ImgBox key={src} src={src} alt={i === 0 ? title : ""} />
+          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
         ))}
       </div>
     );
@@ -117,7 +126,7 @@ function Collage({ images, title }) {
   return (
     <div className="collage collage--4">
       {images.slice(0, 4).map((src, i) => (
-        <ImgBox key={src} src={src} alt={i === 0 ? title : ""} />
+        <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
       ))}
     </div>
   );
@@ -198,7 +207,7 @@ export default function Project() {
       </div>
 
       <div className="projLayout">
-        <Collage images={images} title={pick(project, "title")} />
+        <Collage images={images} title={pick(project, "title")} lang={lang} />
 
         <aside className="projRight">
           <h1 className="projTitle">{pick(project, "title")}</h1>

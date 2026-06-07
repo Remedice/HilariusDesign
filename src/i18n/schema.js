@@ -79,6 +79,26 @@ export function buildWebSite(lang) {
   };
 }
 
+export function buildPerson() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_URL}/#wim-hilarius`,
+    name: "Wim Hilarius",
+    jobTitle: "Designer",
+    worksFor: { "@id": `${SITE_URL}/#org` },
+    url: `${SITE_URL}/nl/about`,
+    sameAs: [routesConfig.linkedin],
+    knowsAbout: [
+      "cardboard design",
+      "recycled board",
+      "corporate gifts",
+      "packaging design",
+      "paper engineering"
+    ]
+  };
+}
+
 // items: [{ name, path }] where path is WITHOUT the lang prefix ("/" = home).
 export function buildBreadcrumb(lang, items) {
   return {
@@ -97,21 +117,23 @@ export function buildCreativeWork(project, lang) {
   const images = (project.images?.length ? project.images : [project.cover])
     .filter(Boolean)
     .map(abs);
+  const name = pickStatic(project, "title", lang) || project.id;
   return {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     "@id": `${localizedUrl(lang, `/project/${project.id}`)}#creativework`,
-    name: pickStatic(project, "title", lang) || project.id,
+    name,
     description: pickStatic(project, "description", lang),
     url: localizedUrl(lang, `/project/${project.id}`),
     image: images,
+    associatedMedia: images.slice(0, 4).map((url, index) => ({
+      "@type": "ImageObject",
+      contentUrl: url,
+      name: index === 0 ? name : `${name} ${index + 1}`
+    })),
     inLanguage: inLang(lang),
     material: MATERIAL[lang] ?? MATERIAL.nl,
-    creator: {
-      "@type": "Person",
-      name: "Wim Hilarius",
-      worksFor: { "@id": `${SITE_URL}/#org` }
-    },
+    creator: { "@id": `${SITE_URL}/#wim-hilarius` },
     isPartOf: { "@id": `${SITE_URL}/#website` }
   };
 }

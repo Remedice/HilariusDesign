@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     lang,
     path: `/category/${slug}`,
     title: pickStatic(cat, "title", lang) || slug,
-    description: pickStatic(cat, "subtitle", lang) || ""
+    description: pickStatic(cat, "seoDescription", lang) || pickStatic(cat, "intro", lang) || pickStatic(cat, "subtitle", lang) || ""
   });
 }
 

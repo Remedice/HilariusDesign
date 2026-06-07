@@ -37,6 +37,7 @@ export default function LanguageSwitch({ compact = false }) {
   );
 
   const chevSize = compact ? 14 : 16;
+  const currentLabel = lang.toUpperCase();
 
   function selectLang(key) {
     // The middleware sets the hd_lang cookie when the new locale path loads,
@@ -50,10 +51,10 @@ export default function LanguageSwitch({ compact = false }) {
       <button
         className="langBtn"
         onClick={() => setOpen((v) => !v)}
-        aria-label="Taal"
+        aria-label={`Taal ${currentLabel}`}
         aria-expanded={open ? "true" : "false"}
       >
-        <span className="langBtnLabel">{lang.toUpperCase()}</span>
+        <span className="langBtnLabel">{currentLabel}</span>
         <ChevronDown
           className={`langChev ${open ? "open" : ""}`}
           size={chevSize}

@@ -4,7 +4,7 @@ import "../../styles/fonts.css";
 import "../../styles/global.css";
 import ClientProviders from "../../components/ClientProviders";
 import { SITE_URL } from "../../i18n/seo";
-import { buildOrganization, buildWebSite, jsonLdHtml } from "../../i18n/schema";
+import { buildOrganization, buildPerson, buildWebSite, jsonLdHtml } from "../../i18n/schema";
 import { routesConfig } from "../../router/routesConfig";
 
 const typekitLoader = `
@@ -60,6 +60,10 @@ export default async function LangLayout({ children, params }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLdHtml(buildWebSite(lang)) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(buildPerson()) }}
         />
       </head>
       <body>

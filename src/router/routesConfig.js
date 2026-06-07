@@ -33,7 +33,7 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
       description:
         "Ontwerp en productie in gerecycled karton. Strak, functioneel en volledig te personaliseren in uw huisstijl.",
       body:
-        "Toepassing\nWaar wordt dit product voor gebruikt?\n\nDetails\nFormaat / variaties\nAfwerking (bijv. stans, folie, lak)\nPersonalisatie / branding\n\nProductie\nOplage (indicatie)\nLevertijd (indicatie)\n\nOpmerking\nExtra context of wensen van de klant",
+        "Hilarius Design ontwerpt en produceert dit kartonnen product op maat voor relatiegeschenken, presentaties of merkactivaties. Het ontwerp wordt afgestemd op toepassing, formaat, bedrukking en gewenste uitstraling.\n\nGerecycled karton is licht, sterk en goed te bedrukken. Daardoor ontstaat een product dat praktisch is in productie en tegelijk herkenbaar blijft voor uw merk.",
       type: categoryDefaults?.nl?.type ?? "Relatiegeschenk / Karton",
       year: categoryDefaults?.nl?.year ?? "",
       materials: "Gerecycled karton"
@@ -43,7 +43,7 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
       description:
         "Design and production in recycled board. Clean, functional and fully tailored to your brand.",
       body:
-        "Use case\nWhat is this used for?\n\nDetails\nSize / variations\nFinishing (e.g. die-cut, foil, varnish)\nCustom branding\n\nProduction\nQuantity (estimate)\nLead time (estimate)\n\nNotes\nAny extra context or client requests",
+        "Hilarius Design designs and produces this cardboard product to order for corporate gifts, presentations or brand activations. The design is tailored to the use case, size, print and desired appearance.\n\nRecycled board is light, strong and easy to print. This creates a product that works well in production and remains recognizable for your brand.",
       type: categoryDefaults?.en?.type ?? "Corporate gift / Board",
       year: categoryDefaults?.en?.year ?? "",
       materials: "Recycled board"
@@ -53,7 +53,7 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
       description:
         "Design und Produktion aus recycelter Pappe. Klar, funktional und vollständig an Ihre Marke anpassbar.",
       body:
-        "Einsatz\nWofür wird es genutzt?\n\nDetails\nGröße / Varianten\nVeredelung (z.B. Stanzung, Folie, Lack)\nBranding / Personalisierung\n\nProduktion\nAuflage (Schätzung)\nLieferzeit (Schätzung)\n\nNotizen\nZusätzlicher Kontext oder Kundenwünsche",
+        "Hilarius Design entwirft und produziert dieses Kartonprodukt nach Maß für Werbegeschenke, Präsentationen oder Markenaktionen. Das Design wird auf Einsatz, Format, Druck und gewünschte Wirkung abgestimmt.\n\nRecycelte Pappe ist leicht, stabil und gut bedruckbar. So entsteht ein Produkt, das in der Produktion praktisch ist und für Ihre Marke erkennbar bleibt.",
       type: categoryDefaults?.de?.type ?? "Werbegeschenk / Pappe",
       year: categoryDefaults?.de?.year ?? "",
       materials: "Recycelte Pappe"
@@ -63,7 +63,7 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
       description:
         "Conception et production en carton recyclé. Sobre, fonctionnel et entièrement adaptable à votre marque.",
       body:
-        "Utilisation\nÀ quoi sert ce produit ?\n\nDétails\nFormat / variantes\nFinition (par ex. découpe, film, vernis)\nPersonnalisation / branding\n\nProduction\nQuantité (indicative)\nDélai (indicatif)\n\nRemarque\nContexte supplémentaire ou souhaits du client",
+        "Hilarius Design conçoit et produit ce produit en carton sur mesure pour des cadeaux d'affaires, des présentations ou des actions de marque. Le design est adapté à l'usage, au format, à l'impression et au rendu souhaité.\n\nLe carton recyclé est léger, solide et facile à imprimer. Il permet de créer un produit pratique à produire et clairement reconnaissable pour votre marque.",
       type: categoryDefaults?.fr?.type ?? "Cadeau d'affaires / Carton",
       year: categoryDefaults?.fr?.year ?? "",
       materials: "Carton recyclé"
@@ -73,7 +73,7 @@ const defaultProjectI18n = (file, categoryDefaults = {}) => {
       description:
         "Diseño y producción en cartón reciclado. Limpio, funcional y totalmente adaptable a su marca.",
       body:
-        "Uso\n¿Para qué se utiliza este producto?\n\nDetalles\nFormato / variantes\nAcabado (p. ej. troquelado, lámina, barniz)\nPersonalización / marca\n\nProducción\nTirada (indicativa)\nPlazo de entrega (indicativo)\n\nNota\nContexto adicional o deseos del cliente",
+        "Hilarius Design diseña y produce este producto de cartón a medida para regalos corporativos, presentaciones o activaciones de marca. El diseño se adapta al uso, formato, impresión y aspecto deseado.\n\nEl cartón reciclado es ligero, resistente y fácil de imprimir. Así se crea un producto práctico de producir y claramente reconocible para su marca.",
       type: categoryDefaults?.es?.type ?? "Regalo corporativo / Cartón",
       year: categoryDefaults?.es?.year ?? "",
       materials: "Cartón reciclado"
@@ -158,6 +158,232 @@ const buildCategoryProjects = (categorySlug, files, categoryDefaults) => {
   });
 };
 
+const categoryContent = {
+  transport: {
+    nl: {
+      intro: "Kartonnen transportmodellen maken van een fles, snoepverpakking of kleine attentie een herkenbaar merkobject. Hilarius Design ontwerpt vrachtwagens, auto's, treinen en vliegtuigen in gerecycled karton, bedrukt in uw huisstijl en geschikt als relatiegeschenk voor transport, logistiek en evenementen.",
+      seoDescription: "Kartonnen transportmodellen zoals vrachtwagens, auto's, treinen en vliegtuigen als origineel relatiegeschenk in gerecycled karton.",
+      imageAlt: "Kartonnen transportmodel als relatiegeschenk van Hilarius Design"
+    },
+    en: {
+      intro: "Cardboard transport models turn a bottle, sweets package or small gift into a recognizable brand object. Hilarius Design designs trucks, cars, trains and aircraft in recycled board, printed in your corporate identity and made for logistics, transport and event gifts.",
+      seoDescription: "Cardboard transport models such as trucks, cars, trains and aircraft as original corporate gifts in recycled board.",
+      imageAlt: "Cardboard transport model corporate gift by Hilarius Design"
+    },
+    de: {
+      intro: "Transportmodelle aus Karton machen aus einer Flasche, einer Süßigkeitenverpackung oder einer kleinen Aufmerksamkeit ein erkennbares Markenobjekt. Hilarius Design entwirft LKW, Autos, Züge und Flugzeuge aus recycelter Pappe, bedruckt in Ihrem Corporate Design.",
+      seoDescription: "Transportmodelle aus Karton wie LKW, Autos, Züge und Flugzeuge als originelle Werbegeschenke aus recycelter Pappe.",
+      imageAlt: "Transportmodell aus Karton als Werbegeschenk von Hilarius Design"
+    },
+    fr: {
+      intro: "Les modèles de transport en carton transforment une bouteille, un emballage de friandises ou une petite attention en objet de marque reconnaissable. Hilarius Design conçoit camions, voitures, trains et avions en carton recyclé, imprimés à votre identité visuelle.",
+      seoDescription: "Modèles de transport en carton, dont camions, voitures, trains et avions, comme cadeaux d'affaires en carton recyclé.",
+      imageAlt: "Modèle de transport en carton comme cadeau d'affaires par Hilarius Design"
+    },
+    es: {
+      intro: "Los modelos de transporte de cartón convierten una botella, un envase de dulces o un pequeño detalle en un objeto de marca reconocible. Hilarius Design diseña camiones, coches, trenes y aviones en cartón reciclado, impresos con su identidad visual.",
+      seoDescription: "Modelos de transporte de cartón, como camiones, coches, trenes y aviones, para regalos corporativos en cartón reciclado.",
+      imageAlt: "Modelo de transporte de cartón como regalo corporativo de Hilarius Design"
+    }
+  },
+  "bureau-accessoires": {
+    nl: {
+      intro: "Bureau-accessoires van karton blijven zichtbaar op de werkplek. Kalenders, klokken, memobakjes en onderzetters worden licht, stevig en volledig bedrukbaar uitgevoerd, zodat uw merk dagelijks aanwezig is zonder schreeuwerig te worden.",
+      seoDescription: "Bureau-accessoires van gerecycled karton, waaronder kalenders, klokken, memobakjes en onderzetters op maat.",
+      imageAlt: "Bureau-accessoire van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Cardboard desk accessories stay visible in the workplace. Calendars, clocks, memo trays and coasters are light, sturdy and fully printable, keeping your brand present every day without becoming loud.",
+      seoDescription: "Desk accessories in recycled board, including custom calendars, clocks, memo trays and coasters.",
+      imageAlt: "Recycled board desk accessory by Hilarius Design"
+    },
+    de: {
+      intro: "Schreibtisch-Accessoires aus Karton bleiben am Arbeitsplatz sichtbar. Kalender, Uhren, Memo-Ablagen und Untersetzer sind leicht, stabil und vollständig bedruckbar, sodass Ihre Marke jeden Tag präsent bleibt.",
+      seoDescription: "Schreibtisch-Accessoires aus recycelter Pappe, darunter Kalender, Uhren, Memo-Ablagen und Untersetzer nach Maß.",
+      imageAlt: "Schreibtisch-Accessoire aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Les accessoires de bureau en carton restent visibles sur le lieu de travail. Calendriers, horloges, bacs mémo et sous-verres sont légers, solides et entièrement imprimables, pour garder votre marque présente au quotidien.",
+      seoDescription: "Accessoires de bureau en carton recyclé, dont calendriers, horloges, bacs mémo et sous-verres sur mesure.",
+      imageAlt: "Accessoire de bureau en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Los accesorios de escritorio de cartón permanecen visibles en el lugar de trabajo. Calendarios, relojes, bandejas memo y posavasos son ligeros, resistentes y totalmente imprimibles, para mantener su marca presente cada día.",
+      seoDescription: "Accesorios de escritorio en cartón reciclado, como calendarios, relojes, bandejas memo y posavasos a medida.",
+      imageAlt: "Accesorio de escritorio en cartón reciclado de Hilarius Design"
+    }
+  },
+  verpakkingen: {
+    nl: {
+      intro: "Verpakkingen van karton beschermen, presenteren en versterken uw merk tegelijk. Van wijnverpakkingen en kokers tot displays en verrassende uitklapdozen: elk ontwerp wordt afgestemd op product, oplage, bedrukking en gewenste ervaring.",
+      seoDescription: "Luxe verpakkingen van gerecycled karton, waaronder wijnverpakkingen, kokers, displays en cadeauverpakkingen op maat.",
+      imageAlt: "Verpakking van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Cardboard packaging protects, presents and strengthens your brand at the same time. From wine packaging and tubes to displays and surprising fold-out boxes, each design is tailored to product, quantity, print and desired experience.",
+      seoDescription: "Premium recycled board packaging, including wine packaging, tubes, displays and custom gift packaging.",
+      imageAlt: "Recycled board packaging by Hilarius Design"
+    },
+    de: {
+      intro: "Verpackungen aus Karton schützen, präsentieren und stärken Ihre Marke zugleich. Von Weinverpackungen und Hülsen bis zu Displays und überraschenden Aufklappboxen wird jedes Design auf Produkt, Auflage, Druck und Wirkung abgestimmt.",
+      seoDescription: "Premium-Verpackungen aus recycelter Pappe, darunter Weinverpackungen, Hülsen, Displays und Geschenkverpackungen nach Maß.",
+      imageAlt: "Verpackung aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Les emballages en carton protègent, présentent et renforcent votre marque à la fois. Des emballages pour le vin et tubes aux displays et boîtes dépliantes, chaque design est adapté au produit, à la quantité, à l'impression et à l'expérience souhaitée.",
+      seoDescription: "Emballages haut de gamme en carton recyclé, dont emballages pour le vin, tubes, displays et emballages cadeaux sur mesure.",
+      imageAlt: "Emballage en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Los embalajes de cartón protegen, presentan y refuerzan su marca al mismo tiempo. Desde embalajes para vino y tubos hasta displays y cajas desplegables, cada diseño se adapta al producto, tirada, impresión y experiencia deseada.",
+      seoDescription: "Embalajes premium en cartón reciclado, incluidos embalajes para vino, tubos, displays y embalajes de regalo a medida.",
+      imageAlt: "Embalaje en cartón reciclado de Hilarius Design"
+    }
+  },
+  "boeken-mappen": {
+    nl: {
+      intro: "Boeken, mappen en cassettes vragen om een presentatie die de inhoud serieus neemt. Hilarius Design maakt kartonnen mappen, boekverpakkingen en uitgaven op maat voor documentatie, kunst, prijzen en bijzondere publicaties.",
+      seoDescription: "Boekverpakkingen, mappen en cassettes van gerecycled karton voor documentatie, kunst en bijzondere publicaties.",
+      imageAlt: "Boekverpakking of map van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Books, folders and slipcases need a presentation that respects the content. Hilarius Design creates custom cardboard folders, book packaging and editions for documentation, art, awards and special publications.",
+      seoDescription: "Book packaging, folders and slipcases in recycled board for documentation, art and special publications.",
+      imageAlt: "Recycled board book packaging or folder by Hilarius Design"
+    },
+    de: {
+      intro: "Bücher, Mappen und Schuber brauchen eine Präsentation, die dem Inhalt gerecht wird. Hilarius Design fertigt Kartonmappen, Buchverpackungen und Ausgaben nach Maß für Dokumentation, Kunst, Preise und besondere Publikationen.",
+      seoDescription: "Buchverpackungen, Mappen und Schuber aus recycelter Pappe für Dokumentation, Kunst und besondere Publikationen.",
+      imageAlt: "Buchverpackung oder Mappe aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Livres, dossiers et étuis demandent une présentation qui respecte le contenu. Hilarius Design crée des dossiers, emballages de livres et éditions en carton sur mesure pour documentation, art, prix et publications particulières.",
+      seoDescription: "Emballages de livres, dossiers et étuis en carton recyclé pour documentation, art et publications particulières.",
+      imageAlt: "Emballage de livre ou dossier en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Libros, carpetas y estuches necesitan una presentación que respete el contenido. Hilarius Design crea carpetas, embalajes para libros y ediciones de cartón a medida para documentación, arte, premios y publicaciones especiales.",
+      seoDescription: "Embalajes para libros, carpetas y estuches en cartón reciclado para documentación, arte y publicaciones especiales.",
+      imageAlt: "Embalaje para libro o carpeta en cartón reciclado de Hilarius Design"
+    }
+  },
+  spellen: {
+    nl: {
+      intro: "Spellen van karton maken merkbeleving actief. Bordspellen, puzzels, werpspellen en schaakspellen worden op maat gemaakt voor teams, events en relatiegeschenken waarbij mensen samen iets doen.",
+      seoDescription: "Spellen van gerecycled karton, zoals bordspellen, puzzels, werpspellen en schaakspellen als origineel relatiegeschenk.",
+      imageAlt: "Spel van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Cardboard games make brand experience active. Board games, puzzles, throwing games and chess sets are made to order for teams, events and corporate gifts where people do something together.",
+      seoDescription: "Games in recycled board, such as board games, puzzles, throwing games and chess sets as original corporate gifts.",
+      imageAlt: "Recycled board game by Hilarius Design"
+    },
+    de: {
+      intro: "Spiele aus Karton machen Markenerlebnis aktiv. Brettspiele, Puzzles, Wurfspiele und Schachspiele entstehen nach Maß für Teams, Events und Werbegeschenke, bei denen Menschen gemeinsam etwas tun.",
+      seoDescription: "Spiele aus recycelter Pappe, darunter Brettspiele, Puzzles, Wurfspiele und Schachspiele als originelle Werbegeschenke.",
+      imageAlt: "Spiel aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Les jeux en carton rendent l'expérience de marque active. Jeux de plateau, puzzles, jeux de lancer et jeux d'échecs sont réalisés sur mesure pour équipes, événements et cadeaux d'affaires où les personnes agissent ensemble.",
+      seoDescription: "Jeux en carton recyclé, dont jeux de plateau, puzzles, jeux de lancer et jeux d'échecs comme cadeaux d'affaires.",
+      imageAlt: "Jeu en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Los juegos de cartón hacen activa la experiencia de marca. Juegos de mesa, puzzles, juegos de lanzamiento y ajedrez se realizan a medida para equipos, eventos y regalos corporativos donde las personas participan juntas.",
+      seoDescription: "Juegos en cartón reciclado, como juegos de mesa, puzzles, juegos de lanzamiento y ajedrez para regalos corporativos.",
+      imageAlt: "Juego en cartón reciclado de Hilarius Design"
+    }
+  },
+  "the-art-of-board": {
+    nl: {
+      intro: "The Art Of Board laat zien hoe ver karton kan gaan als constructief en beeldend materiaal. Van monumenten en stoelen tot gelaagde bloemen en kunstobjecten: elk werk onderzoekt vorm, sterkte en verbeelding in gerecycled karton.",
+      seoDescription: "Kunstobjecten en ruimtelijke ontwerpen in gerecycled karton, van maquettes tot stoelen en gelaagde bloemen.",
+      imageAlt: "Kunstobject in gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "The Art Of Board shows how far cardboard can go as a structural and visual material. From monuments and chairs to layered flowers and art objects, each work explores form, strength and imagination in recycled board.",
+      seoDescription: "Art objects and spatial designs in recycled board, from scale models to chairs and layered flowers.",
+      imageAlt: "Recycled board art object by Hilarius Design"
+    },
+    de: {
+      intro: "The Art Of Board zeigt, wie weit Karton als konstruktives und bildnerisches Material gehen kann. Von Monumenten und Stühlen bis zu geschichteten Blumen und Kunstobjekten untersucht jedes Werk Form, Stärke und Vorstellungskraft.",
+      seoDescription: "Kunstobjekte und räumliche Entwürfe aus recycelter Pappe, von Modellen bis zu Stühlen und geschichteten Blumen.",
+      imageAlt: "Kunstobjekt aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "The Art Of Board montre jusqu'où le carton peut aller comme matériau constructif et visuel. Des monuments et chaises aux fleurs en couches et objets d'art, chaque œuvre explore la forme, la solidité et l'imagination.",
+      seoDescription: "Objets d'art et créations spatiales en carton recyclé, des maquettes aux chaises et fleurs en couches.",
+      imageAlt: "Objet d'art en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "The Art Of Board muestra hasta dónde puede llegar el cartón como material constructivo y visual. Desde monumentos y sillas hasta flores por capas y objetos artísticos, cada obra explora forma, resistencia e imaginación.",
+      seoDescription: "Objetos artísticos y diseños espaciales en cartón reciclado, desde maquetas hasta sillas y flores por capas.",
+      imageAlt: "Objeto artístico en cartón reciclado de Hilarius Design"
+    }
+  },
+  "interieur-exterieur": {
+    nl: {
+      intro: "Interieur- en exterieurprojecten van karton maken ruimte tastbaar. Hilarius Design ontwerpt displays, maquettes, meubels en ruimtelijke presentaties die licht zijn in materiaal, maar groot in effect.",
+      seoDescription: "Interieur- en exterieurprojecten van gerecycled karton, waaronder displays, maquettes, meubels en presentaties.",
+      imageAlt: "Ruimtelijk ontwerp van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Interior and exterior cardboard projects make space tangible. Hilarius Design designs displays, scale models, furniture and spatial presentations that are light in material and strong in effect.",
+      seoDescription: "Interior and exterior projects in recycled board, including displays, scale models, furniture and presentations.",
+      imageAlt: "Spatial design in recycled board by Hilarius Design"
+    },
+    de: {
+      intro: "Innen- und Außenprojekte aus Karton machen Raum greifbar. Hilarius Design entwirft Displays, Modelle, Möbel und räumliche Präsentationen, die im Material leicht und in der Wirkung stark sind.",
+      seoDescription: "Innen- und Außenprojekte aus recycelter Pappe, darunter Displays, Modelle, Möbel und Präsentationen.",
+      imageAlt: "Räumliches Design aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Les projets d'intérieur et d'extérieur en carton rendent l'espace tangible. Hilarius Design conçoit displays, maquettes, meubles et présentations spatiales, légers par le matériau et forts par l'effet.",
+      seoDescription: "Projets d'intérieur et d'extérieur en carton recyclé, dont displays, maquettes, meubles et présentations.",
+      imageAlt: "Création spatiale en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Los proyectos de interior y exterior en cartón hacen tangible el espacio. Hilarius Design diseña displays, maquetas, muebles y presentaciones espaciales, ligeros por material y fuertes por efecto.",
+      seoDescription: "Proyectos de interior y exterior en cartón reciclado, incluidos displays, maquetas, muebles y presentaciones.",
+      imageAlt: "Diseño espacial en cartón reciclado de Hilarius Design"
+    }
+  },
+  eindejaarsgeschenken: {
+    nl: {
+      intro: "Eindejaarsgeschenken van karton combineren waardering, originaliteit en duurzaamheid. Hilarius Design maakt feestelijke producten die passen bij uw merk en bij het moment waarop u relaties of medewerkers wilt bedanken.",
+      seoDescription: "Eindejaarsgeschenken en kerstdecoraties van gerecycled karton, volledig afgestemd op merk en ontvanger.",
+      imageAlt: "Eindejaarsgeschenk van gerecycled karton door Hilarius Design"
+    },
+    en: {
+      intro: "Cardboard year-end gifts combine appreciation, originality and sustainability. Hilarius Design creates festive products that fit your brand and the moment when you want to thank clients or staff.",
+      seoDescription: "Year-end gifts and Christmas decorations in recycled board, fully tailored to brand and recipient.",
+      imageAlt: "Recycled board year-end gift by Hilarius Design"
+    },
+    de: {
+      intro: "Jahresendgeschenke aus Karton verbinden Wertschätzung, Originalität und Nachhaltigkeit. Hilarius Design gestaltet festliche Produkte, die zu Ihrer Marke und zum Moment des Dankes passen.",
+      seoDescription: "Jahresendgeschenke und Weihnachtsdekoration aus recycelter Pappe, vollständig auf Marke und Empfänger abgestimmt.",
+      imageAlt: "Jahresendgeschenk aus recycelter Pappe von Hilarius Design"
+    },
+    fr: {
+      intro: "Les cadeaux de fin d'année en carton associent appréciation, originalité et durabilité. Hilarius Design crée des produits festifs adaptés à votre marque et au moment où vous souhaitez remercier clients ou collaborateurs.",
+      seoDescription: "Cadeaux de fin d'année et décorations de Noël en carton recyclé, adaptés à la marque et au destinataire.",
+      imageAlt: "Cadeau de fin d'année en carton recyclé par Hilarius Design"
+    },
+    es: {
+      intro: "Los regalos de fin de año de cartón combinan reconocimiento, originalidad y sostenibilidad. Hilarius Design crea productos festivos adaptados a su marca y al momento de agradecer a clientes o colaboradores.",
+      seoDescription: "Regalos de fin de año y decoración navideña en cartón reciclado, adaptados a la marca y al destinatario.",
+      imageAlt: "Regalo de fin de año en cartón reciclado de Hilarius Design"
+    }
+  }
+};
+
+const withCategoryContent = (categories) =>
+  categories.map((category) => {
+    const extra = categoryContent[category.slug];
+    if (!extra) return category;
+    return mergeDeep(category, { i18n: extra });
+  });
+
 export const routesConfig = {
   i18n: {
     default: "nl",
@@ -220,7 +446,7 @@ export const routesConfig = {
     { path: "/contact", i18n: { nl: { label: "Contact" }, en: { label: "Contact" }, de: { label: "Kontakt" }, fr: { label: "Contact" }, es: { label: "Contacto" } } }
   ],
 
-  categories: [
+  categories: withCategoryContent([
     {
       slug: "transport",
       i18n: {
@@ -301,7 +527,7 @@ export const routesConfig = {
         es: { title: "Regalos de fin de año", subtitle: "Productos festivos para el final del año.", titleLine1: "Regalos", titleLine2: "de fin de año", titleLine3: "" }
       }
     }
-  ],
+  ]),
 
   homeCovers: {
     transport: "transport/vrachtwagens/vrachtwagens2-2.webp",

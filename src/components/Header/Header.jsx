@@ -95,7 +95,6 @@ export default function Header() {
 
               <div
                 className={`mega ${portfolioOpen ? "open" : ""}`}
-                role="menu"
                 aria-label="Portfolio submenu"
                 onMouseEnter={openPortfolio}
                 onMouseLeave={scheduleClosePortfolio}

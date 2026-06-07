@@ -23,7 +23,16 @@ async function preloadAndDecode(src) {
   }
 }
 
-const AUTO_DELAY = 4000;
+const AUTO_DELAY = 5500;
+const AUTO_INITIAL_DELAY = 8500;
+
+const imageAltSuffix = {
+  nl: "van Hilarius Design in gerecycled karton",
+  en: "by Hilarius Design in recycled board",
+  de: "von Hilarius Design aus recycelter Pappe",
+  fr: "par Hilarius Design en carton recyclé",
+  es: "de Hilarius Design en cartón reciclado"
+};
 
 export default function Category() {
   const { slug } = useParams();
@@ -92,6 +101,11 @@ export default function Category() {
 
   const startAutoTimer = useCallback(() => {
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
+    const shouldSkip =
+      projects.length < 2 ||
+      document.hidden ||
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    if (shouldSkip) return;
     autoTimerRef.current = setInterval(() => {
       const next = activeIndexRef.current < projects.length - 1
         ? activeIndexRef.current + 1
@@ -129,8 +143,11 @@ export default function Category() {
     setActiveIndex(0);
     const rail = railRef.current;
     if (rail) rail.scrollLeft = 0;
-    startAutoTimer();
+    const initialTimer = window.setTimeout(() => {
+      startAutoTimer();
+    }, AUTO_INITIAL_DELAY);
     return () => {
+      window.clearTimeout(initialTimer);
       if (autoTimerRef.current) clearInterval(autoTimerRef.current);
     };
   }, [slug, projects.length, startAutoTimer]);
@@ -144,12 +161,23 @@ export default function Category() {
       if (settleTimer) clearTimeout(settleTimer);
       settleTimer = setTimeout(() => {
         startAutoTimer();
-      }, 120);
+      }, 600);
+    };
+
+    const onVisibilityChange = () => {
+      if (document.hidden && autoTimerRef.current) {
+        clearInterval(autoTimerRef.current);
+        autoTimerRef.current = null;
+      } else {
+        startAutoTimer();
+      }
     };
 
     rail.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("visibilitychange", onVisibilityChange);
     return () => {
       rail.removeEventListener("scroll", onScroll);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
       if (settleTimer) clearTimeout(settleTimer);
     };
   }, [startAutoTimer]);
@@ -174,6 +202,15 @@ export default function Category() {
 
   const currentProject = projects.find((p) => p.id === activeId) ?? projects[0] ?? null;
   const mobileProject = projects[activeIndex] ?? null;
+  const categoryTitle = pick(category, "title");
+  const categoryIntro = pick(category, "intro");
+  const categoryImageAlt = pick(category, "imageAlt");
+  const projectImageAlt = (project) => {
+    const title = pick(project, "title");
+    return [title, categoryImageAlt || `${categoryTitle} ${imageAltSuffix[lang] ?? imageAltSuffix.en}`]
+      .filter(Boolean)
+      .join(" - ");
+  };
   const headingLines = ["titleLine1", "titleLine2", "titleLine3"]
     .map((key, index) => ({
       key,
@@ -198,7 +235,7 @@ export default function Category() {
                   key={heroFadeKey}
                   className="catHeroImg"
                   src={heroSrc}
-                  alt={currentProject ? pick(currentProject, "title") : ""}
+                  alt={currentProject ? projectImageAlt(currentProject) : ""}
                   fill
                   priority
                   fetchPriority="high"
@@ -246,13 +283,16 @@ export default function Category() {
             </div>
           </div>
 
-          <div className="catMetaNote">{pick(category, "subtitle")}</div>
+          <div className="catMetaNote">
+            <p>{pick(category, "subtitle")}</p>
+            {categoryIntro ? <p>{categoryIntro}</p> : null}
+          </div>
         </div>
       </div>
 
       {/* ─── Mobile ─────────────────────────────────────────────── */}
       <div className="catMobile">
-        <div className="catMobileTitle">{pick(category, "title")}</div>
+        <div className="catMobileTitle">{categoryTitle}</div>
         <div className="catMobileSub">{pick(category, "subtitle")}</div>
 
         <div ref={railRef} className="catMobileImgRail">
@@ -273,7 +313,7 @@ export default function Category() {
               {p.cover ? (
                 <NextImage
                   src={p.cover}
-                  alt={pick(p, "title")}
+                  alt={projectImageAlt(p)}
                   fill
                   sizes="100vw"
                   priority={i === 0}
@@ -312,6 +352,7 @@ export default function Category() {
           </div>
           <ArrowUpRight className="catCardIcon" size={16} strokeWidth={2} aria-hidden="true" />
         </Link>
+        {categoryIntro ? <p className="catMobileIntro">{categoryIntro}</p> : null}
       </div>
     </section>
   );
