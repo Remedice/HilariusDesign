@@ -284,8 +284,8 @@ export default function Category() {
           </div>
 
           <div className="catMetaNote">
-            <p>{pick(category, "subtitle")}</p>
-            {categoryIntro ? <p>{categoryIntro}</p> : null}
+            <p className="catSub">{pick(category, "subtitle")}</p>
+            {categoryIntro ? <p className="catIntro">{categoryIntro}</p> : null}
           </div>
         </div>
       </div>

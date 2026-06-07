@@ -154,17 +154,27 @@
 
 .catMetaNote{
   margin-top: 18px;
-  color: var(--muted);
-  line-height: 1.6;
-  font-size: 15px;
 }
 
 .catMetaNote p{
   margin: 0;
 }
 
-.catMetaNote p + p{
-  margin-top: 12px;
+.catSub{
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.catIntro{
+  color: var(--muted-strong);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.catSub + .catIntro{
+  margin-top: 10px;
 }
 
 /* ─── Mobile ─────────────────────────────────────────────────── */
@@ -187,15 +197,15 @@
 
 .catMobileSub{
   margin-top: 6px;
-  color: var(--muted);
+  color: var(--text);
+  font-weight: 500;
   line-height: 1.55;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .catMobileIntro{
   margin: 14px 0 0;
-  color: var(--text);
-  opacity: 0.82;
+  color: var(--muted-strong);
   line-height: 1.58;
   font-size: 15px;
 }

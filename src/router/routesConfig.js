@@ -480,11 +480,11 @@ export const routesConfig = {
     {
       slug: "boeken-mappen",
       i18n: {
-        nl: { title: "Boeken & Mappen", subtitle: "Stalenboeken, (info)mappen en boekjes.", titleLine1: "Boeken", titleLine2: "& mappen", titleLine3: "" },
-        en: { title: "Books & Folders", subtitle: "Sample books, folders and booklets.", titleLine1: "Books", titleLine2: "& folders", titleLine3: "" },
-        de: { title: "Bücher & Mappen", subtitle: "Musterbücher, Mappen und Booklets.", titleLine1: "Bücher", titleLine2: "& Mappen", titleLine3: "" },
-        fr: { title: "Livres & Dossiers", subtitle: "Catalogues d'échantillons, dossiers et livrets.", titleLine1: "Livres", titleLine2: "& dossiers", titleLine3: "" },
-        es: { title: "Libros & Carpetas", subtitle: "Muestrarios, carpetas y folletos.", titleLine1: "Libros", titleLine2: "& carpetas", titleLine3: "" }
+        nl: { title: "Boeken & Mappen", subtitle: "Mappen, boekverpakkingen en bijzondere uitgaven.", titleLine1: "Boeken", titleLine2: "& mappen", titleLine3: "" },
+        en: { title: "Books & Folders", subtitle: "Folders, book packaging and special editions.", titleLine1: "Books", titleLine2: "& folders", titleLine3: "" },
+        de: { title: "Bücher & Mappen", subtitle: "Mappen, Buchverpackungen und besondere Ausgaben.", titleLine1: "Bücher", titleLine2: "& Mappen", titleLine3: "" },
+        fr: { title: "Livres & Dossiers", subtitle: "Dossiers, emballages de livres et éditions spéciales.", titleLine1: "Livres", titleLine2: "& dossiers", titleLine3: "" },
+        es: { title: "Libros & Carpetas", subtitle: "Carpetas, embalajes para libros y ediciones especiales.", titleLine1: "Libros", titleLine2: "& carpetas", titleLine3: "" }
       }
     },
     {
