@@ -53,7 +53,7 @@ function LogoSkeleton() {
   );
 }
 
-function ImgBox({ src, alt }) {
+function ImgBox({ src, alt, priority = false }) {
   const imgRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const { width, height } = getImageSize(src);
@@ -73,9 +73,12 @@ function ImgBox({ src, alt }) {
         height={height}
         sizes="(max-width: 860px) 50vw, 30vw"
         quality={70}
+        priority={priority}
+        fetchPriority={priority ? "high" : undefined}
+        loading={priority ? undefined : "lazy"}
         className={loaded ? "isLoaded" : ""}
         onLoad={() => setLoaded(true)}
-        onError={() => setLoaded(true)}
+        onError={() => setLoaded(false)}
       />
       {!loaded && <LogoSkeleton />}
     </div>
@@ -98,7 +101,7 @@ function Collage({ images, title, lang }) {
   if (count === 1) {
     return (
       <div className="collage collage--1">
-        <ImgBox src={images[0]} alt={primaryAlt} />
+        <ImgBox src={images[0]} alt={primaryAlt} priority />
       </div>
     );
   }
@@ -107,7 +110,7 @@ function Collage({ images, title, lang }) {
     return (
       <div className="collage collage--2">
         {images.slice(0, 2).map((src, i) => (
-          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
+          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} priority={i === 0} />
         ))}
       </div>
     );
@@ -117,7 +120,7 @@ function Collage({ images, title, lang }) {
     return (
       <div className="collage collage--3">
         {images.slice(0, 3).map((src, i) => (
-          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
+          <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} priority={i === 0} />
         ))}
       </div>
     );
@@ -126,7 +129,7 @@ function Collage({ images, title, lang }) {
   return (
     <div className="collage collage--4">
       {images.slice(0, 4).map((src, i) => (
-        <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} />
+        <ImgBox key={src} src={src} alt={i === 0 ? primaryAlt : ""} priority={i === 0} />
       ))}
     </div>
   );

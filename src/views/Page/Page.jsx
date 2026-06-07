@@ -34,6 +34,7 @@ function AboutPage({ page }) {
             className="aboutImg"
             fill
             priority
+            fetchPriority="high"
             sizes="(max-width: 860px) 100vw, 45vw"
           />
         </div>
@@ -160,6 +161,7 @@ function ContactPage({ page }) {
             className="contactImg"
             fill
             priority
+            fetchPriority="high"
             sizes="(max-width: 860px) 100vw, 50vw"
           />
         </div>

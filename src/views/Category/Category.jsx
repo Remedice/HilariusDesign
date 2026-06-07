@@ -34,6 +34,38 @@ const imageAltSuffix = {
   es: "de Hilarius Design en cartón reciclado"
 };
 
+function MobileProjectImage({ src, alt, priority }) {
+  const imgRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(false);
+    if (imgRef.current?.complete) setLoaded(true);
+  }, [src]);
+
+  return (
+    <>
+      <NextImage
+        ref={imgRef}
+        src={src}
+        alt={alt}
+        fill
+        sizes="100vw"
+        priority={priority}
+        fetchPriority={priority ? "high" : undefined}
+        loading={priority ? undefined : "lazy"}
+        quality={65}
+        onLoad={() => setLoaded(true)}
+        onError={(e) => {
+          e.currentTarget.style.display = "none";
+          setLoaded(true);
+        }}
+      />
+      {!priority && !loaded ? <div className="catImgSkeleton" aria-hidden="true" /> : null}
+    </>
+  );
+}
+
 export default function Category() {
   const { slug } = useParams();
   const { pick, lang } = useContext(I18nContext);
@@ -311,15 +343,10 @@ export default function Category() {
               }}
             >
               {p.cover ? (
-                <NextImage
+                <MobileProjectImage
                   src={p.cover}
                   alt={projectImageAlt(p)}
-                  fill
-                  sizes="100vw"
                   priority={i === 0}
-                  fetchPriority={i === 0 ? "high" : undefined}
-                  quality={65}
-                  onError={(e) => (e.currentTarget.style.display = "none")}
                 />
               ) : null}
               <div className="catHeroFallback" />
