@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import Category from "../../../../views/Category/Category";
 import { routesConfig } from "../../../../router/routesConfig";
 import { buildMetadata, pickStatic } from "../../../../i18n/seo";
@@ -24,6 +25,8 @@ export async function generateMetadata({ params }) {
 export default async function CategoryPage({ params }) {
   const { lang, slug } = await params;
   const cat = routesConfig.categories.find((c) => c.slug === slug);
+  if (!cat) notFound();
+
   const crumbs = buildBreadcrumb(lang, [
     { name: pickStatic(routesConfig.copy.nav, "home", lang) || "Home", path: "/" },
     { name: pickStatic(cat, "title", lang) || slug, path: `/category/${slug}` }

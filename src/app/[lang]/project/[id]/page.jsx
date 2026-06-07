@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import Project from "../../../../views/Project/Project";
 import { routesConfig } from "../../../../router/routesConfig";
 import { buildMetadata, pickStatic } from "../../../../i18n/seo";
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }) {
 export default async function ProjectPage({ params }) {
   const { lang, id } = await params;
   const project = routesConfig.projects.find((p) => p.id === id);
-  if (!project) return <Project />;
+  if (!project) notFound();
 
   const cat = routesConfig.categories.find((c) => c.slug === project.category);
   const crumbs = buildBreadcrumb(lang, [
