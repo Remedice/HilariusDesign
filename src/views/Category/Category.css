@@ -220,10 +220,9 @@
 
 .catMobileSub{
   margin-top: 6px;
-  color: var(--text);
-  font-weight: 500;
+  color: var(--muted);
   line-height: 1.55;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .catMobileIntro{

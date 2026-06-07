@@ -23,8 +23,8 @@ async function preloadAndDecode(src) {
   }
 }
 
-const AUTO_DELAY = 5500;
-const AUTO_INITIAL_DELAY = 8500;
+const AUTO_DELAY = 5000;
+const AUTO_INITIAL_DELAY = 5000;
 
 const imageAltSuffix = {
   nl: "van Hilarius Design in gerecycled karton",
@@ -118,9 +118,11 @@ export default function Category() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeIndexRef = useRef(0);
   const autoTimerRef = useRef(null);
+  const autoScrollingRef = useRef(false);
+  const autoScrollSettleRef = useRef(null);
   const cellTouchStartX = useRef(0);
 
-  const scrollToIndex = useCallback((index) => {
+  const scrollToIndex = useCallback((index, source = "manual") => {
     const rail = railRef.current;
     if (!rail) return;
     const cell = rail.children[index];
@@ -128,6 +130,13 @@ export default function Category() {
     const prefersReduced =
       typeof window !== "undefined" &&
       window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    if (source === "auto") {
+      autoScrollingRef.current = true;
+      if (autoScrollSettleRef.current) window.clearTimeout(autoScrollSettleRef.current);
+      autoScrollSettleRef.current = window.setTimeout(() => {
+        autoScrollingRef.current = false;
+      }, prefersReduced ? 0 : 900);
+    }
     rail.scrollTo({ left: cell.offsetLeft, behavior: prefersReduced ? "auto" : "smooth" });
   }, []);
 
@@ -142,9 +151,21 @@ export default function Category() {
       const next = activeIndexRef.current < projects.length - 1
         ? activeIndexRef.current + 1
         : 0;
-      scrollToIndex(next);
+      scrollToIndex(next, "auto");
     }, AUTO_DELAY);
   }, [projects.length, scrollToIndex]);
+
+  const stopAutoForManualInteraction = useCallback(() => {
+    autoScrollingRef.current = false;
+    if (autoScrollSettleRef.current) {
+      window.clearTimeout(autoScrollSettleRef.current);
+      autoScrollSettleRef.current = null;
+    }
+    if (autoTimerRef.current) {
+      clearInterval(autoTimerRef.current);
+      autoTimerRef.current = null;
+    }
+  }, []);
 
   useEffect(() => {
     const rail = railRef.current;
@@ -190,6 +211,11 @@ export default function Category() {
 
     let settleTimer = null;
     const onScroll = () => {
+      if (autoScrollingRef.current) return;
+      if (autoTimerRef.current) {
+        clearInterval(autoTimerRef.current);
+        autoTimerRef.current = null;
+      }
       if (settleTimer) clearTimeout(settleTimer);
       settleTimer = setTimeout(() => {
         startAutoTimer();
@@ -211,12 +237,20 @@ export default function Category() {
       rail.removeEventListener("scroll", onScroll);
       document.removeEventListener("visibilitychange", onVisibilityChange);
       if (settleTimer) clearTimeout(settleTimer);
+      if (autoScrollSettleRef.current) window.clearTimeout(autoScrollSettleRef.current);
     };
   }, [startAutoTimer]);
 
   function handleDotClick(e, index) {
     e.preventDefault();
-    if (index === activeIndex) return;
+    if (autoTimerRef.current) {
+      clearInterval(autoTimerRef.current);
+      autoTimerRef.current = null;
+    }
+    if (index === activeIndex) {
+      startAutoTimer();
+      return;
+    }
     scrollToIndex(index);
     startAutoTimer();
   }
@@ -335,8 +369,10 @@ export default function Category() {
               className="catMobileImgCell"
               data-index={i}
               onTouchStart={(e) => {
+                stopAutoForManualInteraction();
                 cellTouchStartX.current = e.touches[0].clientX;
               }}
+              onTouchEnd={startAutoTimer}
               onClick={(e) => {
                 const dx = Math.abs(e.clientX - cellTouchStartX.current);
                 if (dx > 8) e.preventDefault();
