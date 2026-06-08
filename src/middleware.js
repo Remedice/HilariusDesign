@@ -15,13 +15,10 @@ export function middleware(req) {
   const { pathname, search } = req.nextUrl;
   const firstSegment = pathname.split("/")[1];
 
-  // Path already carries a valid locale: let it through, mirror the locale into
-  // an x-lang request header so the root layout can set <html lang> server-side,
-  // and refresh the cookie so the next bare-domain visit remembers this language.
+  // Path already carries a valid locale: let it through and refresh the cookie
+  // so the next bare-domain visit remembers this language.
   if (isLocale(firstSegment)) {
-    const headers = new Headers(req.headers);
-    headers.set("x-lang", firstSegment);
-    const res = NextResponse.next({ request: { headers } });
+    const res = NextResponse.next();
     res.cookies.set(COOKIE, firstSegment, {
       path: "/",
       maxAge: COOKIE_MAX_AGE,

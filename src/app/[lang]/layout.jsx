@@ -35,6 +35,8 @@ export const metadata = {
   icons: { icon: "/logo.svg" }
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routesConfig.i18n.supported.map((lang) => ({ lang }));
 }

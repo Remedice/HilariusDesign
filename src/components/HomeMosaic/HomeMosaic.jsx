@@ -32,6 +32,8 @@ function RevealImg({ src, alt, priority, sizes, className, onReveal }) {
       alt={alt}
       fill
       priority={priority}
+      fetchPriority={priority ? "high" : undefined}
+      loading={priority ? undefined : "lazy"}
       sizes={sizes}
       className={className}
       onLoad={revealOnce}

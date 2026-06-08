@@ -4,6 +4,8 @@ import { routesConfig } from "../../../../router/routesConfig";
 import { buildMetadata, pickStatic } from "../../../../i18n/seo";
 import { buildBreadcrumb, jsonLdHtml } from "../../../../i18n/schema";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const langs = routesConfig.i18n.supported;
   return langs.flatMap((lang) =>

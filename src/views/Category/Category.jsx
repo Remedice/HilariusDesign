@@ -13,7 +13,7 @@ import "./Category.css";
 async function preloadAndDecode(src) {
   if (!src) return;
   const img = new Image();
-  img.src = src;
+  img.src = `/_next/image?url=${encodeURIComponent(src)}&w=750&q=75`;
   await new Promise((resolve, reject) => {
     img.onload = () => resolve();
     img.onerror = () => reject(new Error("load failed"));
