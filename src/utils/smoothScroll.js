@@ -1,15 +1,17 @@
-export function smoothScrollTo(top, duration = 520) {
+export function smoothScrollTo(target, duration = 520) {
+  const resolveTop = () =>
+    typeof target === "function" ? target() : target;
   const prefersReduced =
     typeof window !== "undefined" &&
     window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
 
   if (prefersReduced) {
-    window.scrollTo(0, top);
+    window.scrollTo(0, resolveTop());
     return;
   }
 
   const startY = window.scrollY || window.pageYOffset || 0;
-  const distance = top - startY;
+  const distance = resolveTop() - startY;
   if (Math.abs(distance) < 1) return;
 
   const start = performance.now();
@@ -17,7 +19,11 @@ export function smoothScrollTo(top, duration = 520) {
 
   const tick = (now) => {
     const progress = Math.min(1, (now - start) / duration);
-    window.scrollTo(0, Math.round(startY + distance * easeOutCubic(progress)));
+    const currentDistance = resolveTop() - startY;
+    window.scrollTo(
+      0,
+      Math.round(startY + currentDistance * easeOutCubic(progress))
+    );
     if (progress < 1) requestAnimationFrame(tick);
   };
 

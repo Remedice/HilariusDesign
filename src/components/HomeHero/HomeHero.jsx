@@ -13,6 +13,12 @@ import { smoothScrollTo } from "../../utils/smoothScroll";
 import WorldOfBoard from "../WorldOfBoard/WorldOfBoard";
 import "./HomeHero.css";
 
+const mobileHeroOrder = new Map(
+  routesConfig.homeHero.items
+    .filter((item) => !item.hideOnMobile)
+    .map((item, index) => [item.key, index])
+);
+
 export default function HomeHero() {
   const { pick, lang } = useContext(I18nContext);
   const heroRef = useParallaxField();
@@ -26,17 +32,22 @@ export default function HomeHero() {
     if (!portfolio || !portfolioTitle) return;
 
     event.preventDefault();
-    const headerHeight =
-      document.querySelector(".header")?.getBoundingClientRect().height ?? 0;
     const topMargin = window.matchMedia("(max-width: 860px)").matches ? 24 : 32;
-    const top =
-      portfolioTitle.getBoundingClientRect().top +
-      window.scrollY -
-      headerHeight -
-      topMargin;
+    const resolveTop = () => {
+      const headerHeight =
+        document.querySelector(".header")?.getBoundingClientRect().height ?? 0;
+
+      return Math.max(
+        0,
+        portfolioTitle.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight -
+          topMargin
+      );
+    };
 
     window.history.pushState(null, "", "#portfolio");
-    smoothScrollTo(Math.max(0, top), 680);
+    smoothScrollTo(resolveTop, 680);
   };
 
   return (
@@ -61,7 +72,10 @@ export default function HomeHero() {
             >
               <div
                 className="homeHeroMedia"
-                style={{ "--hero-item-delay": `${140 + index * 75}ms` }}
+                style={{
+                  "--hero-item-delay": `${140 + index * 75}ms`,
+                  "--hero-item-mobile-delay": `${70 + (mobileHeroOrder.get(item.key) ?? 0) * 70}ms`
+                }}
               >
                 <Image
                   src={getImage(item.image)}
