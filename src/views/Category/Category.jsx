@@ -8,6 +8,7 @@ import { ArrowUpRight } from "lucide-react";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
 import { localizedHref } from "../../i18n/href";
+import { revealCachedImage } from "../../utils/revealImage";
 import "./Category.css";
 
 async function preloadAndDecode(src) {
@@ -46,7 +47,10 @@ function MobileProjectImage({ src, alt, priority }) {
   return (
     <>
       <NextImage
-        ref={imgRef}
+        ref={(image) => {
+          imgRef.current = image;
+          revealCachedImage(image);
+        }}
         src={src}
         alt={alt}
         fill
@@ -54,7 +58,11 @@ function MobileProjectImage({ src, alt, priority }) {
         priority={priority}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? undefined : "lazy"}
-        onLoad={() => setLoaded(true)}
+        data-reveal="fade"
+        onLoad={(event) => {
+          window.__hdRevealImage?.(event.currentTarget);
+          setLoaded(true);
+        }}
         onError={(e) => {
           e.currentTarget.style.display = "none";
           setLoaded(true);
@@ -107,7 +115,10 @@ export default function Category() {
   function hoverProject(p) {
     if (!p?.cover || p.id === activeId) return;
     setActiveId(p.id);
-    const show = () => { setHeroSrc(p.cover); setHeroFadeKey((k) => k + 1); };
+    const show = () => {
+      setHeroSrc(p.cover);
+      setHeroFadeKey((k) => k + 1);
+    };
     if (preloadedRef.current.has(p.cover)) { show(); return; }
     preloadAndDecode(p.cover).then(() => { preloadedRef.current.add(p.cover); show(); }).catch(show);
   }
@@ -305,6 +316,10 @@ export default function Category() {
                   priority
                   fetchPriority="high"
                   sizes="(max-width: 860px) 0px, 50vw"
+                  ref={revealCachedImage}
+                  data-reveal="fade"
+                  data-reveal-duration="680"
+                  onLoad={(event) => window.__hdRevealImage?.(event.currentTarget)}
                   onError={(e) => (e.currentTarget.style.display = "none")}
                 />
               ) : null}

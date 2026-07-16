@@ -1,34 +1,42 @@
 "use client";
 
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { routesConfig } from "../../router/routesConfig";
 import { I18nContext } from "../../i18n/I18nProvider";
 import { localizedHref } from "../../i18n/href";
+import { revealCachedImage } from "../../utils/revealImage";
 import { Plus } from "lucide-react";
 import "./Page.css";
 
-function useFadeIn(delay = 0) {
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    const t = setTimeout(() => setVisible(true), delay);
-    return () => clearTimeout(t);
-  }, [delay]);
-  return visible;
+function PageImage({ alt, className = "", src, onError, ...props }) {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      className={className}
+      ref={revealCachedImage}
+      data-reveal="fade"
+      data-reveal-duration="680"
+      onLoad={(event) => window.__hdRevealImage?.(event.currentTarget)}
+      onError={(event) => {
+        onError?.(event);
+      }}
+      {...props}
+    />
+  );
 }
 
 /* About */
 function AboutPage({ page }) {
   const { pick, lang } = useContext(I18nContext);
-  const imgVisible = useFadeIn(100);
-  const textVisible = useFadeIn(300);
 
   return (
     <section className="aboutLayout">
       <div className="aboutLeft">
-        <div className={`aboutImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
-          <Image
+        <div className="aboutImgWrap">
+          <PageImage
             src="/over-wim.webp"
             alt=""
             className="aboutImg"
@@ -41,7 +49,10 @@ function AboutPage({ page }) {
         </div>
       </div>
 
-      <div className={`aboutRight pageFade pageFadeSlowDesktop ${textVisible ? "visible" : ""}`}>
+      <div
+        className="aboutRight pageFade pageFadeSlowDesktop"
+        style={{ "--page-delay": "180ms" }}
+      >
         <p className="aboutSuper">Over Hilarius Design</p>
         <h1 className="aboutHeading">{pick(page, "heading")}</h1>
         <p className="aboutIntro">{pick(page, "intro")}</p>
@@ -87,9 +98,11 @@ function FaqItem({ q, a }) {
 }
 
 function FaqItemFade({ index, q, a }) {
-  const visible = useFadeIn(200 + index * 80);
   return (
-    <div className={`pageFade ${visible ? "visible" : ""}`}>
+    <div
+      className="pageFade"
+      style={{ "--page-delay": `${140 + index * 70}ms` }}
+    >
       <FaqItem q={q} a={a} />
     </div>
   );
@@ -98,11 +111,10 @@ function FaqItemFade({ index, q, a }) {
 function FaqPage({ page }) {
   const { pick } = useContext(I18nContext);
   const items = pick(page, "items") ?? [];
-  const headerVisible = useFadeIn(100);
 
   return (
     <section className="page">
-      <div className={`pageFade ${headerVisible ? "visible" : ""}`}>
+      <div className="pageFade" style={{ "--page-delay": "60ms" }}>
         <h1 className="pageTitle">{pick(page, "title")}</h1>
         <p className="pageIntro">{pick(page, "intro")}</p>
       </div>
@@ -122,9 +134,6 @@ function ContactPage({ page }) {
   const labels = pick(page, "formLabels") ?? {};
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const imgVisible = useFadeIn(100);
-  const textVisible = useFadeIn(220);
-  const formVisible = useFadeIn(340);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -155,8 +164,8 @@ function ContactPage({ page }) {
   return (
     <div className="contactLayout">
       <div className="contactInfo">
-        <div className={`contactImgWrap pageFade pageFadeSlowDesktop ${imgVisible ? "visible" : ""}`}>
-          <Image
+        <div className="contactImgWrap">
+          <PageImage
             src="/contact-image.webp"
             alt=""
             className="contactImg"
@@ -168,7 +177,10 @@ function ContactPage({ page }) {
           />
         </div>
 
-        <div className={`contactCopy pageFade pageFadeSlowDesktop ${textVisible ? "visible" : ""}`}>
+        <div
+          className="contactCopy pageFade pageFadeSlowDesktop"
+          style={{ "--page-delay": "150ms" }}
+        >
           <h1 className="pageTitle">{pick(page, "title")}</h1>
           <p className="pageIntro">{pick(page, "intro")}</p>
 
@@ -202,7 +214,10 @@ function ContactPage({ page }) {
         </div>
       </div>
 
-      <div className={`contactFormCol pageFade pageFadeSlowDesktop ${formVisible ? "visible" : ""}`}>
+      <div
+        className="contactFormCol pageFade pageFadeSlowDesktop"
+        style={{ "--page-delay": "260ms" }}
+      >
         {sent ? (
           <div className="contactSuccess">{labels.success}</div>
         ) : (

@@ -32,8 +32,6 @@
 .homeHeroMedia {
   overflow: hidden;
   border-radius: var(--image-radius);
-  animation: homeHeroObjectIn 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: var(--hero-item-delay, 0ms);
 }
 
 .homeHeroMedia img {
@@ -190,17 +188,6 @@
   border: 0;
 }
 
-@keyframes homeHeroObjectIn {
-  from {
-    opacity: 0;
-    transform: translateY(16px) scale(0.985);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 @keyframes homeHeroScrollIn {
   from {
     opacity: 0;
@@ -210,11 +197,6 @@
     opacity: 0.72;
     transform: translate(-50%, 0);
   }
-}
-
-@keyframes homeHeroObjectFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 @keyframes homeHeroMarkFadeIn {
@@ -233,13 +215,6 @@
     height: calc(100dvh - var(--header-h) - 8px);
     min-height: 500px;
     margin-top: -16px;
-  }
-
-  .homeHeroMedia {
-    animation-name: homeHeroObjectFadeIn;
-    animation-duration: 560ms;
-    animation-delay: var(--hero-item-mobile-delay, 90ms);
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .homeHero .homeHeroMark {

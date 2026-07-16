@@ -25,6 +25,72 @@ const typekitLoader = `
 })();
 `;
 
+const imageRevealLoader = `
+(() => {
+  const revealed = new WeakSet();
+  const startedAt = performance.now();
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const revealImage = (image) => {
+    if (!(image instanceof HTMLImageElement) || !image.dataset.reveal || revealed.has(image)) return;
+    if (!image.complete || !image.naturalWidth) return;
+
+    revealed.add(image);
+    const revealMode = image.dataset.reveal;
+    const isHero = revealMode === "hero";
+    const target = isHero ? image.closest(".homeHeroMedia") : image;
+    if (!target) return;
+
+    const skeleton = image.parentElement?.querySelector(":scope > .imgSkeleton, :scope > .catImgSkeleton");
+    if (skeleton && !prefersReducedMotion && typeof skeleton.animate === "function") {
+      skeleton.animate([{ opacity: 1 }, { opacity: 0 }], {
+        duration: 180,
+        delay: 80,
+        easing: "ease-out",
+        fill: "forwards"
+      });
+    }
+
+    if (revealMode === "cover" || prefersReducedMotion || typeof target.animate !== "function") return;
+
+    const isMobile = window.matchMedia("(max-width: 860px)").matches;
+    const targetDelay = Number(
+      isMobile
+        ? image.dataset.revealDelayMobile || 0
+        : image.dataset.revealDelayDesktop || 0
+    );
+    const delay = Math.max(0, targetDelay - (performance.now() - startedAt));
+    const duration = Number(image.dataset.revealDuration || (isHero ? (isMobile ? 560 : 760) : 620));
+    const keyframes = isHero && !isMobile
+      ? [
+          { opacity: 0, transform: "translateY(16px) scale(0.985)" },
+          { opacity: 1, transform: "translateY(0) scale(1)" }
+        ]
+      : [{ opacity: 0 }, { opacity: 1 }];
+
+    target.animate(keyframes, {
+      duration,
+      delay,
+      easing: isMobile ? "cubic-bezier(0.4, 0, 0.2, 1)" : "cubic-bezier(0.22, 1, 0.36, 1)",
+      fill: "backwards"
+    });
+  };
+
+  window.__hdRevealImage = revealImage;
+  document.addEventListener("load", (event) => revealImage(event.target), true);
+
+  const revealCompletedImages = () => {
+    document.querySelectorAll("img[data-reveal]").forEach(revealImage);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", revealCompletedImages, { once: true });
+  } else {
+    revealCompletedImages();
+  }
+})();
+`;
+
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -51,6 +117,7 @@ export default async function LangLayout({ children, params }) {
         <link rel="dns-prefetch" href="https://use.typekit.net" />
         <link rel="dns-prefetch" href="https://p.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
+        <script dangerouslySetInnerHTML={{ __html: imageRevealLoader }} />
         <script dangerouslySetInnerHTML={{ __html: typekitLoader }} />
         <noscript>
           <link rel="stylesheet" href="https://use.typekit.net/zko8kch.css" />

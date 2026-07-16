@@ -1,21 +1,18 @@
 /* src/pages/Page/Page.css */
 /* ─── Fade-in ─────────────────────────────────────────────── */
 .pageFade{
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 1000ms cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1000ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: pageFadeIn 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--page-delay, 0ms);
 }
 
-.pageFade.visible{
-  opacity: 1;
-  transform: translateY(0);
+@keyframes pageFadeIn{
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @media (min-width: 861px){
   .pageFadeSlowDesktop{
-    transition: opacity 1200ms cubic-bezier(0.16, 1, 0.3, 1),
-                transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    animation-duration: 900ms;
   }
 }
 
@@ -41,9 +38,14 @@
 @media (max-width: 860px){
   .pageTitle{ font-size: 28px; }
   .pageFade{
-    transform: none;
-    transition: opacity 1350ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation-name: pageFadeInMobile;
+    animation-duration: 700ms;
   }
+}
+
+@keyframes pageFadeInMobile{
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ─── About ──────────────────────────────────────────────── */
@@ -456,4 +458,10 @@
   .aboutCta:hover{ gap: 10px; opacity: 0.88; }
   .contactDetailLink:hover{ opacity: 0.88; }
   .contactDetailLink:hover .contactDetailUnderline{ transform: scaleX(0); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .pageFade{
+    animation: none;
+  }
 }

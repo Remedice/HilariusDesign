@@ -8,6 +8,7 @@ import { routesConfig } from "../../router/routesConfig";
 import { getImageSize } from "../../router/images";
 import { I18nContext } from "../../i18n/I18nProvider";
 import { localizedHref } from "../../i18n/href";
+import { revealCachedImage } from "../../utils/revealImage";
 import { ArrowLeft, ArrowRight, LayoutGrid } from "lucide-react";
 import "./Project.css";
 
@@ -66,7 +67,10 @@ function ImgBox({ src, alt, priority = false }) {
   return (
     <div className="imgBox">
       <Image
-        ref={imgRef}
+        ref={(image) => {
+          imgRef.current = image;
+          revealCachedImage(image);
+        }}
         src={src}
         alt={alt}
         width={width}
@@ -75,8 +79,12 @@ function ImgBox({ src, alt, priority = false }) {
         priority={priority}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? undefined : "lazy"}
-        className={loaded ? "isLoaded" : ""}
-        onLoad={() => setLoaded(true)}
+        data-reveal={priority ? "cover" : "fade"}
+        data-reveal-duration="620"
+        onLoad={(event) => {
+          window.__hdRevealImage?.(event.currentTarget);
+          setLoaded(true);
+        }}
         onError={() => setLoaded(false)}
       />
       {!loaded && <LogoSkeleton />}

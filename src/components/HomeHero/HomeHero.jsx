@@ -10,6 +10,7 @@ import { routesConfig } from "../../router/routesConfig";
 import { getImage } from "../../router/images";
 import { useParallaxField } from "../../hooks/useParallaxField";
 import { smoothScrollTo } from "../../utils/smoothScroll";
+import { revealCachedImage } from "../../utils/revealImage";
 import WorldOfBoard from "../WorldOfBoard/WorldOfBoard";
 import "./HomeHero.css";
 
@@ -57,45 +58,53 @@ export default function HomeHero() {
       </h1>
 
       <div className="homeHeroObjects" aria-hidden="true">
-        {routesConfig.homeHero.items.map((item, index) => (
-          <div
-            key={item.key}
-            className={`homeHeroFloat homeHeroFloat--${item.key}${
-              item.hideOnMobile ? " homeHeroFloat--desktopOnly" : ""
-            }`}
-          >
+        {routesConfig.homeHero.items.map((item, index) => {
+          const desktopDelay = 140 + index * 75;
+          const mobileDelay =
+            90 + (mobileHeroOrder.get(item.key) ?? 0) * 70;
+
+          return (
             <div
-              className="homeHeroMotion"
-              data-parallax-depth={item.depth}
-              data-parallax-x={item.shiftX}
-              data-parallax-y={item.shiftY}
+              key={item.key}
+              className={`homeHeroFloat homeHeroFloat--${item.key}${
+                item.hideOnMobile ? " homeHeroFloat--desktopOnly" : ""
+              }`}
             >
               <div
-                className="homeHeroMedia"
-                style={{
-                  "--hero-item-delay": `${140 + index * 75}ms`,
-                  "--hero-item-mobile-delay": `${90 + (mobileHeroOrder.get(item.key) ?? 0) * 70}ms`
-                }}
+                className="homeHeroMotion"
+                data-parallax-depth={item.depth}
+                data-parallax-x={item.shiftX}
+                data-parallax-y={item.shiftY}
               >
-                <Image
-                  src={getImage(item.image)}
-                  alt=""
-                  fill
-                  priority={item.priority}
-                  loading={
-                    item.priority
-                      ? undefined
-                      : item.hideOnMobile
-                        ? "lazy"
-                        : "eager"
-                  }
-                  fetchPriority={item.priority ? "high" : undefined}
-                  sizes={item.sizes}
-                />
+                <div className="homeHeroMedia">
+                  <Image
+                    src={getImage(item.image)}
+                    alt=""
+                    fill
+                    priority={item.priority}
+                    loading={
+                      item.priority
+                        ? undefined
+                        : item.hideOnMobile
+                          ? "lazy"
+                          : "eager"
+                    }
+                    fetchPriority={item.priority ? "high" : undefined}
+                    sizes={item.sizes}
+                    ref={revealCachedImage}
+                    data-reveal="hero"
+                    data-reveal-delay-desktop={desktopDelay}
+                    data-reveal-delay-mobile={mobileDelay}
+                    onLoad={(event) => window.__hdRevealImage?.(event.currentTarget)}
+                    onError={(event) => {
+                      event.currentTarget.style.display = "none";
+                    }}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="homeHeroCenter">
