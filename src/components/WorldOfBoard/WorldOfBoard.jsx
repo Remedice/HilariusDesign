@@ -60,13 +60,13 @@ const CRAFT_PATHS = [
   "M863.49,432.23h10.84c7.63,0,13.56,3.88,13.56,11.51,0,7.93-6.3,11.63-14.35,11.63h-5.51s0,18.65,0,18.65h-4.54s0-41.78,0-41.78ZM883.23,443.8c0-5.33-4.12-7.63-9.08-7.63h-6.12s0,15.26,0,15.26h5.87c5.45,0,9.33-2.24,9.33-7.63Z",
 ];
 
-export default function WorldOfBoard({ className = "" }) {
+export default function WorldOfBoard({ className = "", eager = false }) {
   const [ref, isRevealed] = useScrollReveal();
 
   return (
     <svg
       ref={ref}
-      className={`wob ${isRevealed ? "isIn" : ""} ${className}`}
+      className={`wob ${eager || isRevealed ? "isIn" : ""} ${className}`}
       viewBox="0 0 985 513.49"
       preserveAspectRatio="xMidYMid meet"
       role="img"

@@ -8,6 +8,8 @@ export const texts = {
         secondTitle: "Van idee tot uitvoering",
         secondBody:
           "Van kartonnen bureau-accessoires en transportmodellen tot luxe (wijn)verpakkingen, mappen en spellen. Hilarius Design combineert eenvoud met impact en verzorgt het traject van concept tot realisatie.",
+        portfolioTitle: "Portfolio",
+        viewPortfolio: "Bekijk het portfolio",
         hoverHint: "Bekijk categorie",
         extraLabel: "Uitgelicht"
       },
@@ -18,6 +20,8 @@ export const texts = {
         secondTitle: "From idea to execution",
         secondBody:
           "From desk accessories and transport models to premium (wine) packaging, folders and games. Hilarius Design delivers impact with simplicity, from concept to production.",
+        portfolioTitle: "Portfolio",
+        viewPortfolio: "View the portfolio",
         hoverHint: "View category",
         extraLabel: "Featured"
       },
@@ -28,6 +32,8 @@ export const texts = {
         secondTitle: "Von der Idee bis zur Umsetzung",
         secondBody:
           "Von Schreibtisch-Accessoires und Transportmodellen bis zu Premium-(Wein)Verpackungen, Mappen und Spielen. Hilarius Design begleitet von Konzept bis Produktion.",
+        portfolioTitle: "Portfolio",
+        viewPortfolio: "Portfolio ansehen",
         hoverHint: "Kategorie ansehen",
         extraLabel: "Highlight"
       },
@@ -38,6 +44,8 @@ export const texts = {
         secondTitle: "De l'idée à la réalisation",
         secondBody:
           "Des accessoires de bureau en carton et modèles de transport aux emballages haut de gamme pour le vin, dossiers et jeux. Hilarius Design allie simplicité et impact, du concept à la production.",
+        portfolioTitle: "Portfolio",
+        viewPortfolio: "Voir le portfolio",
         hoverHint: "Voir la catégorie",
         extraLabel: "Sélection"
       },
@@ -48,6 +56,8 @@ export const texts = {
         secondTitle: "De la idea a la realización",
         secondBody:
           "Desde accesorios de escritorio y modelos de transporte hasta embalajes premium para vino, carpetas y juegos. Hilarius Design combina sencillez e impacto, del concepto a la producción.",
+        portfolioTitle: "Portfolio",
+        viewPortfolio: "Ver el portfolio",
         hoverHint: "Ver categoría",
         extraLabel: "Destacado"
       }

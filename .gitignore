@@ -45,3 +45,4 @@ AGENTS.md
 content/
 prompts/
 tmp/
+.tmp*

@@ -540,6 +540,63 @@ export const routesConfig = {
     eindejaarsgeschenken: "eindejaarsgeschenken/kerst/kerstversiering2.webp"
   },
 
+  homeHero: {
+    items: [
+      {
+        key: "clock",
+        image: "the-art-of-board/eiffeltoren/eiffeltoren1.webp",
+        depth: 0.65,
+        shiftX: -0.8,
+        shiftY: -0.45,
+        sizes: "(max-width: 860px) 29vw, 11vw",
+        priority: true
+      },
+      {
+        key: "folder",
+        image: "the-art-of-board/wild-flowers/klaproos.webp",
+        depth: 1.05,
+        shiftX: 0.75,
+        shiftY: -0.55,
+        sizes: "17vw",
+        hideOnMobile: true
+      },
+      {
+        key: "model",
+        image: "the-art-of-board/tezeras/tezeras.webp",
+        depth: 1.3,
+        shiftX: -1,
+        shiftY: 0,
+        sizes: "13vw",
+        hideOnMobile: true
+      },
+      {
+        key: "packaging",
+        image: "the-art-of-board/westminster-abbey/westminster-abbey1.webp",
+        depth: 0.85,
+        shiftX: 1,
+        shiftY: 0.05,
+        sizes: "(max-width: 860px) 29vw, 12vw",
+        priority: true
+      },
+      {
+        key: "transport",
+        image: "the-art-of-board/golfkartonnen-stoel/stoelkarton-Hilariusdesign.webp",
+        depth: 1.15,
+        shiftX: -0.7,
+        shiftY: 0.7,
+        sizes: "(max-width: 860px) 42vw, 16vw"
+      },
+      {
+        key: "game",
+        image: "the-art-of-board/wild-flowers/IMG_7269.webp",
+        depth: 0.75,
+        shiftX: 0.8,
+        shiftY: 0.65,
+        sizes: "(max-width: 860px) 49vw, 19vw"
+      }
+    ]
+  },
+
   pages: texts.pages,
 
   linkedin: "https://www.linkedin.com/in/wim-hilarius-529817228/",

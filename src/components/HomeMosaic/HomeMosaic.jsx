@@ -3,11 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import WorldOfBoard from "../WorldOfBoard/WorldOfBoard.jsx";
 import "./HomeMosaic.css";
 
 // Handles the case where the image loads before React attaches onLoad (SSR/cache).
-function RevealImg({ src, alt, priority, sizes, className, onReveal }) {
+function RevealImg({ src, alt, sizes, className, onReveal }) {
   const ref = useRef(null);
   const revealedRef = useRef(false);
 
@@ -31,9 +30,7 @@ function RevealImg({ src, alt, priority, sizes, className, onReveal }) {
       src={src}
       alt={alt}
       fill
-      priority={priority}
-      fetchPriority={priority ? "high" : undefined}
-      loading={priority ? undefined : "lazy"}
+      loading="lazy"
       sizes={sizes}
       className={className}
       onLoad={revealOnce}
@@ -48,26 +45,6 @@ export default function HomeMosaic({ tiles }) {
   return (
     <div className="mosaic">
       {tiles.map((t, i) => {
-        if (t.type === "wob") {
-          const WobWrapper = t.to ? Link : "div";
-          return (
-            <WobWrapper
-              key={t.key}
-              href={t.to}
-              className={`mosaicTile ${t.size || ""} ${t.to ? "isLink" : ""}`}
-              aria-label="The Art Of Board"
-            >
-              <div className="mosaicMedia mosaicMediaWob">
-                <WorldOfBoard className="mosaicWobImg" />
-              </div>
-              <div className="mosaicCaption">
-                <div className="mosaicCaptionLabel">{t.label}</div>
-                {t.sub ? <div className="mosaicCaptionSub">{t.sub}</div> : null}
-              </div>
-            </WobWrapper>
-          );
-        }
-
         const Wrapper = t.to ? Link : "div";
         const isLoaded = !!loaded[t.key];
 
@@ -83,8 +60,7 @@ export default function HomeMosaic({ tiles }) {
                 <RevealImg
                   src={t.src}
                   alt={t.alt || ""}
-                  priority={i === 1}
-                  sizes={t.size === "s3" ? "33vw" : "25vw"}
+                  sizes={t.size === "s3" ? "(max-width: 860px) 100vw, 33vw" : "(max-width: 860px) 100vw, 25vw"}
                   className={`revealImg ${isLoaded ? "isLoaded" : ""}`}
                   onReveal={() => setLoaded((p) => ({ ...p, [t.key]: true }))}
                 />
