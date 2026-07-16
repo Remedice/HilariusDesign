@@ -54,7 +54,7 @@ export default function HomeMosaic({ tiles }) {
             key={t.key}
             href={t.to}
             className={`mosaicTile ${t.size || ""} ${t.to ? "isLink" : ""}`}
-            aria-label={t.action ? `${t.action}: ${t.label}` : t.alt || t.label}
+            aria-label={t.alt || t.label}
           >
             <div className="mosaicMedia">
               {t.src ? (
@@ -70,15 +70,17 @@ export default function HomeMosaic({ tiles }) {
             </div>
             <div className="mosaicCaption">
               <div className="mosaicCaptionContent">
-                <div className="mosaicCaptionLabel">{t.label}</div>
+                <div className="mosaicCaptionHeading">
+                  <div className="mosaicCaptionLabel">{t.label}</div>
+                  <ArrowUpRight
+                    className="mosaicCaptionIcon"
+                    size={16}
+                    strokeWidth={1.75}
+                    aria-hidden="true"
+                  />
+                </div>
                 {t.sub ? <div className="mosaicCaptionSub">{t.sub}</div> : null}
               </div>
-              {t.action ? (
-                <span className="mosaicCaptionAction">
-                  {t.action}
-                  <ArrowUpRight size={15} strokeWidth={1.75} aria-hidden="true" />
-                </span>
-              ) : null}
             </div>
           </Wrapper>
         );

@@ -31,8 +31,7 @@ export default function Home() {
         to: localizedHref(`/category/${cat.slug}`, lang),
         src: coverFor(cat.slug),
         label: pick(cat, "title"),
-        sub: pick(cat, "subtitle"),
-        action: pick(routesConfig.copy.home, "hoverHint")
+        sub: pick(cat, "subtitle")
       }));
   }, [pick, lang]);
 

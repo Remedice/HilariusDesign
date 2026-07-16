@@ -592,7 +592,8 @@ export const routesConfig = {
         depth: 0.75,
         shiftX: 0.8,
         shiftY: 0.65,
-        sizes: "(max-width: 860px) 49vw, 19vw"
+        sizes: "(max-width: 860px) 49vw, 19vw",
+        priority: true
       }
     ]
   },

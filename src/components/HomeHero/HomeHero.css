@@ -31,7 +31,7 @@
 
 .homeHeroMedia {
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: var(--image-radius);
   animation: homeHeroObjectIn 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--hero-item-delay, 0ms);
 }
@@ -148,6 +148,17 @@
   transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.homeHeroScrollInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 360ms ease, transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 .homeHeroScroll:hover .homeHeroScrollIcon,
 .homeHeroScroll:focus-visible .homeHeroScrollIcon {
   transform: translateY(4px);
@@ -159,11 +170,12 @@
 }
 
 .homeHero.isParallaxScrolled .homeHeroScroll {
-  opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -6px);
-  animation: none;
-  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.homeHero.isParallaxScrolled .homeHeroScrollInner {
+  opacity: 0;
+  transform: translateY(-6px);
 }
 
 .homeHeroSrOnly {
@@ -200,6 +212,21 @@
   }
 }
 
+@keyframes homeHeroObjectFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes homeHeroMarkFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes homeHeroScrollFadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.72; }
+}
+
 @media (max-width: 860px) {
   .homeHero {
     height: calc(100svh - var(--header-h) - 8px);
@@ -209,8 +236,14 @@
   }
 
   .homeHeroMedia {
-    animation-duration: 600ms;
-    animation-delay: var(--hero-item-mobile-delay, 70ms);
+    animation-name: homeHeroObjectFadeIn;
+    animation-duration: 560ms;
+    animation-delay: var(--hero-item-mobile-delay, 90ms);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .homeHero .homeHeroMark {
+    animation: homeHeroMarkFadeIn 700ms cubic-bezier(0.4, 0, 0.2, 1) 180ms both;
   }
 
   .homeHeroFloat--desktopOnly {
@@ -252,9 +285,7 @@
   .homeHeroScroll {
     bottom: calc(12px + env(safe-area-inset-bottom, 0px));
     font-size: 0.6875rem;
-    opacity: 0;
-    animation: homeHeroScrollIn 480ms cubic-bezier(0.22, 1, 0.36, 1) 900ms forwards;
-    transition: opacity 180ms ease, transform 180ms ease;
+    animation: homeHeroScrollFadeIn 500ms cubic-bezier(0.4, 0, 0.2, 1) 950ms forwards;
   }
 }
 
@@ -301,7 +332,8 @@
   }
 
   .homeHeroMarkLink,
-  .homeHeroScrollIcon {
+  .homeHeroScrollIcon,
+  .homeHeroScrollInner {
     transition: none;
   }
 }

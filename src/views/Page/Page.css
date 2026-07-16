@@ -64,6 +64,7 @@
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow:hidden;
+  border-radius: var(--image-radius);
   background: rgba(0,0,0,0.04);
 }
 
@@ -267,6 +268,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  border-radius: var(--image-radius);
   margin-bottom: 32px;
   background: rgba(0,0,0,0.04);
 }

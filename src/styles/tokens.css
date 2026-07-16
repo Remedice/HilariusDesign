@@ -4,6 +4,7 @@
   --muted: rgba(10, 10, 10, 0.62);
   --muted-strong: rgba(10, 10, 10, 0.72);
   --line: rgba(10, 10, 10, 0.14);
+  --image-radius: 6px;
 
   --page-pad: clamp(18px, 5vw, 64px);
 

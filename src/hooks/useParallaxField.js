@@ -29,7 +29,7 @@ export function useParallaxField({ desktopOffset = 18, mobileOffset = 5 } = {}) 
 
     const updateScrollTarget = () => {
       const rect = container.getBoundingClientRect();
-      container.classList.toggle("isParallaxScrolled", rect.top < -12);
+      container.classList.toggle("isParallaxScrolled", window.scrollY > 12);
       if (reducedMotionQuery.matches) return;
       targetProgress = clamp(-rect.top / Math.max(rect.height * 0.72, 1), 0, 1);
     };

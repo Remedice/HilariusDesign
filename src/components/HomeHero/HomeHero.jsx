@@ -74,7 +74,7 @@ export default function HomeHero() {
                 className="homeHeroMedia"
                 style={{
                   "--hero-item-delay": `${140 + index * 75}ms`,
-                  "--hero-item-mobile-delay": `${70 + (mobileHeroOrder.get(item.key) ?? 0) * 70}ms`
+                  "--hero-item-mobile-delay": `${90 + (mobileHeroOrder.get(item.key) ?? 0) * 70}ms`
                 }}
               >
                 <Image
@@ -82,6 +82,13 @@ export default function HomeHero() {
                   alt=""
                   fill
                   priority={item.priority}
+                  loading={
+                    item.priority
+                      ? undefined
+                      : item.hideOnMobile
+                        ? "lazy"
+                        : "eager"
+                  }
                   fetchPriority={item.priority ? "high" : undefined}
                   sizes={item.sizes}
                 />
@@ -106,13 +113,15 @@ export default function HomeHero() {
         href="#portfolio"
         onClick={handlePortfolioClick}
       >
-        <span>{pick(routesConfig.copy.home, "viewPortfolio")}</span>
-        <ArrowDown
-          className="homeHeroScrollIcon"
-          size={17}
-          strokeWidth={1.5}
-          aria-hidden="true"
-        />
+        <span className="homeHeroScrollInner">
+          <span>{pick(routesConfig.copy.home, "viewPortfolio")}</span>
+          <ArrowDown
+            className="homeHeroScrollIcon"
+            size={17}
+            strokeWidth={1.5}
+            aria-hidden="true"
+          />
+        </span>
       </a>
     </section>
   );

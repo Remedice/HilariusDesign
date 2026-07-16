@@ -84,7 +84,7 @@
   width:100%;
   background: transparent;
   border: 0;
-  border-radius: 0;
+  border-radius: var(--image-radius);
   overflow:hidden;
   padding: 0;
 }
