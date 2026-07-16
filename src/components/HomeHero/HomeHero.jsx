@@ -9,6 +9,7 @@ import { localizedHref } from "../../i18n/href";
 import { routesConfig } from "../../router/routesConfig";
 import { getImage } from "../../router/images";
 import { useParallaxField } from "../../hooks/useParallaxField";
+import { smoothScrollTo } from "../../utils/smoothScroll";
 import WorldOfBoard from "../WorldOfBoard/WorldOfBoard";
 import "./HomeHero.css";
 
@@ -18,6 +19,20 @@ export default function HomeHero() {
   const artOfBoard = routesConfig.categories.find(
     (category) => category.slug === "the-art-of-board"
   );
+
+  const handlePortfolioClick = (event) => {
+    const portfolio = document.getElementById("portfolio");
+    if (!portfolio) return;
+
+    event.preventDefault();
+    const headerHeight =
+      document.querySelector(".header")?.getBoundingClientRect().height ?? 0;
+    const top =
+      portfolio.getBoundingClientRect().top + window.scrollY - headerHeight - 24;
+
+    window.history.pushState(null, "", "#portfolio");
+    smoothScrollTo(Math.max(0, top), 680);
+  };
 
   return (
     <section ref={heroRef} className="homeHero" aria-labelledby="homeHeroTitle">
@@ -67,7 +82,11 @@ export default function HomeHero() {
         </Link>
       </div>
 
-      <a className="homeHeroScroll" href="#portfolio">
+      <a
+        className="homeHeroScroll"
+        href="#portfolio"
+        onClick={handlePortfolioClick}
+      >
         <span>{pick(routesConfig.copy.home, "viewPortfolio")}</span>
         <ArrowDown
           className="homeHeroScrollIcon"

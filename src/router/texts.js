@@ -9,6 +9,9 @@ export const texts = {
         secondBody:
           "Van kartonnen bureau-accessoires en transportmodellen tot luxe (wijn)verpakkingen, mappen en spellen. Hilarius Design combineert eenvoud met impact en verzorgt het traject van concept tot realisatie.",
         portfolioTitle: "Portfolio",
+        portfolioIntro:
+          "Kies een categorie en ontdek daarbinnen de afzonderlijke producten en ontwerpen.",
+        categoryLabel: "Categorie",
         viewPortfolio: "Bekijk het portfolio",
         hoverHint: "Bekijk categorie",
         extraLabel: "Uitgelicht"
@@ -21,6 +24,9 @@ export const texts = {
         secondBody:
           "From desk accessories and transport models to premium (wine) packaging, folders and games. Hilarius Design delivers impact with simplicity, from concept to production.",
         portfolioTitle: "Portfolio",
+        portfolioIntro:
+          "Choose a category, then explore the individual products and designs within it.",
+        categoryLabel: "Category",
         viewPortfolio: "View the portfolio",
         hoverHint: "View category",
         extraLabel: "Featured"
@@ -33,6 +39,9 @@ export const texts = {
         secondBody:
           "Von Schreibtisch-Accessoires und Transportmodellen bis zu Premium-(Wein)Verpackungen, Mappen und Spielen. Hilarius Design begleitet von Konzept bis Produktion.",
         portfolioTitle: "Portfolio",
+        portfolioIntro:
+          "Wählen Sie eine Kategorie und entdecken Sie darin die einzelnen Produkte und Entwürfe.",
+        categoryLabel: "Kategorie",
         viewPortfolio: "Portfolio ansehen",
         hoverHint: "Kategorie ansehen",
         extraLabel: "Highlight"
@@ -45,6 +54,9 @@ export const texts = {
         secondBody:
           "Des accessoires de bureau en carton et modèles de transport aux emballages haut de gamme pour le vin, dossiers et jeux. Hilarius Design allie simplicité et impact, du concept à la production.",
         portfolioTitle: "Portfolio",
+        portfolioIntro:
+          "Choisissez une catégorie, puis découvrez les produits et créations qu'elle contient.",
+        categoryLabel: "Catégorie",
         viewPortfolio: "Voir le portfolio",
         hoverHint: "Voir la catégorie",
         extraLabel: "Sélection"
@@ -57,6 +69,9 @@ export const texts = {
         secondBody:
           "Desde accesorios de escritorio y modelos de transporte hasta embalajes premium para vino, carpetas y juegos. Hilarius Design combina sencillez e impacto, del concepto a la producción.",
         portfolioTitle: "Portfolio",
+        portfolioIntro:
+          "Elija una categoría y descubra los productos y diseños que contiene.",
+        categoryLabel: "Categoría",
         viewPortfolio: "Ver el portfolio",
         hoverHint: "Ver categoría",
         extraLabel: "Destacado"
@@ -68,43 +83,43 @@ export const texts = {
     about: {
       i18n: {
         nl: {
-          title: "Over Wim",
+          title: "Over Hilarius Design",
           heading: "Wim Hilarius",
-          intro: "Ontwerp in gerecycled karton, met een heldere signatuur.",
+          intro: "Where board meets creation",
           body:
-            "Bij Hilarius Design draait alles om vindingrijkheid, vakmanschap en doordachte eenvoud. Al meer dan veertig jaar ontwerp ik producten waarin creativiteit en constructie samenkomen: van relatiegeschenken en verpakkingen tot transportmodellen en interieurelementen, allemaal vervaardigd uit gerecycled karton.\n\nKarton is een materiaal dat mensen onderschatten. Het is licht, sterk, duurzaam en vormt de basis voor producten die opvallen zonder te schreeuwen. Elk ontwerp begint met een idee: hoe kan iets tegelijk slim, mooi en maakbaar zijn?\n\nVan eerste schets tot productie begeleid ik het volledige traject. Het resultaat is altijd een product dat klopt in detail en past bij uw merk.",
+            "Bij Hilarius Design draait alles om vakmanschap en eenvoud. Al meer dan veertig jaar ontwerp ik producten van gerecycled karton, van relatiegeschenken en verpakkingen tot transportmodellen en interieurelementen.\n\nElk ontwerp begint met een idee: hoe kan iets mooi en maakbaar zijn? Van de eerste schets tot de productie begeleid ik het volledige traject. Het resultaat is een product dat tot in detail klopt en past bij uw merk.",
           cta: "Bekijk mijn werk"
         },
         en: {
-          title: "About Wim",
+          title: "About Hilarius Design",
           heading: "Wim Hilarius",
-          intro: "Design in recycled board, with a clear signature.",
+          intro: "Where board meets creation",
           body:
-            "Hilarius Design is about ingenuity, craftsmanship and considered simplicity. For over forty years I have designed products where creativity and construction meet: from corporate gifts and packaging to transport models and interior elements, all made from recycled board.\n\nBoard is a material people underestimate. It is light, strong, sustainable and forms the basis for products that stand out without shouting. Every design starts with an idea: how can something be smart, beautiful and manufacturable at the same time?\n\nFrom first sketch to production I guide the full process. The result is always a product that holds up in detail and fits your brand.",
+            "Hilarius Design is built on craftsmanship and simplicity. For more than forty years, I have designed products made from recycled board, from corporate gifts and packaging to transport models and interior elements.\n\nEvery design starts with an idea: how can something be both beautiful and practical to produce? I guide the full process from the first sketch to production. The result is a product that works down to the last detail and fits your brand.",
           cta: "View my work"
         },
         de: {
-          title: "Über Wim",
+          title: "Über Hilarius Design",
           heading: "Wim Hilarius",
-          intro: "Design aus recycelter Pappe, mit klarer Handschrift.",
+          intro: "Where board meets creation",
           body:
-            "Bei Hilarius Design dreht sich alles um Einfallsreichtum, Handwerkskunst und durchdachte Einfachheit. Seit mehr als vierzig Jahren entwerfe ich Produkte, in denen Kreativität und Konstruktion zusammenkommen: von Werbegeschenken und Verpackungen bis hin zu Transportmodellen und Innenraumelementen, alle aus recycelter Pappe.\n\nPappe ist ein Material, das Menschen unterschätzen. Es ist leicht, stark, nachhaltig und bildet die Grundlage für Produkte, die auffallen ohne zu schreien. Jeder Entwurf beginnt mit einer Idee: Wie kann etwas gleichzeitig clever, schön und produzierbar sein?\n\nVon der ersten Skizze bis zur Produktion begleite ich den gesamten Prozess. Das Ergebnis ist immer ein Produkt, das im Detail stimmt und zu Ihrer Marke passt.",
+            "Bei Hilarius Design dreht sich alles um Handwerkskunst und Einfachheit. Seit mehr als vierzig Jahren entwerfe ich Produkte aus recycelter Pappe, von Werbegeschenken und Verpackungen bis zu Transportmodellen und Innenraumelementen.\n\nJeder Entwurf beginnt mit einer Idee: Wie kann etwas schön und zugleich gut produzierbar sein? Von der ersten Skizze bis zur Produktion begleite ich den gesamten Prozess. Das Ergebnis ist ein Produkt, das bis ins Detail stimmt und zu Ihrer Marke passt.",
           cta: "Meine Arbeit ansehen"
         },
         fr: {
-          title: "À propos de Wim",
+          title: "À propos de Hilarius Design",
           heading: "Wim Hilarius",
-          intro: "Design en carton recyclé, avec une signature claire.",
+          intro: "Where board meets creation",
           body:
-            "Chez Hilarius Design, tout tourne autour de l'inventivité, du savoir-faire et d'une simplicité réfléchie. Depuis plus de quarante ans, je conçois des produits où créativité et construction se rencontrent : cadeaux d'affaires, emballages, modèles de transport et éléments d'intérieur, tous fabriqués en carton recyclé.\n\nLe carton est un matériau souvent sous-estimé. Il est léger, solide, durable et forme la base de produits qui se remarquent sans en faire trop. Chaque création commence par une idée : comment rendre un objet à la fois intelligent, beau et réalisable ?\n\nDe la première esquisse à la production, j'accompagne tout le processus. Le résultat est toujours un produit juste dans le détail et adapté à votre marque.",
+            "Chez Hilarius Design, tout repose sur le savoir-faire et la simplicité. Depuis plus de quarante ans, je conçois des produits en carton recyclé, des cadeaux d'affaires et emballages aux modèles de transport et éléments d'intérieur.\n\nChaque création commence par une idée : comment concevoir un objet à la fois beau et réalisable ? J'accompagne tout le processus, de la première esquisse à la production. Le résultat est un produit abouti dans les moindres détails et adapté à votre marque.",
           cta: "Voir mon travail"
         },
         es: {
-          title: "Sobre Wim",
+          title: "Sobre Hilarius Design",
           heading: "Wim Hilarius",
-          intro: "Diseño en cartón reciclado, con una firma clara.",
+          intro: "Where board meets creation",
           body:
-            "En Hilarius Design todo gira en torno al ingenio, la artesanía y la sencillez bien pensada. Desde hace más de cuarenta años diseño productos en los que creatividad y construcción se unen: regalos corporativos, embalajes, modelos de transporte y elementos de interior, todos fabricados en cartón reciclado.\n\nEl cartón es un material que a menudo se subestima. Es ligero, resistente, sostenible y forma la base de productos que destacan sin necesidad de exagerar. Cada diseño empieza con una idea: ¿cómo puede algo ser inteligente, bello y producible al mismo tiempo?\n\nDesde el primer boceto hasta la producción acompaño todo el proceso. El resultado es siempre un producto cuidado al detalle y adecuado para su marca.",
+            "En Hilarius Design todo gira en torno a la artesanía y la sencillez. Desde hace más de cuarenta años diseño productos de cartón reciclado, desde regalos corporativos y embalajes hasta modelos de transporte y elementos de interior.\n\nCada diseño empieza con una idea: ¿cómo puede un objeto ser bonito y viable de producir? Acompaño todo el proceso, desde el primer boceto hasta la producción. El resultado es un producto cuidado hasta el último detalle y adaptado a su marca.",
           cta: "Ver mi trabajo"
         }
       }

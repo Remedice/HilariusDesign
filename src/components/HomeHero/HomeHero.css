@@ -1,7 +1,8 @@
 .homeHero {
   position: relative;
   width: calc(100% + (2 * var(--page-pad)));
-  height: clamp(560px, calc(100svh - var(--header-h) - 64px), 760px);
+  height: calc(100svh - var(--header-h) - 12px);
+  min-height: 560px;
   margin-inline: calc(-1 * var(--page-pad));
   margin-top: -28px;
   overflow: hidden;
@@ -154,6 +155,14 @@
   outline-offset: 6px;
 }
 
+.homeHero.isParallaxScrolled .homeHeroScroll {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -6px);
+  animation: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
 .homeHeroSrOnly {
   position: absolute;
   width: 1px;
@@ -190,8 +199,13 @@
 
 @media (max-width: 860px) {
   .homeHero {
-    height: clamp(500px, calc(100svh - var(--header-h) - 16px), 660px);
+    height: calc(100svh - var(--header-h) - 8px);
+    min-height: 500px;
     margin-top: -16px;
+  }
+
+  .homeHeroMedia {
+    animation: none;
   }
 
   .homeHeroFloat--desktopOnly {
@@ -199,23 +213,27 @@
   }
 
   .homeHeroFloat--clock {
-    inset: 3% auto auto -5%;
-    width: clamp(96px, 29vw, 124px);
+    inset: 4% auto auto -1%;
+    width: clamp(88px, 26vw, 110px);
+  }
+
+  .homeHeroFloat--folder {
+    inset: 5% -4% auto auto;
+    width: clamp(146px, 43vw, 180px);
   }
 
   .homeHeroFloat--packaging {
-    inset: 4% -4% auto auto;
-    width: clamp(96px, 29vw, 126px);
+    display: none;
   }
 
   .homeHeroFloat--transport {
-    inset: auto auto 1% -9%;
-    width: clamp(136px, 42vw, 176px);
+    inset: auto auto 18% -2%;
+    width: clamp(118px, 35vw, 146px);
   }
 
   .homeHeroFloat--game {
-    inset: auto -10% 4% auto;
-    width: clamp(158px, 49vw, 206px);
+    inset: auto -6% 18% auto;
+    width: clamp(150px, 46vw, 190px);
   }
 
   .homeHeroCenter {
@@ -223,7 +241,7 @@
   }
 
   .homeHeroMarkLink {
-    width: min(76vw, 430px);
+    width: min(74vw, 400px);
   }
 
   .homeHeroMarkLink:hover {
@@ -231,7 +249,7 @@
   }
 
   .homeHeroScroll {
-    bottom: 14px;
+    bottom: 12px;
     font-size: 0.6875rem;
   }
 }
@@ -242,7 +260,7 @@
   }
 
   .homeHeroMarkLink {
-    width: min(80vw, 350px);
+    width: min(76vw, 330px);
   }
 }
 

@@ -141,27 +141,28 @@ Erhältlich in verschiedenen Ausführungen und vollständig nach Ihren Wünschen
   },
 
   "transport/vliegtuigen/vliegtuigen2.webp": {
+    id: "vliegtuigen",
     i18n: {
       nl: {
-        title: "Vliegtuigen",
-        description: `Zorg voor een vliegende start met uw nieuwe relaties. Kartonnen vliegtuigen als origineel relatiegeschenk.`,
-        body: `Deze vliegtuigen van karton worden volledig bedrukt in uw huisstijl en zijn perfect te vullen met snoep, chocolade of een kleine verrassing. Een geschenk dat de aandacht trekt en de verbeelding prikkelt.
+        title: "Vliegtuigjes",
+        description: `The sky is the limit. Geef nieuwe relaties een vliegende start met een volledig recyclebaar kartonnen vliegtuigje.`,
+        body: `De dubbeldekkers kunnen naar wens worden bedrukt en worden plano aangeleverd, zodat u ze in een envelop kunt versturen. Na ontvangst zijn ze eenvoudig in elkaar te zetten.
 
-De sky is the limit!`
+Ziet u uw vliegtuig al op veel bureaus staan? Vraag dan een offerte aan.`
       },
       en: {
-        title: "Aircraft",
-        description: `Give your new business relationships a flying start. Cardboard aircraft as an original corporate gift.`,
-        body: `These cardboard aircraft are fully printed in your corporate identity and perfect to fill with sweets, chocolate or a small surprise. A gift that draws attention and sparks the imagination.
+        title: "Cardboard aircraft",
+        description: `The sky is the limit. Give new business relationships a flying start with a fully recyclable cardboard biplane.`,
+        body: `The biplanes can be printed to order and are supplied flat, so you can send them in an envelope. They are easy to assemble after delivery.
 
-The sky is the limit!`
+Picture your aircraft on desks everywhere. Request a quote for your custom version.`
       },
       de: {
-        title: "Flugzeuge",
-        description: `Sorgen Sie für einen fliegenden Start mit Ihren neuen Geschäftspartnern. Kartonflugzeuge als unverwechselbares Werbegeschenk.`,
-        body: `Diese Kartonflugzeuge werden vollständig in Ihrem Corporate Design bedruckt und lassen sich perfekt mit Süßigkeiten, Schokolade oder einer kleinen Überraschung befüllen.
+        title: "Kartonflugzeuge",
+        description: `The sky is the limit. Schenken Sie neuen Geschäftspartnern einen fliegenden Start mit einem vollständig recycelbaren Doppeldecker aus Karton.`,
+        body: `Die Doppeldecker können nach Wunsch bedruckt und flach geliefert werden, sodass Sie sie in einem Umschlag versenden können. Nach der Lieferung lassen sie sich einfach zusammenbauen.
 
-The sky is the limit!`
+Stellen Sie sich Ihr Flugzeug auf vielen Schreibtischen vor. Fordern Sie ein Angebot für Ihre individuelle Ausführung an.`
       }
     }
   },
@@ -170,30 +171,30 @@ The sky is the limit!`
     i18n: {
       nl: {
         title: "Vrachtwagens",
-        description: `Ik ben de koning van de weg. Vrachtwagens van karton, perfect om een fles wijn, bier of snoep op een originele manier te verpakken.`,
-        body: `Met onze vrachtwagens is dat nog betaalbaar ook. Deze wagens worden bedrukt in uw huisstijl, zodat uw geschenk een aandachttrekker blijft op het bureau van uw relaties.
+        description: `Koning van de weg, maar dan betaalbaar. Kartonnen vrachtwagens verpakken een fles wijn, bier of snoep op een originele manier.`,
+        body: `De wagens worden bedrukt in uw huisstijl, zodat uw geschenk een aandachttrekker blijft op het bureau van uw relaties.
 
 Afmetingen: 348 x 86 x 114 mm (l x b x h).
 
-Heeft u interesse in andere voertuigen van karton? Neem dan een kijkje op hilariusdesign.nl of wenst u een ander ontwerp, dan denken wij graag met u mee. De sky is the limit!`
+Wenst u een ander ontwerp? Dan denken wij graag met u mee.`
       },
       en: {
         title: "Trucks",
-        description: `King of the road. Cardboard trucks, perfect for presenting a bottle of wine, beer or sweets in a truly original way.`,
-        body: `And at a price that keeps your budget on track. These trucks are printed in your corporate identity, ensuring your gift remains a conversation piece on your clients' desks.
+        description: `King of the road at an accessible price. Cardboard trucks package a bottle of wine, beer or sweets in an original way.`,
+        body: `The trucks are printed in your brand identity, keeping your gift visible on your clients' desks.
 
 Dimensions: 348 x 86 x 114 mm (l x w x h).
 
-Interested in other cardboard vehicles? Visit hilariusdesign.nl or get in touch. We are happy to develop a custom design. The sky is the limit!`
+Looking for a different design? We are happy to develop it with you.`
       },
       de: {
         title: "LKW",
-        description: `König der Straße. LKW aus Karton, ideal um eine Flasche Wein, Bier oder Süßigkeiten auf originelle Weise zu verpacken.`,
-        body: `Und das zu einem Preis, der Ihr Budget im Griff behält. Diese Fahrzeuge werden in Ihrem Corporate Design bedruckt und bleiben als echter Blickfang auf dem Schreibtisch Ihrer Geschäftspartner.
+        description: `König der Straße zu einem erschwinglichen Preis. LKW aus Karton verpacken eine Flasche Wein, Bier oder Süßigkeiten auf originelle Weise.`,
+        body: `Die Fahrzeuge werden in Ihrem Corporate Design bedruckt und bleiben als Blickfang auf dem Schreibtisch Ihrer Geschäftspartner.
 
 Maße: 348 x 86 x 114 mm (L x B x H).
 
-Interesse an anderen Kartonfahrzeugen? Besuchen Sie hilariusdesign.nl oder nehmen Sie Kontakt auf. Wir entwickeln gerne ein individuelles Design. The sky is the limit!`
+Wünschen Sie ein anderes Design? Wir entwickeln es gerne gemeinsam mit Ihnen.`
       }
     }
   },
@@ -211,7 +212,7 @@ Interesse an anderen Kartonfahrzeugen? Besuchen Sie hilariusdesign.nl oder nehme
 
 Formaat bureaukalender: 210 x 75 x 70 mm (l x b x h). De kalenders worden vlakliggend geleverd.
 
-Ook leverbaar als wandkalender in het formaat 420 x 297 mm of 297 x 420 mm.
+Ook leverbaar als wandkalender in het formaat 420 x 297 mm, 297 x 420 mm of 210 x 297 mm.
 
 Duurzaam, herkenbaar en praktisch: het relatiegeschenk dat blijft staan.`
       },
@@ -222,7 +223,7 @@ Duurzaam, herkenbaar en praktisch: het relatiegeschenk dat blijft staan.`
 
 Desk calendar dimensions: 210 x 75 x 70 mm (l x w x h). Calendars are delivered flat.
 
-Also available as a wall calendar in 420 x 297 mm or 297 x 420 mm.
+Also available as a wall calendar in 420 x 297 mm, 297 x 420 mm or 210 x 297 mm.
 
 Sustainable, recognizable and practical: the corporate gift that keeps standing.`
       },
@@ -233,7 +234,7 @@ Sustainable, recognizable and practical: the corporate gift that keeps standing.
 
 Maße Schreibtischkalender: 210 x 75 x 70 mm (L x B x H). Die Kalender werden flach geliefert.
 
-Auch als Wandkalender im Format 420 x 297 mm oder 297 x 420 mm erhältlich.
+Auch als Wandkalender im Format 420 x 297 mm, 297 x 420 mm oder 210 x 297 mm erhältlich.
 
 Nachhaltig, unverwechselbar und praktisch: das Werbegeschenk, das stehen bleibt.`
       }
@@ -310,7 +311,7 @@ Nachhaltig, unverwechselbar und praktisch: das Werbegeschenk, das stehen bleibt.
       en: {
         title: "Coasters",
         description: `Stylish cardboard coasters that accompany every cup of coffee or tea with your brand.`,
-        body: `These cardboard coasters are fully personalisable with your logo and corporate identity. Functional, sustainable and a subtle way to keep your brand top of mind with your clients.`
+        body: `These cardboard coasters can be printed with your logo and brand identity. Functional and subtle, they keep your brand visible to clients.`
       },
       de: {
         title: "Untersetzer",
@@ -345,41 +346,49 @@ Nachhaltig, unverwechselbar und praktisch: das Werbegeschenk, das stehen bleibt.
   // ═══════════════════════════════════════════════════════════════
 
   "verpakkingen/bloemenverpakking/bloemendozen2.webp": {
+    id: "bloemenverpakking",
     i18n: {
       nl: {
-        title: "Bloemenverpakking",
-        description: `Originele bloemenverpakkingen van karton die een bos bloemen presenteren als een echt cadeau.`,
-        body: `Hilarius Design ontwerpt bloemenverpakkingen die de bloemen optimaal presenteren en beschermen. Volledig in uw huisstijl zijn ze een stijlvolle aanvulling bij elke gelegenheid.`
+        title: "Rozenstekverpakking",
+        description: `Geef rozenstekken de presentatie die ze verdienen met een kartonnen verpakking op maat.`,
+        body: `De verpakking beschermt de stekken tijdens transport en zorgt tegelijk voor een verzorgde, professionele uitstraling. Hilarius Design stemt iedere transport-, presentatieverpakking of display af op uw huisstijl en merkidentiteit.
+
+Zoekt u een verpakking die praktisch en onderscheidend is? Wij ontwikkelen maatwerk dat uw product laat opvallen en een sterke eerste indruk maakt.`
       },
       en: {
-        title: "Flower packaging",
-        description: `Original cardboard flower packaging that presents a bouquet as a true gift.`,
-        body: `Hilarius Design creates flower packaging that presents and protects the flowers well. Fully in your corporate identity, they add a stylish touch to any occasion.`
+        title: "Rose cutting packaging",
+        description: `Give rose cuttings the presentation they deserve with custom cardboard packaging.`,
+        body: `The packaging protects the cuttings in transit while giving them a polished, professional appearance. Hilarius Design tailors every transport package, presentation package and display to your brand identity.
+
+Looking for packaging that is practical and distinctive? We develop custom packaging that helps your product stand out and make a strong first impression.`
       },
       de: {
-        title: "Blumenverpackung",
-        description: `Originelle Karton-Blumenverpackungen, die einen Blumenstrauß als echtes Geschenk präsentieren.`,
-        body: `Hilarius Design entwirft Blumenverpackungen, die die Blumen optimal in Szene setzen und schützen. Vollständig in Ihrem Corporate Design sind sie eine stilvolle Ergänzung für jeden Anlass.`
+        title: "Verpackung für Rosenstecklinge",
+        description: `Geben Sie Rosenstecklingen mit einer maßgefertigten Kartonverpackung die passende Präsentation.`,
+        body: `Die Verpackung schützt die Stecklinge beim Transport und sorgt zugleich für ein gepflegtes, professionelles Erscheinungsbild. Hilarius Design stimmt jede Transport- und Präsentationsverpackung sowie jedes Display auf Ihr Corporate Design und Ihre Markenidentität ab.
+
+Suchen Sie eine praktische und unverwechselbare Verpackung? Wir entwickeln eine Maßanfertigung, die Ihr Produkt hervorhebt und einen starken ersten Eindruck vermittelt.`
       }
     }
   },
 
   "verpakkingen/cd-verpakking/cdverpakking2.webp": {
+    id: "cd-verpakking",
     i18n: {
       nl: {
-        title: "CD-verpakking",
-        description: `Bijzondere CD-verpakkingen van karton die uw muziek of presentatie een professionele uitstraling geven.`,
-        body: `Deze op maat gemaakte CD-verpakkingen van karton geven uw product een eigen presentatie. Volledig in uw huisstijl, van eenvoudig tot luxe afgewerkt.`
+        title: "LP-hoes",
+        description: `Een bijzondere LP-hoes van karton die uw muziek of presentatie een professionele uitstraling geeft.`,
+        body: `Deze op maat gemaakte LP-hoes geeft uw product meerwaarde en wordt luxe afgewerkt.`
       },
       en: {
-        title: "CD packaging",
-        description: `Cardboard CD packaging that gives your music or presentation a professional appearance.`,
-        body: `These bespoke cardboard CD cases give your product its own presentation. Fully in your corporate identity, ranging from simple to premium finish.`
+        title: "Record sleeve",
+        description: `A distinctive cardboard record sleeve that gives your music or presentation a professional appearance.`,
+        body: `This custom record sleeve adds value to your product and comes with a premium finish.`
       },
       de: {
-        title: "CD-Verpackung",
-        description: `Besondere CD-Verpackungen aus Karton, die Ihrer Musik oder Präsentation ein professionelles Erscheinungsbild verleihen.`,
-        body: `Diese maßgefertigten CD-Verpackungen aus Karton sind eine unverwechselbare Art, Ihr Produkt zu präsentieren. Vollständig in Ihrem Corporate Design, von schlicht bis edel veredelt.`
+        title: "LP-Hülle",
+        description: `Eine besondere LP-Hülle aus Karton, die Ihrer Musik oder Präsentation ein professionelles Erscheinungsbild verleiht.`,
+        body: `Diese maßgefertigte LP-Hülle wertet Ihr Produkt auf und wird hochwertig veredelt.`
       }
     }
   },
@@ -394,7 +403,7 @@ Nachhaltig, unverwechselbar und praktisch: das Werbegeschenk, das stehen bleibt.
       en: {
         title: "Chocolate box",
         description: `Luxury cardboard chocolate boxes as a delicious corporate gift in a stylish package.`,
-        body: `Hilarius Design creates chocolate boxes that make an impression even before the first bonbon. Fully personalisable in your corporate identity, from size to print.`
+        body: `Hilarius Design creates chocolate boxes that make an impression before the first bonbon. Customize the size and print to match your brand identity.`
       },
       de: {
         title: "Schokoladendöschen",
@@ -409,29 +418,29 @@ Nachhaltig, unverwechselbar und praktisch: das Werbegeschenk, das stehen bleibt.
       nl: {
         title: "Handtasjes",
         description: `Cadeau in stijl. Luxe kartonnen handtassen die van elk geschenk een stijlvolle beleving maken.`,
-        body: `Perfect voor het verrassen van relaties, het bedanken van medewerkers of het versterken van uw merk tijdens speciale momenten. Uitermate geschikt voor champagne, wijn, delicatessen, lingerie, mode en cosmetica.
+        body: `Perfect voor het verrassen van relaties, het bedanken van medewerkers of het versterken van uw merk tijdens speciale momenten. Geschikt voor champagne, wijn, delicatessen, lingerie, mode en cosmetica.
 
-Dankzij de hoogwaardige afwerking en het stevige golfkarton combineren ze een luxe uitstraling met praktische duurzaamheid. Verkrijgbaar in wit, zwart of bruin karton en volledig te personaliseren naar uw huisstijl.
+Dankzij de hoogwaardige afwerking en het stevige golfkarton combineren ze een luxe uitstraling met praktisch gebruik. Verkrijgbaar in wit, zwart of bruin golfkarton en volledig te personaliseren in uw huisstijl.
 
-Prijs op aanvraag vanaf 250 stuks. Inclusief artwork en één correctieronde, exclusief 21% btw.`
+Prijs op aanvraag vanaf 250 stuks.`
       },
       en: {
         title: "Handbags",
         description: `Gift in style. Luxury cardboard handbags that turn any present into a stylish experience.`,
-        body: `Perfect for surprising clients, thanking staff or reinforcing your brand during special occasions. Ideal for champagne, wine, delicacies, lingerie, fashion and cosmetics.
+        body: `Perfect for surprising clients, thanking employees or strengthening your brand on special occasions. Suitable for champagne, wine, delicacies, lingerie, fashion and cosmetics.
 
-Thanks to the high-quality finish and sturdy corrugated board, they combine a luxurious look with practical durability. Available in white, black or brown cardboard and fully customizable to your corporate identity.
+The high-quality finish and sturdy corrugated board combine a premium look with practical use. Available in white, black or brown corrugated board and fully customizable to your brand.
 
-Price on request from 250 units. Including artwork and one revision round, excluding 21% VAT.`
+Price on request for orders of 250 or more.`
       },
       de: {
         title: "Handtaschen",
         description: `Geschenk mit Stil. Luxuriöse Karton-Handtaschen, die jedes Geschenk zu einem stilvollen Erlebnis machen.`,
-        body: `Perfekt zum Überraschen von Geschäftspartnern, zum Bedanken bei Mitarbeitern oder zur Stärkung Ihrer Marke bei besonderen Anlässen. Ideal für Champagner, Wein, Delikatessen, Lingerie, Mode und Kosmetik.
+        body: `Perfekt, um Geschäftspartner zu überraschen, Mitarbeitern zu danken oder Ihre Marke zu besonderen Anlässen zu stärken. Geeignet für Champagner, Wein, Delikatessen, Lingerie, Mode und Kosmetik.
 
-Dank der hochwertigen Verarbeitung und der robusten Wellpappe verbinden sie ein luxuriöses Erscheinungsbild mit praktischer Langlebigkeit. Erhältlich in Weiß, Schwarz oder Braun und vollständig in Ihrem Corporate Design personalisierbar.
+Die hochwertige Verarbeitung und robuste Wellpappe verbinden eine exklusive Optik mit praktischem Nutzen. Erhältlich in weißer, schwarzer oder brauner Wellpappe und vollständig in Ihrem Corporate Design personalisierbar.
 
-Preis auf Anfrage ab 250 Stück. Inklusive Artwork und einer Korrekturr­unde, exklusive 21% MwSt.`
+Preis auf Anfrage ab 250 Stück.`
       }
     }
   },
@@ -440,24 +449,24 @@ Preis auf Anfrage ab 250 Stück. Inklusive Artwork und einer Korrekturr­unde, e
     i18n: {
       nl: {
         title: "Magic Packaging",
-        description: `De meest originele champagne- of wijnverpakking ter wereld. Met een simpele tik op de bovenkant valt de doos als een bloem open.`,
-        body: `Ontdek de magic packaging van Hilarius Design: met een simpele tik valt de doos open als een bloem en presenteert de fles zich prachtig. Verkrijgbaar in opvallend roze en andere kleuren op aanvraag.
+        description: `Een originele champagne- of wijnverpakking die met een tik op de bovenkant als een bloem openvalt.`,
+        body: `Bij het openen presenteert de verpakking de fles direct. Verkrijgbaar in zwart, wit en rood. Andere kleuren zijn op aanvraag mogelijk.
 
-Wij ontwikkelen originele verpakkingen op maat, perfect afgestemd op uw wensen.`
+Hilarius Design ontwikkelt ook originele verpakkingen op maat, afgestemd op uw wensen.`
       },
       en: {
         title: "Magic Packaging",
-        description: `The world's most original champagne or wine packaging. With a simple tap on the top, the box opens like a flower.`,
-        body: `Discover the magic packaging by Hilarius Design: with a single tap the box unfolds like a flower, presenting the bottle beautifully. Available in striking pink and other colors on request.
+        description: `An original champagne or wine package that opens like a flower with a tap on the top.`,
+        body: `As it opens, the package immediately presents the bottle. Available in black, white and red, with other colors on request.
 
-We develop original custom packaging tailored to your wishes.`
+Hilarius Design also develops original custom packaging tailored to your requirements.`
       },
       de: {
         title: "Magic Packaging",
-        description: `Die originellste Champagner- oder Weinverpackung der Welt. Mit einem einfachen Klick auf die Oberseite öffnet sich die Box wie eine Blume.`,
-        body: `Entdecken Sie das Magic Packaging von Hilarius Design: Mit einem einzigen Klick öffnet sich die Box wie eine Blume und präsentiert die Flasche auf wunderschöne Weise. Erhältlich in auffallendem Rosa und weiteren Farben auf Anfrage.
+        description: `Eine originelle Champagner- oder Weinverpackung, die sich mit einem leichten Druck auf die Oberseite wie eine Blume öffnet.`,
+        body: `Beim Öffnen präsentiert die Verpackung die Flasche unmittelbar. Erhältlich in Schwarz, Weiß und Rot. Weitere Farben sind auf Anfrage möglich.
 
-Wir entwickeln originelle Maßverpackungen, perfekt auf Ihre Wünsche abgestimmt.`
+Hilarius Design entwickelt auch originelle Maßverpackungen, abgestimmt auf Ihre Anforderungen.`
       }
     }
   },
@@ -492,7 +501,7 @@ Wir entwickeln originelle Maßverpackungen, perfekt auf Ihre Wünsche abgestimmt
       en: {
         title: "Shockproof wine packaging",
         description: `Shockproof cardboard wine packaging that protects your bottle during transport.`,
-        body: `This strong cardboard wine packaging is developed to protect your bottle against bumps and shocks. Stylish, sustainable and fully personalisable in your corporate identity. Safe and representative at the same time.`
+        body: `This strong cardboard wine packaging protects your bottle against bumps and shocks. Customize it to match your brand identity for safe, polished presentation.`
       },
       de: {
         title: "Stoßfeste Weinverpackung",
@@ -507,37 +516,44 @@ Wir entwickeln originelle Maßverpackungen, perfekt auf Ihre Wünsche abgestimmt
       nl: {
         title: "Uitklapdoos",
         description: `Een uitklapdoos die bij het openen verrast en de inhoud spectaculair presenteert.`,
-        body: `De uitklapdoos van Hilarius Design combineert functionaliteit met een verrassend openingsmoment. Volledig in uw huisstijl gemaakt, is deze doos het ideale relatiegeschenk voor bijzondere gelegenheden.`
+        body: `De uitklapdoos van Hilarius Design combineert functionaliteit met een verrassend openingsmoment. Volledig in uw huisstijl gemaakt, is deze doos een fraaie verpakking voor bijzondere gelegenheden.`
       },
       en: {
         title: "Fold-out box",
         description: `A fold-out box that surprises upon opening and presents its contents spectacularly.`,
-        body: `The fold-out box by Hilarius Design combines functionality with a surprising opening moment. Made fully in your corporate identity, this box is the ideal corporate gift for special occasions.`
+        body: `The fold-out box by Hilarius Design combines function with an unexpected opening moment. Made in your brand identity, it is a refined package for special occasions.`
       },
       de: {
         title: "Aufklappbox",
         description: `Eine Aufklappbox, die beim Öffnen überrascht und den Inhalt spektakulär präsentiert.`,
-        body: `Die Aufklappbox von Hilarius Design verbindet Funktionalität mit einem überraschenden Öffnungsmoment. Vollständig in Ihrem Corporate Design gefertigt, ist diese Box das ideale Werbegeschenk für besondere Anlässe.`
+        body: `Die Aufklappbox von Hilarius Design verbindet Funktion mit einem überraschenden Öffnungsmoment. In Ihrem Corporate Design gefertigt, ist sie eine stilvolle Verpackung für besondere Anlässe.`
       }
     }
   },
 
   "verpakkingen/viko-kokers/vikokoker2.webp": {
+    id: "viko-kokers",
     i18n: {
       nl: {
-        title: "Viko kokers",
-        description: `Originele Viko kokers van karton: een elegante en beschermende verpakking voor rollen en documenten.`,
-        body: `De Viko kokers zijn ontwikkeld voor een stijlvolle presentatie en veilig transport van posters, documenten en andere rolvormige producten. Volledig bedrukt in uw huisstijl.`
+        title: "Ronde koker wordt vierkant",
+        description: `De vierkante Viko-koker is sterk, vlak op te slaan en geschikt voor machinale verwerking door PostNL.`,
+        body: `Hilarius Design ontwikkelde de koker samen met PostNL Pakketservice na uitgebreide tests. Na het eenvoudige opzetten kan hij machinaal worden verwerkt in de sorteercentra van PostNL. De sluiting maakt nietjes en plakband overbodig en verzending is mogelijk tegen een lager tarief.
+
+Bedrukking in uw huisstijl is mogelijk vanaf 500 stuks. Neem contact op voor een vrijblijvende offerte.`
       },
       en: {
-        title: "Viko tubes",
-        description: `Original Viko cardboard tubes: an elegant and protective packaging for rolls and documents.`,
-        body: `Viko tubes are developed for stylish presentation and safe transport of posters, documents and other roll-shaped products. Fully printed in your corporate identity.`
+        title: "A round tube becomes square",
+        description: `The square Viko tube is strong, stores flat and is suitable for automated processing by PostNL.`,
+        body: `Hilarius Design developed the tube with PostNL Parcel Service after extensive testing. Once assembled, it can be processed automatically at PostNL sorting centers. Its closure eliminates staples and tape, and the package qualifies for a lower shipping rate.
+
+Custom printing is available from 500 units. Contact us for a no-obligation quote.`
       },
       de: {
-        title: "Viko-Hülsen",
-        description: `Originelle Viko-Hülsen aus Karton: eine elegante und schützende Verpackung für Rollen und Dokumente.`,
-        body: `Die Viko-Hülsen wurden für eine stilvolle Präsentation und den sicheren Transport von Postern, Dokumenten und anderen rollenförmigen Produkten entwickelt. Vollständig in Ihrem Corporate Design bedruckt.`
+        title: "Aus rund wird quadratisch",
+        description: `Die quadratische Viko-Hülse ist stabil, flach lagerbar und für die maschinelle Verarbeitung bei PostNL geeignet.`,
+        body: `Hilarius Design entwickelte die Hülse gemeinsam mit PostNL Pakketservice nach umfangreichen Tests. Nach dem einfachen Aufrichten kann sie in den Sortierzentren von PostNL maschinell verarbeitet werden. Der Verschluss macht Heftklammern und Klebeband überflüssig und ermöglicht einen günstigeren Versandtarif.
+
+Eine Bedruckung in Ihrem Corporate Design ist ab 500 Stück möglich. Kontaktieren Sie uns für ein unverbindliches Angebot.`
       }
     }
   },
@@ -546,44 +562,39 @@ Wir entwickeln originelle Maßverpackungen, perfekt auf Ihre Wünsche abgestimmt
     i18n: {
       nl: {
         title: "Wijnverpakkingen",
-        description: `Duurzame wijndozen voor 1, 2 of 3 flessen. Lichtgewicht, milieuvriendelijk en een stijlvol alternatief voor houten kistjes.`,
-        body: `Deze wijndozen van karton zijn verkrijgbaar voor 1, 2 of 3 flessen en combineren een stijlvolle uitstraling met praktisch gemak. Lichtgewicht, milieuvriendelijk en perfect als verpakking en presentatie.
-
-Volledig te personaliseren in uw huisstijl.`
+        description: `Geschenkverpakkingen van golfkarton voor één, twee of drie flessen.`,
+        body: `Deze lichte verpakkingen combineren een stijlvolle uitstraling met praktisch gemak en zijn geschikt voor zowel verpakking als presentatie.`
       },
       en: {
         title: "Wine packaging",
-        description: `Sustainable wine boxes for 1, 2 or 3 bottles. Lightweight, eco-friendly and a stylish alternative to wooden crates.`,
-        body: `These cardboard wine boxes are available for 1, 2 or 3 bottles and combine a stylish appearance with practical convenience. Lightweight, eco-friendly and perfect for packaging and presentation.
-
-Fully personalisable in your corporate identity.`
+        description: `Corrugated board gift packaging for one, two or three bottles.`,
+        body: `These lightweight packages combine a refined appearance with practical convenience and work for both packaging and presentation.`
       },
       de: {
         title: "Weinverpackungen",
-        description: `Nachhaltige Weinboxen für 1, 2 oder 3 Flaschen. Leicht, umweltfreundlich und eine stilvolle Alternative zu Holzkisten.`,
-        body: `Diese Karton-Weinboxen sind für 1, 2 oder 3 Flaschen erhältlich und verbinden ein stilvolles Erscheinungsbild mit praktischer Handhabung. Leicht, umweltfreundlich und ideal für Verpackung und Präsentation.
-
-Vollständig in Ihrem Corporate Design personalisierbar.`
+        description: `Geschenkverpackungen aus Wellpappe für eine, zwei oder drei Flaschen.`,
+        body: `Diese leichten Verpackungen verbinden eine stilvolle Optik mit praktischer Handhabung und eignen sich sowohl zum Verpacken als auch zum Präsentieren.`
       }
     }
   },
 
   "verpakkingen/zakken/zakkengroot.webp": {
+    id: "zakken",
     i18n: {
       nl: {
-        title: "Zakken",
-        description: `Kartonnen zakken en draagassen als stijlvolle verpakking voor uw producten en relatiegeschenken.`,
-        body: `Hilarius Design ontwerpt en produceert kartonnen zakken in diverse formaten en uitvoeringen. Volledig bedrukt in uw huisstijl zijn ze een visitekaartje voor uw merk bij elke gelegenheid.`
+        title: "Blokbodemzakken",
+        description: `Kartonnen blokbodemzakken en papieren draagtassen als stijlvolle verpakking voor uw producten.`,
+        body: `Hilarius Design produceert blokbodemzakken en papieren draagtassen in diverse formaten en uitvoeringen. Volledig bedrukt in uw huisstijl zijn ze een visitekaartje voor uw merk.`
       },
       en: {
-        title: "Bags",
-        description: `Cardboard bags and carriers as stylish packaging for your products and corporate gifts.`,
-        body: `Hilarius Design designs and produces cardboard bags in a variety of sizes and configurations. Fully printed in your corporate identity, they are a calling card for your brand on every occasion.`
+        title: "Block-bottom bags",
+        description: `Cardboard block-bottom bags and paper carrier bags as stylish packaging for your products.`,
+        body: `Hilarius Design produces block-bottom bags and paper carrier bags in a range of sizes and versions. Printed in your brand identity, they become a calling card for your brand.`
       },
       de: {
-        title: "Taschen",
-        description: `Karton-Tragetaschen als stilvolle Verpackung für Ihre Produkte und Werbegeschenke.`,
-        body: `Hilarius Design entwirft und produziert Karton-Tragetaschen in verschiedenen Größen und Ausführungen. Vollständig in Ihrem Corporate Design bedruckt, sind sie bei jedem Anlass eine Visitenkarte für Ihre Marke.`
+        title: "Blockbodenbeutel",
+        description: `Blockbodenbeutel aus Karton und Papiertragetaschen als stilvolle Verpackung für Ihre Produkte.`,
+        body: `Hilarius Design produziert Blockbodenbeutel und Papiertragetaschen in verschiedenen Größen und Ausführungen. In Ihrem Corporate Design bedruckt, werden sie zur Visitenkarte Ihrer Marke.`
       }
     }
   },
@@ -597,21 +608,21 @@ Vollständig in Ihrem Corporate Design personalisierbar.`
       nl: {
         title: "Boekverpakkingen",
         description: `De presentatie maakt het verschil. Op maat gemaakte cassettes voor bijzondere boeken, zoals bij de uitreiking van de Libris-prijs.`,
-        body: `Een boek biedt uren, dagen en soms zelfs jaren leesplezier en is daarmee het perfecte relatiegeschenk. Maar de presentatie maakt het verschil. Kiest u voor standaard cadeaupapier of voor een duurzame, op maat gemaakte cassette?
+        body: `Een boek biedt uren, dagen en soms zelfs jaren leesplezier en is daarmee een mooi relatiegeschenk. Maar de presentatie maakt het verschil. Kiest u voor standaard cadeaupapier of voor een duurzame, op maat gemaakte cassette?
 
 De afgebeelde boekverpakking werd gebruikt bij de uitreiking van de Libris-prijs, waarbij prijswinnaars hun boek in deze exclusieve uitvoering mee naar huis namen.`
       },
       en: {
         title: "Book packaging",
         description: `Presentation makes the difference. Bespoke slipcases for special books, as used at the Libris Prize ceremony.`,
-        body: `A book offers hours, days and sometimes even years of reading pleasure, making it the perfect corporate gift. But presentation makes the difference. Do you go for standard gift wrap or a durable, bespoke slipcase?
+        body: `A book offers hours, days and sometimes years of reading pleasure, making it a thoughtful corporate gift. But presentation makes the difference. Do you choose standard gift wrap or a recycled board slipcase made to order?
 
 The book packaging shown here was used at the Libris Prize ceremony, where award winners took their book home in this exclusive presentation.`
       },
       de: {
         title: "Buchverpackungen",
         description: `Die Präsentation macht den Unterschied. Maßgefertigte Schuber für besondere Bücher, wie bei der Verleihung des Libris-Preises.`,
-        body: `Ein Buch bietet stunden-, tage- und manchmal jahrelanges Lesevergnügen und ist damit das perfekte Werbegeschenk. Aber die Präsentation macht den Unterschied. Entscheiden Sie sich für normales Geschenkpapier oder für einen nachhaltigen, maßgefertigten Schuber?
+        body: `Ein Buch bietet stunden-, tage- und manchmal jahrelanges Lesevergnügen und ist damit ein schönes Werbegeschenk. Aber die Präsentation macht den Unterschied. Entscheiden Sie sich für normales Geschenkpapier oder einen maßgefertigten Schuber aus recycelter Pappe?
 
 Die abgebildete Buchverpackung wurde bei der Verleihung des Libris-Preises verwendet, bei der Preisträger ihr Buch in dieser exklusiven Ausführung mit nach Hause nehmen durften.`
       }
@@ -623,17 +634,17 @@ Die abgebildete Buchverpackung wurde bei der Verleihung des Libris-Preises verwe
       nl: {
         title: "Euromap",
         description: `Uitgegeven bij de introductie van de Euro in 2002. Alle munten van de twaalf aangesloten landen passen erin.`,
-        body: `Deze unieke mappen werden uitgegeven bij de introductie van de Euro in 2002. Alle munten van de twaalf, toen aangesloten landen, passen erin. Een historisch hebbeding dat de komst van een nieuw tijdperk vastlegt.`
+        body: `Deze unieke mappen werden uitgegeven bij de introductie van de euro in 2002. Alle munten van de twaalf toen aangesloten landen passen erin.`
       },
       en: {
         title: "Euromap folder",
         description: `Issued at the introduction of the Euro in 2002. All coins from the twelve participating countries fit inside.`,
-        body: `These unique folders were issued at the introduction of the Euro in 2002. All coins from the twelve member countries at the time fit inside. A historic keepsake from the arrival of a new era.`
+        body: `These unique folders were issued when the euro was introduced in 2002. They hold every coin from the twelve participating countries at the time.`
       },
       de: {
         title: "Euromap-Mappe",
         description: `Anlässlich der Euro-Einführung 2002 herausgegeben. Alle Münzen der zwölf Mitgliedsländer haben darin Platz.`,
-        body: `Diese einzigartigen Mappen wurden anlässlich der Euro-Einführung im Jahr 2002 herausgegeben. Alle Münzen der damals zwölf Mitgliedsländer haben darin Platz. Ein historisches Sammlerstück, das den Beginn einer neuen Ära festhält.`
+        body: `Diese einzigartigen Mappen wurden anlässlich der Euro-Einführung im Jahr 2002 herausgegeben. Alle Münzen der damals zwölf Mitgliedsländer haben darin Platz.`
       }
     }
   },
@@ -669,7 +680,7 @@ Erhältlich auf Niederländisch, Englisch und Deutsch. Ideal für ein internatio
       nl: {
         title: "Grafiekmappen",
         description: `Elf losse sumi-tekeningen van Peter Schenk gebundeld door stalen pinnen, verrijkt met een gedicht van Theo Olthuis.`,
-        body: `In deze bijzondere ordner worden elf losse sumi-tekeningen van Peter Schenk door stalen pinnen gebundeld. De map is verrijkt met een gedicht van Theo Olthuis. Zo ontstaat een kunstzinnige uitgave waarin inhoud en vorm samenkomen.`
+        body: `In deze bijzondere ordner worden elf losse sumi-tekeningen van Peter Schenk door stalen pinnen gebundeld. De map is verrijkt met een gedicht van Theo Olthuis. Zo ontstond een kunstzinnige uitgave waarin inhoud en vorm samenkomen.`
       },
       en: {
         title: "Graphic folders",
@@ -708,18 +719,24 @@ Erhältlich auf Niederländisch, Englisch und Deutsch. Ideal für ein internatio
     i18n: {
       nl: {
         title: "Informatiemap",
-        description: `Informatieve mappen die uw documentatie professioneel en stijlvol presenteren.`,
-        body: `Hilarius Design ontwerpt informatieve mappen volledig in uw huisstijl. Robuust, overzichtelijk en ontworpen om indruk te maken bij uw klanten en relaties.`
+        description: `Deel informatie overzichtelijk met medewerkers of relaties in een informatiemap op maat.`,
+        body: `Hilarius Design ontwerpt informatiemappen voor opleidingen, cursussen en andere toepassingen. Met de afgebeelde map legden huisartsen hun ADHD-medicatiebeleid helder uit aan ouders en kinderen.
+
+Ook een eigen informatiemap laten maken? Neem contact op voor een voorstel.`
       },
       en: {
         title: "Information folder",
-        description: `Information folders that present your documentation in a professional and stylish way.`,
-        body: `Hilarius Design designs information folders fully in your corporate identity. Robust, clear and crafted to make an impression on your clients and contacts.`
+        description: `Share information clearly with employees or clients in a custom information folder.`,
+        body: `Hilarius Design creates information folders for training, courses and other applications. Doctors used the folder shown here to explain their ADHD medication policy clearly to parents and children.
+
+Interested in your own information folder? Contact us for a proposal.`
       },
       de: {
         title: "Informationsmappe",
-        description: `Informationsmappen, die Ihre Dokumentation professionell und stilvoll präsentieren.`,
-        body: `Hilarius Design entwirft Informationsmappen vollständig in Ihrem Corporate Design. Robust, übersichtlich und darauf ausgelegt, bei Ihren Kunden und Geschäftspartnern Eindruck zu hinterlassen.`
+        description: `Teilen Sie Informationen übersichtlich mit Mitarbeitern oder Geschäftspartnern in einer maßgefertigten Informationsmappe.`,
+        body: `Hilarius Design entwirft Informationsmappen für Schulungen, Kurse und andere Anwendungen. Mit der abgebildeten Mappe erklärten Ärzte Eltern und Kindern ihre Richtlinien zur ADHS-Medikation verständlich.
+
+Möchten Sie eine eigene Informationsmappe anfertigen lassen? Kontaktieren Sie uns für einen Vorschlag.`
       }
     }
   },
@@ -798,18 +815,24 @@ Hilarius Design entwirft Mappen vollständig in Ihrem Corporate Design, mit Ihre
     i18n: {
       nl: {
         title: "Poulebal",
-        description: `Het Poulebal spel: een uitdagend en vermakelijk spel voor groepen, perfect als relatiegeschenk.`,
-        body: `Speel, daag uit en lach samen. Het Poulebal spel van Hilarius Design is een uitstekend middel voor teamactiviteiten en is volledig te personaliseren voor uw organisatie.`
+        description: `Een voetbalpool die tijdens het WK en EK uw logo en bedrijfsnaam dagelijks onder de aandacht brengt.`,
+        body: `De poulebal kan volledig naar wens worden bedrukt. Hij wordt plano geleverd en is na ontvangst eenvoudig in elkaar te zetten. Dankzij de stevige kwaliteit gaat hij het hele toernooi mee en blijft hij daarna nog lang op het bureau staan.
+
+Wilt u een poulebal met uw logo laten maken? Neem contact op voor een vrijblijvende offerte.`
       },
       en: {
-        title: "Poule ball game",
-        description: `The Poule ball game: a challenging and entertaining group game, perfect as a corporate gift.`,
-        body: `Play, challenge and laugh together. The Hilarius Design Poule ball game works well for team activities and is fully customizable for your organization.`
+        title: "Poulebal",
+        description: `A soccer pool that keeps your logo and company name visible throughout the World Cup and European Championship.`,
+        body: `The Poulebal can be printed entirely to order. It is supplied flat and is easy to assemble after delivery. Its sturdy construction lasts throughout the tournament and keeps the ball on desks long afterward.
+
+Want a Poulebal featuring your logo? Contact us for a no-obligation quote.`
       },
       de: {
-        title: "Poule-Spiel",
-        description: `Das Poule-Kugelspiel: ein herausforderndes und unterhaltsames Gruppenspiel, ideal als Werbegeschenk.`,
-        body: `Spielen, herausfordern und gemeinsam lachen. Das Poule-Spiel von Hilarius Design ist ein hervorragendes Mittel für Teamaktivitäten und vollständig für Ihre Organisation personalisierbar.`
+        title: "Poulebal",
+        description: `Ein Fußballtippspiel, das Ihr Logo und Ihren Firmennamen während WM und EM täglich sichtbar macht.`,
+        body: `Der Poulebal kann vollständig nach Wunsch bedruckt werden. Er wird flach geliefert und lässt sich nach Erhalt einfach zusammenbauen. Dank seiner stabilen Qualität hält er das gesamte Turnier und bleibt auch danach lange auf dem Schreibtisch stehen.
+
+Möchten Sie einen Poulebal mit Ihrem Logo anfertigen lassen? Kontaktieren Sie uns für ein unverbindliches Angebot.`
       }
     }
   },
@@ -838,18 +861,18 @@ Hilarius Design entwirft Mappen vollständig in Ihrem Corporate Design, mit Ihre
     i18n: {
       nl: {
         title: "Schaakspel",
-        description: `Fraaie schaakspellen leverbaar in diverse kleuren en maten. Een potje schaken tussen de bedrijven door.`,
-        body: `Onze schaakspellen van karton zijn zowel functioneel als decoratief. Ze combineren klassiek spel met het unieke materiaal karton. Een origineel relatiegeschenk voor liefhebbers van het schaakspel dat ook als designobject opvalt.`
+        description: `Een functioneel en decoratief schaakspel van karton.`,
+        body: `Dit klassieke spel krijgt door de uitvoering in karton een eigen karakter. Het is een origineel relatiegeschenk voor schaakliefhebbers en valt ook op als designobject.`
       },
       en: {
         title: "Chess set",
-        description: `Beautiful chess sets available in various colors and sizes. A game of chess between meetings.`,
-        body: `Our cardboard chess sets are both functional and decorative. They combine a classic game with the unique material of cardboard. An original corporate gift for chess enthusiasts that also stands out as a design object.`
+        description: `A functional and decorative chess set made from cardboard.`,
+        body: `The cardboard construction gives this classic game a distinct character. It is an original corporate gift for chess enthusiasts and also stands out as a design object.`
       },
       de: {
         title: "Schachspiel",
-        description: `Schöne Schachspiele in verschiedenen Farben und Größen erhältlich. Eine Partie Schach zwischendurch.`,
-        body: `Unsere Schachspiele aus Karton sind sowohl funktional als auch dekorativ. Sie verbinden ein klassisches Spiel mit dem einzigartigen Material Karton. Ein originelles Werbegeschenk für Schachliebhaber, das auch als Designobjekt auffällt.`
+        description: `Ein funktionales und dekoratives Schachspiel aus Karton.`,
+        body: `Die Ausführung aus Karton verleiht diesem klassischen Spiel einen eigenen Charakter. Es ist ein originelles Werbegeschenk für Schachliebhaber und fällt zugleich als Designobjekt auf.`
       }
     }
   },
@@ -864,7 +887,7 @@ Hilarius Design entwirft Mappen vollständig in Ihrem Corporate Design, mit Ihre
       en: {
         title: "Throwing game",
         description: `A challenging cardboard throwing game, perfect as a corporate gift for team building and receptions.`,
-        body: `This throwing game by Hilarius Design combines simple rules with surprisingly great fun. Fully personalisable in your corporate identity and made to bring people together.`
+        body: `This throwing game by Hilarius Design combines simple rules with plenty of fun. Customize it to match your brand identity and bring people together.`
       },
       de: {
         title: "Wurfspiel",
@@ -882,22 +905,22 @@ Hilarius Design entwirft Mappen vollständig in Ihrem Corporate Design, mit Ihre
     i18n: {
       nl: {
         title: "Eiffeltoren",
-        description: `De Eiffeltoren tot in detail nagebouwd van karton, in samenwerking met Fred Zwart.`,
-        body: `Met oog voor vorm, verhoudingen en verfijning is dit wereldberoemde bouwwerk vertaald naar een verrassend toegankelijk en tastbaar kartonnen ontwerp. Tot stand gekomen in samenwerking met Fred Zwart.
+        description: `De Eiffeltoren is met oog voor vorm, verhoudingen en verfijning vertaald naar een tastbaar kartonnen ontwerp.`,
+        body: `Het ontwerp kwam tot stand in samenwerking met Fred Zwart.
 
 Een ander gebouw in gedachten? Dat maken we graag op maat.`
       },
       en: {
         title: "Eiffel Tower",
-        description: `The Eiffel Tower recreated in cardboard down to the last detail, in collaboration with Fred Zwart.`,
-        body: `With attention to shape, proportions and refinement, this world-famous landmark has been translated into a surprisingly accessible and tangible cardboard design. Created in collaboration with Fred Zwart.
+        description: `The Eiffel Tower has been translated into a tangible cardboard design with careful attention to shape, proportions and detail.`,
+        body: `The design was created in collaboration with Fred Zwart.
 
 Have a different building in mind? We are happy to make it to order.`
       },
       de: {
         title: "Eiffelturm",
-        description: `Der Eiffelturm bis ins Detail aus Karton nachgebaut, in Zusammenarbeit mit Fred Zwart.`,
-        body: `Mit Blick auf Form, Proportionen und Detailtreue wurde dieses weltberühmte Bauwerk in ein überraschend zugängliches und greifbares Karton-Design übertragen. Entstanden in Zusammenarbeit mit Fred Zwart.
+        description: `Der Eiffelturm wurde mit Blick auf Form, Proportionen und Details in ein greifbares Karton-Design übertragen.`,
+        body: `Der Entwurf entstand in Zusammenarbeit mit Fred Zwart.
 
 Haben Sie ein anderes Gebäude im Sinn? Das fertigen wir gerne nach Maß.`
       }
@@ -933,23 +956,23 @@ Entworfen und gefertigt von Hilarius Design, wo Karton Charakter bekommt und Des
   "the-art-of-board/tezeras/tezeras.webp": {
     i18n: {
       nl: {
-        title: "Tezeras",
-        description: `Geïnspireerd op mediterrane mozaïekstukjes en Thaise reclamepanelen. Een krachtige visuele compositie op golfkarton.`,
-        body: `Voor deze Tezeras liet Paolo Sistilli zich inspireren door twee werelden: de verfijning van kleine mediterrane mozaïekstukjes en de rauwe esthetiek van grote Thaise reclamepanelen. Deze fragmenten zijn samengebracht tot een krachtig geheel op vierkante doosjes van golfkarton.
+        title: "Tezera’s",
+        description: `Paolo Sistilli liet zich voor deze Tezera’s inspireren door mediterrane mozaïekstukjes en grote Thaise reclamepanelen.`,
+        body: `De verfijnde en rauwe fragmenten vormen op vierkante doosjes van golfkarton een compositie die speelt met structuur en gelaagdheid.
 
 Verbonden door stroken karton, alsof ze letterlijk aan elkaar zijn geregen. Een subtiel detail dat het geheel versterkt.`
       },
       en: {
-        title: "Tezeras",
-        description: `Inspired by Mediterranean mosaic fragments and Thai advertising panels. A strong visual composition on corrugated cardboard.`,
-        body: `For these Tezeras, Paolo Sistilli drew inspiration from two worlds: the refinement of small Mediterranean mosaic pieces and the raw aesthetics of large Thai advertising panels. These fragments have been brought together on square corrugated cardboard boxes.
+        title: "Tezera’s",
+        description: `Paolo Sistilli drew inspiration for these Tezera’s from Mediterranean mosaic pieces and large Thai advertising panels.`,
+        body: `Refined and raw fragments form a composition on square corrugated board boxes that plays with texture and layers.
 
 Connected by strips of cardboard, as if literally threaded together. A subtle detail that strengthens the whole.`
       },
       de: {
-        title: "Tezeras",
-        description: `Inspiriert von mediterranen Mosaikstücken und thailändischen Werbetafeln. Eine kraftvolle visuelle Komposition auf Wellpappe.`,
-        body: `Für diese Tezeras ließ sich Paolo Sistilli von zwei Welten inspirieren: der Verfeinerung kleiner mediterraner Mosaikstücke und der rohen Ästhetik großer thailändischer Werbepanele. Diese Fragmente wurden auf quadratischen Wellpapp-Schachteln zu einem kraftvollen Ganzen zusammengeführt.
+        title: "Tezera’s",
+        description: `Paolo Sistilli ließ sich für diese Tezera’s von mediterranen Mosaikstücken und großen thailändischen Werbetafeln inspirieren.`,
+        body: `Feine und rohe Fragmente bilden auf quadratischen Wellpappschachteln eine Komposition, die mit Struktur und Schichtung spielt.
 
 Verbunden durch Kartonstreifen, als wären sie buchstäblich aneinandergereiht. Ein subtiles Detail, das das Ganze stärkt.`
       }
@@ -960,22 +983,22 @@ Verbunden durch Kartonstreifen, als wären sie buchstäblich aneinandergereiht. 
     i18n: {
       nl: {
         title: "Westminster Abbey",
-        description: `Gedetailleerde maquette van de Westminster Abbey van karton, in samenwerking met Fred Zwart.`,
-        body: `Met oog voor vorm, verhoudingen en verfijning zijn 's werelds bekendste gebouwen vertaald naar een verrassend toegankelijk en tastbaar ontwerp. De Westminster Abbey en de Eiffeltoren zijn tot stand gekomen in samenwerking met Fred Zwart.
+        description: `Westminster Abbey is met oog voor vorm, verhoudingen en verfijning vertaald naar een tastbaar kartonnen ontwerp.`,
+        body: `Het ontwerp kwam tot stand in samenwerking met Fred Zwart.
 
 Een ander gebouw in gedachten? Dat maken we graag op maat.`
       },
       en: {
         title: "Westminster Abbey",
-        description: `Detailed cardboard model of Westminster Abbey, created in collaboration with Fred Zwart.`,
-        body: `With attention to shape, proportions and refinement, some of the world's most famous buildings have been translated into surprisingly accessible and tangible designs. Westminster Abbey and the Eiffel Tower were both created in collaboration with Fred Zwart.
+        description: `Westminster Abbey has been translated into a tangible cardboard design with careful attention to shape, proportions and detail.`,
+        body: `The design was created in collaboration with Fred Zwart.
 
 Have a different building in mind? We are happy to make it to order.`
       },
       de: {
         title: "Westminster Abbey",
-        description: `Detailliertes Kartonmodell der Westminster Abbey, entstanden in Zusammenarbeit mit Fred Zwart.`,
-        body: `Mit Blick auf Form, Proportionen und Detailtreue wurden einige der bekanntesten Gebäude der Welt in überraschend zugängliche und greifbare Designs übertragen. Westminster Abbey und der Eiffelturm entstanden beide in Zusammenarbeit mit Fred Zwart.
+        description: `Westminster Abbey wurde mit Blick auf Form, Proportionen und Details in ein greifbares Karton-Design übertragen.`,
+        body: `Der Entwurf entstand in Zusammenarbeit mit Fred Zwart.
 
 Haben Sie ein anderes Gebäude im Sinn? Das fertigen wir gerne nach Maß.`
       }
@@ -987,21 +1010,21 @@ Haben Sie ein anderes Gebäude im Sinn? Das fertigen wir gerne nach Maß.`
       nl: {
         title: "Wild Flowers",
         description: `Bloemmotieven geïnspireerd op wilde bloemen zoals de klaproos, korenbloem en bosanemoon. Geprint op karton of dibond.`,
-        body: `Deze bloemmotieven worden in verschillende hoogtes geprint op karton of dibond. Het wordt heel mooi als het in verschillende lagen gekleurd karton wordt geplot, zoals de details van de bosanemoon.
+        body: `Deze bloemmotieven kunnen op verschillende hoogtes worden geprint op karton of dibond. Het resultaat wordt bijzonder wanneer het in lagen gekleurd karton wordt geplot, zoals bij de details van de korenbloem.
 
 U kunt ook uw eigen bloem aangeven. Wij komen graag met een voorstel.`
       },
       en: {
         title: "Wild Flowers",
         description: `Floral motifs inspired by wild flowers such as the poppy, cornflower and wood anemone. Printed on cardboard or dibond.`,
-        body: `These floral motifs are printed at various heights on cardboard or dibond. The result is particularly beautiful when plotted in multiple layers of coloured cardboard, as with the details of the wood anemone.
+        body: `These floral motifs can be printed at different heights on board or Dibond. The layered effect is particularly striking when plotted in colored board, as shown in the cornflower details.
 
 You can also suggest your own flower. We are happy to develop a proposal.`
       },
       de: {
         title: "Wildblumen",
         description: `Blumenmotive, inspiriert von Wildblumen wie Mohn, Kornblume und Buschwindröschen. Gedruckt auf Karton oder Dibond.`,
-        body: `Diese Blumenmotive werden in verschiedenen Höhen auf Karton oder Dibond gedruckt. Besonders schön wirkt es, wenn es in verschiedenen Lagen farbigen Kartons geplottet wird, wie bei den Details des Buschwindröschens.
+        body: `Diese Blumenmotive können in verschiedenen Höhen auf Karton oder Dibond gedruckt werden. Eine besondere Wirkung entsteht beim Plotten in mehreren Lagen farbigen Kartons, wie bei den Details der Kornblume.
 
 Sie können auch Ihre eigene Blume vorschlagen. Wir erstellen gerne einen Entwurf.`
       }
@@ -1009,21 +1032,22 @@ Sie können auch Ihre eigene Blume vorschlagen. Wir erstellen gerne einen Entwur
   },
 
   "interieur-exterieur/apothekerskast/apothekerskast2.webp": {
+    id: "apothekerskast",
     i18n: {
       nl: {
-        title: "Apothekerskast",
-        description: `Een apothekerskast van karton: een functioneel en decoratief object met nostalgie en uitstraling.`,
-        body: `Deze apothekerskast is ontworpen als een bijzonder interieurobject dat functionaliteit en esthetiek combineert. Volledig uit karton vervaardigd door Hilarius Design, waar karton zijn grens verlegt.`
+        title: "Apothekerskasten",
+        description: `Deze geprinte apothekerskasten zijn functioneel en decoratief.`,
+        body: `De kasten zijn ontworpen als bijzondere interieurobjecten die functionaliteit en esthetiek combineren. Hilarius Design print ze volledig uit karton en verkent daarmee de grenzen van het materiaal.`
       },
       en: {
-        title: "Pharmacist's cabinet",
-        description: `A cardboard pharmacist's cabinet: a functional and decorative object with nostalgia and character.`,
-        body: `This pharmacist's cabinet is designed as a special interior object that combines functionality with aesthetics. Made entirely from cardboard by Hilarius Design, where cardboard pushes its limits.`
+        title: "Apothecary cabinets",
+        description: `These printed apothecary cabinets are both functional and decorative.`,
+        body: `The cabinets are designed as distinctive interior objects that combine function and aesthetics. Hilarius Design prints them entirely from cardboard, exploring the limits of the material.`
       },
       de: {
-        title: "Apothekerschrank",
-        description: `Ein Apothekerschrank aus Karton: ein funktionales und dekoratives Objekt mit Nostalgie und Ausstrahlung.`,
-        body: `Dieser Apothekerschrank wurde als besonderes Interieur-Objekt entworfen, das Funktionalität und Ästhetik verbindet. Vollständig aus Karton gefertigt von Hilarius Design, wo Karton seine Grenzen auslotet.`
+        title: "Apothekerschränke",
+        description: `Diese bedruckten Apothekerschränke sind funktional und dekorativ.`,
+        body: `Die Schränke wurden als besondere Interieurobjekte entworfen, die Funktion und Ästhetik verbinden. Hilarius Design druckt sie vollständig aus Karton und lotet damit die Grenzen des Materials aus.`
       }
     }
   },
@@ -1053,17 +1077,17 @@ Sie können auch Ihre eigene Blume vorschlagen. Wir erstellen gerne einen Entwur
       nl: {
         title: "Gebouwen",
         description: `Gedetailleerde kartonnen gebouwen als architectuurmodel of decoratief object.`,
-        body: `Van villa tot fabriekshal: Hilarius Design vertaalt architectuur naar nauwkeurige kartonnen modellen. Perfect voor presentaties, tentoonstellingen of als uniek relatiegeschenk voor de bouwwereld.`
+        body: `Van villa tot fabriekshal: Hilarius Design vertaalt architectuur naar nauwkeurige kartonnen modellen. Geschikt voor presentaties, tentoonstellingen of als uniek relatiegeschenk.`
       },
       en: {
         title: "Buildings",
         description: `Detailed cardboard buildings as architectural models or decorative objects.`,
-        body: `From villa to factory hall: Hilarius Design translates architecture into accurate cardboard models. Perfect for presentations, exhibitions or as a unique corporate gift for the construction sector.`
+        body: `From a villa to a factory hall, Hilarius Design translates architecture into accurate cardboard models. They work for presentations, exhibitions or as a unique corporate gift.`
       },
       de: {
         title: "Gebäude",
         description: `Detaillierte Kartongebäude als Architekturmodell oder Dekorationsobjekt.`,
-        body: `Von der Villa bis zur Fabrikhalle: Hilarius Design übersetzt Architektur in präzise Kartonmodelle. Perfekt für Präsentationen, Ausstellungen oder als einzigartiges Werbegeschenk für die Baubranche.`
+        body: `Von der Villa bis zur Fabrikhalle übersetzt Hilarius Design Architektur in präzise Kartonmodelle. Sie eignen sich für Präsentationen, Ausstellungen oder als einzigartiges Werbegeschenk.`
       }
     }
   },
@@ -1072,18 +1096,24 @@ Sie können auch Ihre eigene Blume vorschlagen. Wir erstellen gerne einen Entwur
     i18n: {
       nl: {
         title: "Maquette",
-        description: `Nauwkeurige kartonnen maquettes voor architectuur, stedenbouw en presentaties.`,
-        body: `Hilarius Design ontwerpt en produceert kartonnen maquettes die vorm en schaal precies weergeven. Een onmisbaar hulpmiddel bij presentaties en een indrukwekkend visitekaartje voor uw project.`
+        description: `Deze groene maquette van het hoofdkantoor van Rabobank in Utrecht bestaat uit 38 lagen gerecycled karton.`,
+        body: `De maquette werd gemaakt als geschenk voor medewerkers van de buitenlandse vestigingen van de bank. Hilarius Design ontwerpt en produceert kartonnen maquettes die vorm en schaal precies weergeven.
+
+Ook een eigen maquette laten maken? Neem contact op voor een voorstel.`
       },
       en: {
         title: "Scale model",
-        description: `Accurate cardboard scale models for architecture, urban planning and presentations.`,
-        body: `Hilarius Design designs and produces cardboard scale models that accurately represent form and scale. An indispensable tool for presentations and an impressive showcase for your project.`
+        description: `This green scale model of Rabobank's headquarters in Utrecht is made from 38 layers of recycled board.`,
+        body: `The model was created as a gift for employees at the bank's international branches. Hilarius Design designs and produces cardboard models that accurately reproduce form and scale.
+
+Interested in a custom scale model? Contact us for a proposal.`
       },
       de: {
         title: "Modell",
-        description: `Präzise Kartonmodelle für Architektur, Städtebau und Präsentationen.`,
-        body: `Hilarius Design entwirft und produziert Kartonmodelle, die Form und Maßstab präzise wiedergeben. Ein unverzichtbares Hilfsmittel bei Präsentationen und eine beeindruckende Visitenkarte für Ihr Projekt.`
+        description: `Dieses grüne Modell der Rabobank-Zentrale in Utrecht besteht aus 38 Schichten recyceltem Karton.`,
+        body: `Das Modell entstand als Geschenk für Mitarbeiter der ausländischen Niederlassungen der Bank. Hilarius Design entwirft und produziert Kartonmodelle, die Form und Maßstab präzise wiedergeben.
+
+Möchten Sie ein eigenes Modell anfertigen lassen? Kontaktieren Sie uns für einen Vorschlag.`
       }
     }
   },
@@ -1093,9 +1123,10 @@ Sie können auch Ihre eigene Blume vorschlagen. Wir erstellen gerne einen Entwur
   // ═══════════════════════════════════════════════════════════════
 
   "eindejaarsgeschenken/compilatie/compilatie-1.webp": {
+    id: "compilatie",
     i18n: {
       nl: {
-        title: "Compilatie",
+        title: "Eindejaarsgeschenken",
         description: `Originele kartonnen eindejaarsgeschenken die originaliteit combineren met duurzaamheid.`,
         body: `Verras uw relaties en waardeer uw medewerkers met een geschenk dat blijft hangen. Onze kartonnen eindejaarsgeschenken zijn perfect afgestemd op uw merk en de ontvanger.
 
@@ -1104,7 +1135,7 @@ Bij Hilarius Design krijgt oud papier en karton een nieuw leven als een uniek du
 Het is een investering in waardering en langdurige relaties.`
       },
       en: {
-        title: "Compilation",
+        title: "Year-end gifts",
         description: `Original cardboard year-end gifts that combine originality with sustainability.`,
         body: `Surprise your clients and show appreciation to your staff with a gift that leaves a lasting impression. Our cardboard year-end gifts are tailored to your brand and the recipient.
 
@@ -1113,7 +1144,7 @@ At Hilarius Design, old paper and cardboard gain a new life as a sustainable cor
 It is an investment in appreciation and long-lasting relationships.`
       },
       de: {
-        title: "Zusammenstellung",
+        title: "Jahresendgeschenke",
         description: `Originelle Karton-Jahresendgeschenke, die Originalität mit Nachhaltigkeit verbinden.`,
         body: `Überraschen Sie Ihre Geschäftspartner und würdigen Sie Ihre Mitarbeiter mit einem Geschenk, das in Erinnerung bleibt. Unsere Karton-Jahresendgeschenke sind perfekt auf Ihre Marke und den Empfänger abgestimmt.
 
@@ -1206,32 +1237,32 @@ Disponible en varias versiones y totalmente adaptable a sus deseos.`
     `Impreso completamente a medida con su identidad visual, este tren llega directamente al corazón de sus relaciones. Original, reconocible y sostenible: un regalo que refuerza la conexión.`
   ),
   "transport/vliegtuigen/vliegtuigen2.webp": translatedProject(
-    "Avions",
-    `Donnez un départ en fanfare à vos nouvelles relations. Des avions en carton comme cadeau d'affaires original.`,
-    `Ces avions en carton sont entièrement imprimés à votre identité visuelle et peuvent être remplis de bonbons, de chocolat ou d'une petite surprise. Un cadeau qui attire l'attention et stimule l'imagination.
+    "Avions en carton",
+    `The sky is the limit. Offrez un départ réussi à vos nouvelles relations avec un biplan en carton entièrement recyclable.`,
+    `Les biplans peuvent être imprimés selon vos souhaits et sont livrés à plat, afin de pouvoir les envoyer dans une enveloppe. Ils se montent facilement après réception.
 
-The sky is the limit!`,
-    "Aviones",
-    `Dé a sus nuevas relaciones un despegue brillante. Aviones de cartón como regalo corporativo original.`,
-    `Estos aviones de cartón se imprimen completamente con su identidad visual y son perfectos para llenar con caramelos, chocolate o una pequeña sorpresa. Un regalo que llama la atención y despierta la imaginación.
+Imaginez votre avion sur de nombreux bureaux. Demandez un devis pour votre version personnalisée.`,
+    "Aviones de cartón",
+    `The sky is the limit. Dé a sus nuevas relaciones un buen despegue con un biplano de cartón totalmente reciclable.`,
+    `Los biplanos pueden imprimirse a medida y se entregan planos, de modo que puede enviarlos en un sobre. Se montan fácilmente después de la entrega.
 
-The sky is the limit!`
+Imagine su avión en numerosos escritorios. Solicite un presupuesto para su versión personalizada.`
   ),
   "transport/vrachtwagens/vrachtwagens2-2.webp": translatedProject(
     "Camions",
-    `Le roi de la route. Des camions en carton, parfaits pour emballer une bouteille de vin, de bière ou des friandises de manière originale.`,
-    `Avec nos camions, cela reste aussi abordable. Ces véhicules sont imprimés à votre identité visuelle, afin que votre cadeau reste un point d'attention sur le bureau de vos relations.
+    `Le roi de la route à un prix accessible. Des camions en carton pour emballer une bouteille de vin, de bière ou des friandises de manière originale.`,
+    `Les véhicules sont imprimés à votre identité visuelle, afin que votre cadeau reste bien visible sur le bureau de vos relations.
 
 Dimensions : 348 x 86 x 114 mm (L x l x h).
 
-Vous souhaitez d'autres véhicules en carton ? Consultez hilariusdesign.nl ou contactez-nous pour un design sur mesure. The sky is the limit!`,
+Vous souhaitez un autre design ? Nous le développons volontiers avec vous.`,
     "Camiones",
-    `El rey de la carretera. Camiones de cartón, perfectos para embalar una botella de vino, cerveza o dulces de forma original.`,
-    `Con nuestros camiones, además, sigue siendo asequible. Estos vehículos se imprimen con su identidad visual, para que su regalo siga llamando la atención en el escritorio de sus relaciones.
+    `El rey de la carretera a un precio accesible. Camiones de cartón para embalar una botella de vino, cerveza o dulces de forma original.`,
+    `Los vehículos se imprimen con su identidad visual, para que su regalo permanezca visible en el escritorio de sus clientes.
 
 Dimensiones: 348 x 86 x 114 mm (l x a x h).
 
-¿Le interesan otros vehículos de cartón? Visite hilariusdesign.nl o contáctenos para un diseño a medida. The sky is the limit!`
+¿Desea otro diseño? Lo desarrollamos con usted.`
   ),
   "bureau-accessoires/bureaukalenders/bureaukalenders3.webp": translatedProject(
     "Calendriers de bureau",
@@ -1240,7 +1271,7 @@ Dimensiones: 348 x 86 x 114 mm (l x a x h).
 
 Format calendrier de bureau : 210 x 75 x 70 mm (L x l x h). Les calendriers sont livres a plat.
 
-Également disponible comme calendrier mural en 420 x 297 mm ou 297 x 420 mm.
+Également disponible comme calendrier mural en 420 x 297 mm, 297 x 420 mm ou 210 x 297 mm.
 
 Durable, reconnaissable et pratique : le cadeau d'affaires qui reste debout.`,
     "Calendarios de escritorio",
@@ -1249,7 +1280,7 @@ Durable, reconnaissable et pratique : le cadeau d'affaires qui reste debout.`,
 
 Formato calendario de escritorio: 210 x 75 x 70 mm (l x a x h). Los calendarios se entregan planos.
 
-También disponible como calendario de pared en 420 x 297 mm o 297 x 420 mm.
+También disponible como calendario de pared en 420 x 297 mm, 297 x 420 mm o 210 x 297 mm.
 
 Sostenible, reconocible y práctico: el regalo corporativo que permanece.`
   ),
@@ -1294,20 +1325,24 @@ Sostenible, reconocible y práctico: el regalo corporativo que permanece.`
     `Hilarius Design diseña y produce construcciones pop-up que captan la atención al abrirse. Una forma espectacular de presentar su mensaje, completamente con su identidad visual.`
   ),
   "verpakkingen/bloemenverpakking/bloemendozen2.webp": translatedProject(
-    "Emballage pour fleurs",
-    `Des emballages floraux originaux en carton qui présentent un bouquet comme un vrai cadeau.`,
-    `Hilarius Design conçoit des emballages pour fleurs qui présentent et protègent le bouquet de manière optimale. Entièrement à votre image, ils ajoutent une touche élégante à chaque occasion.`,
-    "Embalaje para flores",
-    `Embalajes florales originales de cartón que presentan un ramo como un verdadero regalo.`,
-    `Hilarius Design diseña embalajes para flores que presentan y protegen el ramo de forma óptima. Totalmente con su identidad visual, son un complemento elegante para cualquier ocasión.`
+    "Emballage pour boutures de rosiers",
+    `Offrez aux boutures de rosiers la présentation qu'elles méritent avec un emballage en carton sur mesure.`,
+    `L'emballage protège les boutures pendant le transport tout en leur donnant une présentation soignée et professionnelle. Hilarius Design adapte chaque emballage de transport, emballage de présentation et display à votre identité visuelle.
+
+Vous recherchez un emballage pratique et distinctif ? Nous développons une solution sur mesure qui met votre produit en valeur et crée une bonne première impression.`,
+    "Embalaje para esquejes de rosal",
+    `Dé a los esquejes de rosal la presentación que merecen con un embalaje de cartón a medida.`,
+    `El embalaje protege los esquejes durante el transporte y les da una apariencia cuidada y profesional. Hilarius Design adapta cada embalaje de transporte, embalaje de presentación y expositor a su identidad visual.
+
+¿Busca un embalaje práctico y distintivo? Desarrollamos una solución a medida que destaca su producto y crea una buena primera impresión.`
   ),
   "verpakkingen/cd-verpakking/cdverpakking2.webp": translatedProject(
-    "Emballage CD",
-    `Des emballages CD particuliers en carton qui donnent à votre musique ou présentation une allure professionnelle.`,
-    `Ces emballages CD sur mesure en carton donnent à votre produit une présentation propre. Entièrement à votre identité visuelle, d'une finition simple à une finition haut de gamme.`,
-    "Embalaje para CD",
-    `Embalajes especiales de cartón para CD que dan a su música o presentación una apariencia profesional.`,
-    `Estos embalajes para CD hechos a medida dan a su producto una presentación propia. Totalmente con su identidad visual, desde un acabado sencillo hasta uno premium.`
+    "Pochette de disque",
+    `Une pochette de disque particulière en carton qui donne à votre musique ou présentation une allure professionnelle.`,
+    `Cette pochette sur mesure valorise votre produit avec une finition haut de gamme.`,
+    "Funda para disco",
+    `Una funda especial de cartón que da a su música o presentación una apariencia profesional.`,
+    `Esta funda hecha a medida aporta valor a su producto con un acabado de alta calidad.`
   ),
   "verpakkingen/chocoladedoosje/twee_chocoladedoosjes.webp": translatedProject(
     "Boîte à chocolats",
@@ -1320,30 +1355,30 @@ Sostenible, reconocible y práctico: el regalo corporativo que permanece.`
   "verpakkingen/handtasjes/IMG_1012.webp": translatedProject(
     "Sacs à main",
     `Offrir avec style. Des sacs à main luxueux en carton qui transforment chaque cadeau en expérience élégante.`,
-    `Parfaits pour surprendre vos relations, remercier vos collaborateurs ou renforcer votre marque lors de moments spéciaux. Très adaptés au champagne, au vin, aux délicatesses, à la lingerie, à la mode et aux cosmétiques.
+    `Parfaits pour surprendre vos relations, remercier vos collaborateurs ou renforcer votre marque lors de moments spéciaux. Adaptés au champagne, au vin, aux produits fins, à la lingerie, à la mode et aux cosmétiques.
 
-Grâce à la finition de qualité et au carton ondulé robuste, ils associent une allure luxueuse à une durabilité pratique. Disponibles en carton blanc, noir ou brun et entièrement personnalisables.
+La finition de qualité et le carton ondulé robuste associent une allure haut de gamme à un usage pratique. Disponibles en carton ondulé blanc, noir ou brun et entièrement personnalisables.
 
-Prix sur demande à partir de 250 pièces. Artwork et une correction inclus, hors 21% de TVA.`,
+Prix sur demande à partir de 250 pièces.`,
     "Bolsos",
     `Regalar con estilo. Bolsos de cartón de lujo que convierten cualquier regalo en una experiencia elegante.`,
-    `Perfectos para sorprender a sus relaciones, agradecer al personal o reforzar su marca en momentos especiales. Muy adecuados para champán, vino, delicatessen, lencería, moda y cosmética.
+    `Perfectos para sorprender a sus clientes, agradecer a sus empleados o reforzar su marca en momentos especiales. Aptos para champán, vino, productos delicatessen, lencería, moda y cosmética.
 
-Gracias al acabado de alta calidad y al cartón corrugado resistente, combinan una imagen lujosa con durabilidad práctica. Disponibles en cartón blanco, negro o marrón y totalmente personalizables.
+El acabado de alta calidad y el cartón corrugado resistente combinan una imagen exclusiva con un uso práctico. Disponibles en cartón corrugado blanco, negro o marrón y totalmente personalizables.
 
-Precio bajo solicitud desde 250 unidades. Incluye artwork y una ronda de corrección, excluido el 21% de IVA.`
+Precio bajo solicitud a partir de 250 unidades.`
   ),
   "verpakkingen/magic-packaging/magictubes2.webp": translatedProject(
     "Magic Packaging",
-    `L'emballage pour champagne ou vin le plus original au monde. D'un simple coup sur le dessus, la boîte s'ouvre comme une fleur.`,
-    `Découvrez le magic packaging de Hilarius Design : d'un simple coup, la boîte s'ouvre comme une fleur et présente magnifiquement la bouteille. Disponible en rose vif et dans d'autres couleurs sur demande.
+    `Un emballage original pour champagne ou vin qui s'ouvre comme une fleur d'une simple pression sur le dessus.`,
+    `À l'ouverture, l'emballage présente immédiatement la bouteille. Disponible en noir, blanc et rouge. D'autres couleurs sont possibles sur demande.
 
-Nous développons des emballages originaux sur mesure, parfaitement adaptés à vos souhaits.`,
+Hilarius Design développe également des emballages originaux sur mesure, adaptés à vos besoins.`,
     "Magic Packaging",
-    `El embalaje para champán o vino más original del mundo. Con un simple toque en la parte superior, la caja se abre como una flor.`,
-    `Descubra el magic packaging de Hilarius Design: con un solo toque la caja se abre como una flor y presenta la botella de forma espectacular. Disponible en rosa llamativo y otros colores bajo solicitud.
+    `Un embalaje original para champán o vino que se abre como una flor con un ligero toque en la parte superior.`,
+    `Al abrirse, el embalaje presenta la botella de inmediato. Disponible en negro, blanco y rojo. Otros colores están disponibles bajo solicitud.
 
-Desarrollamos embalajes originales a medida, perfectamente adaptados a sus deseos.`
+Hilarius Design también desarrolla embalajes originales a medida, adaptados a sus necesidades.`
   ),
   "verpakkingen/ontspiegelde-showcase/luxar2.webp": translatedProject(
     "Vitrine antireflet",
@@ -1364,58 +1399,58 @@ Desarrollamos embalajes originales a medida, perfectamente adaptados a sus deseo
   "verpakkingen/uitklapdoos/metopdoos2.webp": translatedProject(
     "Boîte dépliable",
     `Une boîte dépliable qui surprend à l'ouverture et présente son contenu de manière spectaculaire.`,
-    `La boîte dépliable de Hilarius Design associe fonctionnalité et moment d'ouverture surprenant. Entièrement réalisée à votre identité visuelle, elle est le cadeau d'affaires idéal pour les occasions spéciales.`,
+    `La boîte dépliable de Hilarius Design associe fonction et moment d'ouverture surprenant. Réalisée à votre identité visuelle, elle offre un emballage élégant pour les occasions spéciales.`,
     "Caja desplegable",
     `Una caja desplegable que sorprende al abrirse y presenta el contenido de forma espectacular.`,
-    `La caja desplegable de Hilarius Design combina funcionalidad con un momento de apertura sorprendente. Fabricada completamente con su identidad visual, es el regalo corporativo ideal para ocasiones especiales.`
+    `La caja desplegable de Hilarius Design combina función con un momento de apertura sorprendente. Fabricada con su identidad visual, ofrece un embalaje elegante para ocasiones especiales.`
   ),
   "verpakkingen/viko-kokers/vikokoker2.webp": translatedProject(
-    "Tubes Viko",
-    `Des tubes Viko originaux en carton : un emballage élégant et protecteur pour rouleaux et documents.`,
-    `Les tubes Viko sont développés pour une présentation élégante et un transport sûr de posters, documents et autres produits enroulés. Entièrement imprimés à votre identité visuelle.`,
-    "Tubos Viko",
-    `Tubos Viko originales de cartón: un embalaje elegante y protector para rollos y documentos.`,
-    `Los tubos Viko se han desarrollado para una presentación elegante y un transporte seguro de posters, documentos y otros productos enrollados. Totalmente impresos con su identidad visual.`
+    "Un tube rond devient carré",
+    `Le tube Viko carré est solide, se stocke à plat et convient au traitement automatisé par PostNL.`,
+    `Hilarius Design a développé ce tube avec PostNL Pakketservice après de nombreux essais. Une fois monté, il peut être traité automatiquement dans les centres de tri de PostNL. Sa fermeture rend agrafes et ruban adhésif inutiles et permet un tarif d'expédition inférieur.
+
+L'impression à votre identité visuelle est possible à partir de 500 pièces. Contactez-nous pour un devis sans engagement.`,
+    "Un tubo redondo se vuelve cuadrado",
+    `El tubo Viko cuadrado es resistente, se almacena plano y es apto para el procesamiento automatizado de PostNL.`,
+    `Hilarius Design desarrolló el tubo junto con PostNL Pakketservice después de numerosas pruebas. Una vez montado, puede procesarse de forma automatizada en los centros de clasificación de PostNL. El cierre hace innecesarias las grapas y la cinta adhesiva y permite una tarifa de envío más baja.
+
+La impresión con su identidad visual está disponible a partir de 500 unidades. Contáctenos para solicitar un presupuesto sin compromiso.`
   ),
   "verpakkingen/wijnverpakkingen/IMG_0579_3vakswijndoos.webp": translatedProject(
     "Emballages pour vin",
-    `Boîtes à vin durables pour 1, 2 ou 3 bouteilles. Légères, écologiques et une alternative élégante aux caisses en bois.`,
-    `Ces boîtes à vin en carton sont disponibles pour 1, 2 ou 3 bouteilles et associent une apparence élégante à un usage pratique. Légères, écologiques et parfaites pour l'emballage et la présentation.
-
-Entièrement personnalisables à votre identité visuelle.`,
+    `Emballages cadeaux en carton ondulé pour une, deux ou trois bouteilles.`,
+    `Ces emballages légers associent une allure élégante à un usage pratique et conviennent aussi bien à l'emballage qu'à la présentation.`,
     "Embalajes para vino",
-    `Cajas de vino sostenibles para 1, 2 o 3 botellas. Ligeras, ecológicas y una alternativa elegante a las cajas de madera.`,
-    `Estas cajas de vino de cartón están disponibles para 1, 2 o 3 botellas y combinan una apariencia elegante con comodidad práctica. Ligeras, ecológicas y perfectas para embalaje y presentación.
-
-Totalmente personalizables con su identidad visual.`
+    `Embalajes de regalo de cartón corrugado para una, dos o tres botellas.`,
+    `Estos embalajes ligeros combinan una apariencia elegante con un uso práctico y sirven tanto para embalar como para presentar.`
   ),
   "verpakkingen/zakken/zakkengroot.webp": translatedProject(
-    "Sacs",
-    `Des sacs et cabas en carton comme emballage élégant pour vos produits et cadeaux d'affaires.`,
-    `Hilarius Design conçoit et produit des sacs en carton en divers formats et versions. Entièrement imprimés à votre identité visuelle, ils deviennent une carte de visite pour votre marque à chaque occasion.`,
-    "Bolsas",
-    `Bolsas y asas de cartón como embalaje elegante para sus productos y regalos corporativos.`,
-    `Hilarius Design diseña y produce bolsas de cartón en diversos formatos y versiones. Totalmente impresas con su identidad visual, son una tarjeta de presentación para su marca en cada ocasión.`
+    "Sacs à fond plat",
+    `Des sacs à fond plat en carton et des sacs en papier comme emballages élégants pour vos produits.`,
+    `Hilarius Design produit des sacs à fond plat et des sacs en papier en différents formats et versions. Imprimés à votre identité visuelle, ils deviennent une carte de visite pour votre marque.`,
+    "Bolsas de fondo plano",
+    `Bolsas de fondo plano de cartón y bolsas de papel como embalajes elegantes para sus productos.`,
+    `Hilarius Design produce bolsas de fondo plano y bolsas de papel en distintos formatos y versiones. Impresas con su identidad visual, se convierten en una tarjeta de presentación para su marca.`
   ),
   "boeken-mappen/boekverpakkingen/libris2.webp": translatedProject(
     "Emballages pour livres",
     `La présentation fait la différence. Des étuis sur mesure pour des livres particuliers, comme lors de la remise du prix Libris.`,
-    `Un livre offre des heures, des jours et parfois des années de plaisir de lecture, ce qui en fait un cadeau d'affaires idéal. Mais la présentation fait la différence. Choisissez-vous un papier cadeau standard ou un étui durable réalisé sur mesure ?
+    `Un livre offre des heures, des jours et parfois des années de plaisir de lecture, ce qui en fait un beau cadeau d'affaires. Mais la présentation fait la différence. Choisissez-vous un papier cadeau standard ou un étui sur mesure en carton recyclé ?
 
 L'emballage présenté ici a été utilisé lors de la remise du prix Libris, où les lauréats ont emporté leur livre dans cette présentation exclusive.`,
     "Embalajes para libros",
     `La presentación marca la diferencia. Estuches a medida para libros especiales, como en la entrega del Premio Libris.`,
-    `Un libro ofrece horas, días e incluso años de placer de lectura, por lo que es un regalo corporativo perfecto. Pero la presentación marca la diferencia. ¿Elige papel de regalo estándar o un estuche sostenible hecho a medida?
+    `Un libro ofrece horas, días e incluso años de lectura, por lo que es un buen regalo corporativo. Pero la presentación marca la diferencia. ¿Elige papel de regalo estándar o un estuche a medida de cartón reciclado?
 
 El embalaje mostrado se utilizó en la entrega del Premio Libris, donde los ganadores se llevaron su libro en esta presentación exclusiva.`
   ),
   "boeken-mappen/euromap/euromap2.webp": translatedProject(
     "Dossier Euromap",
     `Édité lors de l'introduction de l'euro en 2002. Toutes les pièces des douze pays participants y trouvent leur place.`,
-    `Ces dossiers uniques ont été édités lors de l'introduction de l'euro en 2002. Toutes les pièces des douze pays membres de l'époque y trouvent leur place. Un objet historique qui marque l'arrivée d'une nouvelle ère.`,
+    `Ces dossiers uniques ont été édités lors de l'introduction de l'euro en 2002. Toutes les pièces des douze pays membres de l'époque y trouvent leur place.`,
     "Carpeta Euromap",
     `Editada con la introducción del euro en 2002. Todas las monedas de los doce países participantes caben en su interior.`,
-    `Estas carpetas únicas se editaron con la introducción del euro en 2002. Todas las monedas de los doce países miembros de entonces caben en su interior. Un recuerdo histórico de la llegada de una nueva era.`
+    `Estas carpetas únicas se editaron con la introducción del euro en 2002. Todas las monedas de los doce países miembros de entonces caben en su interior.`
   ),
   "boeken-mappen/golfrecords/golfrecords2.webp": translatedProject(
     "Livre des records de golf",
@@ -1447,11 +1482,15 @@ El folleto está disponible en neerlandés, inglés y alemán. Ideal para un pú
   ),
   "boeken-mappen/informatiemap/informatiemap2.webp": translatedProject(
     "Dossier d'information",
-    `Des dossiers informatifs qui présentent votre documentation de manière professionnelle et élégante.`,
-    `Hilarius Design conçoit des dossiers d'information entièrement à votre identité visuelle. Robustes, clairs et conçus pour impressionner vos clients et relations.`,
+    `Partagez clairement vos informations avec vos collaborateurs ou relations dans un dossier sur mesure.`,
+    `Hilarius Design conçoit des dossiers d'information pour les formations, les cours et d'autres applications. Le dossier présenté a permis à des médecins d'expliquer clairement leur politique de traitement du TDAH aux parents et aux enfants.
+
+Vous souhaitez faire réaliser votre propre dossier d'information ? Contactez-nous pour une proposition.`,
     "Carpeta informativa",
-    `Carpetas informativas que presentan su documentación de forma profesional y elegante.`,
-    `Hilarius Design diseña carpetas informativas totalmente con su identidad visual. Robustas, claras y creadas para causar impresión en sus clientes y relaciones.`
+    `Comparta información de forma clara con empleados o clientes mediante una carpeta informativa a medida.`,
+    `Hilarius Design diseña carpetas informativas para formaciones, cursos y otras aplicaciones. Los médicos utilizaron la carpeta mostrada para explicar claramente su política de medicación para el TDAH a padres y niños.
+
+¿Desea crear su propia carpeta informativa? Contáctenos para recibir una propuesta.`
   ),
   "boeken-mappen/kunstmappen/kunstmappen2.webp": translatedProject(
     "Dossiers d'art",
@@ -1482,12 +1521,16 @@ Hilarius Design diseña carpetas completamente con su identidad visual, incorpor
     `Convierta el team building o la gestión de relaciones en una verdadera experiencia. Este juego de mesa tridimensional se adapta completamente a su organización y objetivos. Una forma original de vincular su marca a una experiencia positiva y compartida.`
   ),
   "spellen/poulebal/poulebal2.webp": translatedProject(
-    "Jeu Poulebal",
-    `Le jeu Poulebal : un jeu stimulant et amusant pour les groupes, parfait comme cadeau d'affaires.`,
-    `Jouez, défiez-vous et riez ensemble. Le jeu Poulebal de Hilarius Design est un excellent outil pour les activités d'équipe et peut être entièrement personnalisé pour votre organisation.`,
-    "Juego Poulebal",
-    `El juego Poulebal: un juego desafiante y entretenido para grupos, perfecto como regalo corporativo.`,
-    `Jugar, retar y reír juntos. El juego Poulebal de Hilarius Design es una excelente herramienta para actividades de equipo y puede personalizarse completamente para su organización.`
+    "Poulebal",
+    `Un jeu de pronostics football qui garde votre logo et le nom de votre entreprise visibles pendant la Coupe du monde et l'Euro.`,
+    `Le Poulebal peut être entièrement imprimé selon vos souhaits. Il est livré à plat et se monte facilement après réception. Sa construction solide tient pendant tout le tournoi et reste ensuite longtemps sur le bureau.
+
+Vous souhaitez un Poulebal avec votre logo ? Contactez-nous pour un devis sans engagement.`,
+    "Poulebal",
+    `Una quiniela de fútbol que mantiene visibles su logotipo y el nombre de su empresa durante el Mundial y la Eurocopa.`,
+    `El Poulebal puede imprimirse completamente a medida. Se entrega plano y se monta fácilmente después de la entrega. Su construcción resistente dura todo el torneo y permanece mucho tiempo en el escritorio.
+
+¿Desea un Poulebal con su logotipo? Contáctenos para solicitar un presupuesto sin compromiso.`
   ),
   "spellen/puzzel/puzzel2.webp": translatedProject(
     "Puzzle",
@@ -1499,11 +1542,11 @@ Hilarius Design diseña carpetas completamente con su identidad visual, incorpor
   ),
   "spellen/schaakspel/schaakspel2.webp": translatedProject(
     "Jeu d'échecs",
-    `De beaux jeux d'échecs disponibles en plusieurs couleurs et formats. Une partie d'échecs entre deux rendez-vous.`,
-    `Nos jeux d'échecs en carton sont à la fois fonctionnels et décoratifs. Ils associent le jeu classique au matériau unique qu'est le carton. Un cadeau d'affaires original pour amateurs d'échecs, qui se distingue aussi comme objet design.`,
+    `Un jeu d'échecs en carton à la fois fonctionnel et décoratif.`,
+    `La réalisation en carton donne à ce jeu classique un caractère particulier. C'est un cadeau d'affaires original pour les amateurs d'échecs et un objet design qui se remarque.`,
     "Ajedrez",
-    `Bonitos juegos de ajedrez disponibles en varios colores y tamaños. Una partida de ajedrez entre reuniones.`,
-    `Nuestros juegos de ajedrez de cartón son funcionales y decorativos. Combinan el juego clásico con el material único del cartón. Un regalo corporativo original para amantes del ajedrez que también destaca como objeto de diseño.`
+    `Un juego de ajedrez de cartón funcional y decorativo.`,
+    `La fabricación en cartón da a este juego clásico un carácter propio. Es un regalo corporativo original para amantes del ajedrez y también destaca como objeto de diseño.`
   ),
   "spellen/werpspel/werpspel2.webp": translatedProject(
     "Jeu de lancer",
@@ -1515,13 +1558,13 @@ Hilarius Design diseña carpetas completamente con su identidad visual, incorpor
   ),
   "the-art-of-board/eiffeltoren/eiffeltoren1.webp": translatedProject(
     "Tour Eiffel",
-    `La tour Eiffel reproduite en carton jusque dans les détails, en collaboration avec Fred Zwart.`,
-    `Avec attention à la forme, aux proportions et à la finesse, ce monument mondialement connu a été traduit en un design en carton surprenant, accessible et tangible. Réalisé en collaboration avec Fred Zwart.
+    `La tour Eiffel a été traduite en un design tangible en carton avec une grande attention à la forme, aux proportions et aux détails.`,
+    `Le design a été réalisé en collaboration avec Fred Zwart.
 
 Vous avez un autre bâtiment en tête ? Nous le réalisons volontiers sur mesure.`,
     "Torre Eiffel",
-    `La Torre Eiffel reproducida en cartón hasta el último detalle, en colaboración con Fred Zwart.`,
-    `Con atención a la forma, las proporciones y el refinamiento, este monumento mundialmente famoso se ha traducido a un diseño de cartón sorprendentemente accesible y tangible. Realizado en colaboración con Fred Zwart.
+    `La Torre Eiffel se ha traducido a un diseño tangible de cartón con atención a la forma, las proporciones y los detalles.`,
+    `El diseño se creó en colaboración con Fred Zwart.
 
 ¿Tiene otro edificio en mente? Lo realizamos con gusto a medida.`
   ),
@@ -1538,48 +1581,48 @@ Conçue et fabriquée par Hilarius Design, où le carton prend du caractère et 
 Diseñada y fabricada por Hilarius Design, donde el cartón adquiere carácter y el diseño cuenta una historia personal.`
   ),
   "the-art-of-board/tezeras/tezeras.webp": translatedProject(
-    "Tezeras",
-    `Inspiré par des fragments de mosaïque méditerranéenne et des panneaux publicitaires thaïlandais. Une composition visuelle forte sur carton ondulé.`,
-    `Pour ces Tezeras, Paolo Sistilli s'est inspiré de deux mondes : la finesse de petits fragments de mosaïque méditerranéenne et l'esthétique brute de grands panneaux publicitaires thaïlandais. Ces fragments sont réunis sur des boîtes carrées en carton ondulé.
+    "Tezera’s",
+    `Paolo Sistilli s'est inspiré pour ces Tezera’s de fragments de mosaïque méditerranéenne et de grands panneaux publicitaires thaïlandais.`,
+    `Les fragments raffinés et bruts forment sur des boîtes carrées en carton ondulé une composition qui joue avec la structure et les couches.
 
 Reliés par des bandes de carton, comme s'ils étaient littéralement enfilés. Un détail subtil qui renforce l'ensemble.`,
-    "Tezeras",
-    `Inspirado en fragmentos de mosaico mediterráneo y paneles publicitarios tailandeses. Una composición visual potente sobre cartón corrugado.`,
-    `Para estas Tezeras, Paolo Sistilli se inspiró en dos mundos: la delicadeza de pequeños fragmentos de mosaico mediterráneo y la estética cruda de grandes paneles publicitarios tailandeses. Estos fragmentos se unen sobre cajas cuadradas de cartón corrugado.
+    "Tezera’s",
+    `Paolo Sistilli se inspiró para estas Tezera’s en fragmentos de mosaicos mediterráneos y grandes paneles publicitarios tailandeses.`,
+    `Los fragmentos refinados y crudos forman sobre cajas cuadradas de cartón corrugado una composición que juega con la estructura y las capas.
 
 Conectados por tiras de cartón, como si estuvieran literalmente ensartados. Un detalle sutil que refuerza el conjunto.`
   ),
   "the-art-of-board/westminster-abbey/westminster-abbey1.webp": translatedProject(
     "Westminster Abbey",
-    `Maquette détaillée de Westminster Abbey en carton, réalisée en collaboration avec Fred Zwart.`,
-    `Avec attention à la forme, aux proportions et à la finesse, certains des bâtiments les plus connus au monde ont été traduits en designs accessibles et tangibles. Westminster Abbey et la tour Eiffel ont toutes deux été réalisées en collaboration avec Fred Zwart.
+    `Westminster Abbey a été traduite en un design tangible en carton avec une grande attention à la forme, aux proportions et aux détails.`,
+    `Le design a été réalisé en collaboration avec Fred Zwart.
 
 Vous avez un autre bâtiment en tête ? Nous le réalisons volontiers sur mesure.`,
     "Westminster Abbey",
-    `Maqueta detallada de Westminster Abbey en cartón, realizada en colaboración con Fred Zwart.`,
-    `Con atención a la forma, las proporciones y el refinamiento, algunos de los edificios más conocidos del mundo se han traducido a diseños accesibles y tangibles. Westminster Abbey y la Torre Eiffel se realizaron en colaboración con Fred Zwart.
+    `Westminster Abbey se ha traducido a un diseño tangible de cartón con atención a la forma, las proporciones y los detalles.`,
+    `El diseño se creó en colaboración con Fred Zwart.
 
 ¿Tiene otro edificio en mente? Lo realizamos con gusto a medida.`
   ),
   "the-art-of-board/wild-flowers/klaproos.webp": translatedProject(
     "Wild Flowers",
     `Motifs floraux inspirés de fleurs sauvages comme le coquelicot, le bleuet et l'anémone des bois. Imprimés sur carton ou dibond.`,
-    `Ces motifs floraux sont imprimés à différentes hauteurs sur carton ou dibond. Le résultat devient particulièrement beau lorsqu'il est tracé en plusieurs couches de carton coloré, comme les détails de l'anémone des bois.
+    `Ces motifs floraux peuvent être imprimés à différentes hauteurs sur carton ou Dibond. L'effet en couches devient particulièrement expressif dans du carton coloré, comme dans les détails du bleuet.
 
 Vous pouvez aussi proposer votre propre fleur. Nous vous préparons volontiers une proposition.`,
     "Wild Flowers",
     `Motivos florales inspirados en flores silvestres como la amapola, el aciano y la anémona de bosque. Impresos en cartón o dibond.`,
-    `Estos motivos florales se imprimen a distintas alturas en cartón o dibond. El resultado es especialmente bonito cuando se traza en varias capas de cartón de color, como los detalles de la anémona de bosque.
+    `Estos motivos florales pueden imprimirse a distintas alturas en cartón o Dibond. El efecto en capas resulta especialmente expresivo en cartón de color, como en los detalles del aciano.
 
 También puede proponer su propia flor. Con gusto prepararemos una propuesta.`
   ),
   "interieur-exterieur/apothekerskast/apothekerskast2.webp": translatedProject(
-    "Armoire d'apothicaire",
-    `Une armoire d'apothicaire en carton : un objet fonctionnel et décoratif avec nostalgie et caractère.`,
-    `Cette armoire d'apothicaire est conçue comme un objet d'intérieur particulier qui associe fonctionnalité et esthétique. Entièrement fabriquée en carton par Hilarius Design, où le carton repousse ses limites.`,
-    "Armario de farmacia",
-    `Un armario de farmacia de cartón: un objeto funcional y decorativo con nostalgia y carácter.`,
-    `Este armario de farmacia está diseñado como un objeto de interior especial que combina funcionalidad y estética. Fabricado completamente en cartón por Hilarius Design, donde el cartón supera sus límites.`
+    "Armoires d'apothicaire",
+    `Ces armoires d'apothicaire imprimées sont fonctionnelles et décoratives.`,
+    `Les armoires sont conçues comme des objets d'intérieur particuliers qui associent fonction et esthétique. Hilarius Design les imprime entièrement en carton et explore ainsi les limites du matériau.`,
+    "Armarios de farmacia",
+    `Estos armarios de farmacia impresos son funcionales y decorativos.`,
+    `Los armarios están diseñados como objetos de interior especiales que combinan función y estética. Hilarius Design los imprime íntegramente en cartón y explora así los límites del material.`
   ),
   "interieur-exterieur/enorme-displays/oogwereld2.webp": translatedProject(
     "Grands displays",
@@ -1592,28 +1635,32 @@ También puede proponer su propia flor. Con gusto prepararemos una propuesta.`
   "interieur-exterieur/gebouwen/villavna.webp": translatedProject(
     "Bâtiments",
     `Des bâtiments en carton détaillés comme maquettes architecturales ou objets décoratifs.`,
-    `De la villa au hall industriel : Hilarius Design traduit l'architecture en modèles en carton précis. Parfait pour présentations, expositions ou comme cadeau d'affaires unique pour le secteur de la construction.`,
+    `De la villa au hall industriel, Hilarius Design traduit l'architecture en modèles précis en carton. Ils conviennent aux présentations, aux expositions ou comme cadeau d'affaires unique.`,
     "Edificios",
     `Edificios detallados de cartón como modelos arquitectónicos u objetos decorativos.`,
-    `Desde una villa hasta una nave industrial: Hilarius Design traduce la arquitectura en modelos precisos de cartón. Perfectos para presentaciones, exposiciones o como regalo corporativo único para el sector de la construcción.`
+    `Desde una villa hasta una nave industrial, Hilarius Design traduce la arquitectura en modelos precisos de cartón. Son adecuados para presentaciones, exposiciones o como regalo corporativo único.`
   ),
   "interieur-exterieur/maquette/maquette2-1.webp": translatedProject(
     "Maquette",
-    `Des maquettes précises en carton pour l'architecture, l'urbanisme et les présentations.`,
-    `Hilarius Design conçoit et produit des maquettes en carton qui restituent précisément forme et échelle. Un outil indispensable pour les présentations et une carte de visite impressionnante pour votre projet.`,
+    `Cette maquette verte du siège de Rabobank à Utrecht est composée de 38 couches de carton recyclé.`,
+    `La maquette a été réalisée comme cadeau pour les collaborateurs des filiales internationales de la banque. Hilarius Design conçoit et produit des maquettes en carton qui reproduisent fidèlement la forme et l'échelle.
+
+Vous souhaitez faire réaliser votre propre maquette ? Contactez-nous pour une proposition.`,
     "Maqueta",
-    `Maquetas precisas de cartón para arquitectura, urbanismo y presentaciones.`,
-    `Hilarius Design diseña y produce maquetas de cartón que representan con precisión forma y escala. Una herramienta indispensable para presentaciones y una carta de presentación impactante para su proyecto.`
+    `Esta maqueta verde de la sede de Rabobank en Utrecht está formada por 38 capas de cartón reciclado.`,
+    `La maqueta se creó como regalo para los empleados de las sucursales internacionales del banco. Hilarius Design diseña y produce maquetas de cartón que reproducen con precisión la forma y la escala.
+
+¿Desea crear su propia maqueta? Contáctenos para recibir una propuesta.`
   ),
   "eindejaarsgeschenken/compilatie/compilatie-1.webp": translatedProject(
-    "Compilation",
+    "Cadeaux de fin d'année",
     `Des cadeaux de fin d'année originaux en carton qui associent originalité et durabilité.`,
     `Surprenez vos relations et valorisez vos collaborateurs avec un cadeau qui reste en mémoire. Nos cadeaux de fin d'année en carton sont parfaitement adaptés à votre marque et au destinataire.
 
 Chez Hilarius Design, le vieux papier et le carton retrouvent une nouvelle vie sous forme de cadeau d'affaires durable et unique. En choisissant le carton, vous contribuez à réduire les déchets, à économiser les matières premières et à diminuer les émissions de CO2.
 
 C'est un investissement dans l'appréciation et les relations durables.`,
-    "Compilación",
+    "Regalos de fin de año",
     `Regalos originales de fin de año en cartón que combinan originalidad y sostenibilidad.`,
     `Sorprenda a sus relaciones y valore a sus colaboradores con un regalo que permanece en la memoria. Nuestros regalos de fin de año de cartón se adaptan perfectamente a su marca y al destinatario.
 

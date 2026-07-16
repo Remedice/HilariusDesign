@@ -98,28 +98,24 @@
 /* Caption below image, appears on hover */
 .mosaicCaption {
   padding: 14px 0 0;
-  min-height: 58px;
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .mosaicCaptionLabel {
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
+  margin-top: 5px;
+  font-size: 1.0625rem;
   letter-spacing: 0.01em;
   opacity: 0.94;
 }
 
-.mosaicCaptionLabel::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -3px;
-  height: 1px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 220ms ease;
+.mosaicCaptionMeta {
+  color: var(--muted);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .mosaicCaptionSub {
@@ -130,10 +126,25 @@
   line-height: 1.48;
 }
 
-.mosaicTile:hover .mosaicCaptionLabel::after,
-.mosaicTile:focus-visible .mosaicCaptionLabel::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.mosaicCaptionAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--text);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mosaicCaptionAction svg {
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mosaicTile:hover .mosaicCaptionAction svg,
+.mosaicTile:focus-visible .mosaicCaptionAction svg {
+  transform: translate(3px, -3px);
 }
 
 .mosaicTile:hover img {
@@ -163,11 +174,12 @@
 
   .mosaicCaptionLabel { font-size: 1rem; }
   .mosaicCaptionSub { font-size: 0.875rem; }
+  .mosaicCaptionAction { margin-top: 0; padding-top: 16px; }
 }
 
 @media (hover: none) and (pointer: coarse) {
   .mosaicTile:hover img { transform: scale(1.0); }
-  .mosaicCaptionLabel::after { display: none; }
+  .mosaicCaptionAction svg { transition: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

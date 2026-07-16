@@ -31,7 +31,9 @@ export default function Home() {
         to: localizedHref(`/category/${cat.slug}`, lang),
         src: coverFor(cat.slug),
         label: pick(cat, "title"),
-        sub: pick(cat, "subtitle")
+        sub: pick(cat, "subtitle"),
+        meta: `${pick(routesConfig.copy.home, "categoryLabel")} ${String(i + 1).padStart(2, "0")}`,
+        action: pick(routesConfig.copy.home, "hoverHint")
       }));
   }, [pick, lang]);
 
@@ -45,6 +47,7 @@ export default function Home() {
       >
         <div className="homePortfolioHeader">
           <h2 id="portfolioTitle">{pick(routesConfig.copy.home, "portfolioTitle")}</h2>
+          <p>{pick(routesConfig.copy.home, "portfolioIntro")}</p>
         </div>
         <HomeMosaic tiles={tiles} />
       </section>

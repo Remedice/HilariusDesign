@@ -145,7 +145,7 @@ const buildCategoryProjects = (categorySlug, files, categoryDefaults) => {
     const override = projectOverrides[file];
 
     const mergedI18n = mergeDeep(baseI18n, override?.i18n);
-    const baseId = makeId(file, mergedI18n);
+    const baseId = override?.id ?? makeId(file, mergedI18n);
     const count = usedIds.get(baseId) ?? 0;
     usedIds.set(baseId, count + 1);
 
@@ -188,27 +188,27 @@ const categoryContent = {
   },
   "bureau-accessoires": {
     nl: {
-      intro: "Bureau-accessoires van karton blijven zichtbaar op de werkplek. Kalenders, klokken, memobakjes en onderzetters worden licht, stevig en volledig bedrukbaar uitgevoerd, zodat uw merk dagelijks aanwezig is zonder schreeuwerig te worden.",
+      intro: "Bureau-accessoires van karton blijven zichtbaar op de werkplek. Kalenders, klokken, memobakjes en onderzetters zijn licht, stevig en volledig bedrukt, zodat uw merk dagelijks aanwezig is.",
       seoDescription: "Bureau-accessoires van gerecycled karton, waaronder kalenders, klokken, memobakjes en onderzetters op maat.",
       imageAlt: "Bureau-accessoire van gerecycled karton door Hilarius Design"
     },
     en: {
-      intro: "Cardboard desk accessories stay visible in the workplace. Calendars, clocks, memo trays and coasters are light, sturdy and fully printable, keeping your brand present every day without becoming loud.",
+      intro: "Cardboard desk accessories stay visible in the workplace. Calendars, clocks, memo trays and coasters are lightweight, sturdy and fully printed, keeping your brand present every day.",
       seoDescription: "Desk accessories in recycled board, including custom calendars, clocks, memo trays and coasters.",
       imageAlt: "Recycled board desk accessory by Hilarius Design"
     },
     de: {
-      intro: "Schreibtisch-Accessoires aus Karton bleiben am Arbeitsplatz sichtbar. Kalender, Uhren, Memo-Ablagen und Untersetzer sind leicht, stabil und vollständig bedruckbar, sodass Ihre Marke jeden Tag präsent bleibt.",
+      intro: "Schreibtisch-Accessoires aus Karton bleiben am Arbeitsplatz sichtbar. Kalender, Uhren, Memo-Ablagen und Untersetzer sind leicht, stabil und vollständig bedruckt, sodass Ihre Marke jeden Tag präsent bleibt.",
       seoDescription: "Schreibtisch-Accessoires aus recycelter Pappe, darunter Kalender, Uhren, Memo-Ablagen und Untersetzer nach Maß.",
       imageAlt: "Schreibtisch-Accessoire aus recycelter Pappe von Hilarius Design"
     },
     fr: {
-      intro: "Les accessoires de bureau en carton restent visibles sur le lieu de travail. Calendriers, horloges, bacs mémo et sous-verres sont légers, solides et entièrement imprimables, pour garder votre marque présente au quotidien.",
+      intro: "Les accessoires de bureau en carton restent visibles sur le lieu de travail. Calendriers, horloges, bacs mémo et sous-verres sont légers, solides et entièrement imprimés, pour garder votre marque présente au quotidien.",
       seoDescription: "Accessoires de bureau en carton recyclé, dont calendriers, horloges, bacs mémo et sous-verres sur mesure.",
       imageAlt: "Accessoire de bureau en carton recyclé par Hilarius Design"
     },
     es: {
-      intro: "Los accesorios de escritorio de cartón permanecen visibles en el lugar de trabajo. Calendarios, relojes, bandejas memo y posavasos son ligeros, resistentes y totalmente imprimibles, para mantener su marca presente cada día.",
+      intro: "Los accesorios de escritorio de cartón permanecen visibles en el lugar de trabajo. Calendarios, relojes, bandejas para notas y posavasos son ligeros, resistentes y están totalmente impresos, para mantener su marca presente cada día.",
       seoDescription: "Accesorios de escritorio en cartón reciclado, como calendarios, relojes, bandejas memo y posavasos a medida.",
       imageAlt: "Accesorio de escritorio en cartón reciclado de Hilarius Design"
     }
@@ -557,8 +557,8 @@ export const routesConfig = {
         depth: 1.05,
         shiftX: 0.75,
         shiftY: -0.55,
-        sizes: "17vw",
-        hideOnMobile: true
+        sizes: "(max-width: 860px) 42vw, 17vw",
+        priority: true
       },
       {
         key: "model",
@@ -576,7 +576,7 @@ export const routesConfig = {
         shiftX: 1,
         shiftY: 0.05,
         sizes: "(max-width: 860px) 29vw, 12vw",
-        priority: true
+        hideOnMobile: true
       },
       {
         key: "transport",

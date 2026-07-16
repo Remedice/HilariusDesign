@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import "./HomeMosaic.css";
 
 // Handles the case where the image loads before React attaches onLoad (SSR/cache).
@@ -53,7 +54,7 @@ export default function HomeMosaic({ tiles }) {
             key={t.key}
             href={t.to}
             className={`mosaicTile ${t.size || ""} ${t.to ? "isLink" : ""}`}
-            aria-label={t.alt || t.label}
+            aria-label={t.action ? `${t.action}: ${t.label}` : t.alt || t.label}
           >
             <div className="mosaicMedia">
               {t.src ? (
@@ -68,8 +69,17 @@ export default function HomeMosaic({ tiles }) {
               <div className="mosaicFallback" />
             </div>
             <div className="mosaicCaption">
-              <div className="mosaicCaptionLabel">{t.label}</div>
-              {t.sub ? <div className="mosaicCaptionSub">{t.sub}</div> : null}
+              <div className="mosaicCaptionContent">
+                {t.meta ? <div className="mosaicCaptionMeta">{t.meta}</div> : null}
+                <div className="mosaicCaptionLabel">{t.label}</div>
+                {t.sub ? <div className="mosaicCaptionSub">{t.sub}</div> : null}
+              </div>
+              {t.action ? (
+                <span className="mosaicCaptionAction">
+                  {t.action}
+                  <ArrowUpRight size={15} strokeWidth={1.75} aria-hidden="true" />
+                </span>
+              ) : null}
             </div>
           </Wrapper>
         );

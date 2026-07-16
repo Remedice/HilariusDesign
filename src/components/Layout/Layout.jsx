@@ -4,33 +4,8 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import Header from "../Header/Header.jsx";
 import { routesConfig } from "../../router/routesConfig";
+import { smoothScrollTo } from "../../utils/smoothScroll";
 import "./Layout.css";
-
-function smoothScrollTop(duration = 520) {
-  const prefersReduced =
-    typeof window !== "undefined" &&
-    window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
-
-  if (prefersReduced) {
-    window.scrollTo(0, 0);
-    return;
-  }
-
-  const startY = window.scrollY || window.pageYOffset || 0;
-  if (startY <= 0) return;
-
-  const start = performance.now();
-  const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
-
-  const tick = (now) => {
-    const t = Math.min(1, (now - start) / duration);
-    const eased = easeOutCubic(t);
-    window.scrollTo(0, Math.round(startY * (1 - eased)));
-    if (t < 1) requestAnimationFrame(tick);
-  };
-
-  requestAnimationFrame(tick);
-}
 
 function isCoarsePointer() {
   if (typeof window === "undefined") return false;
@@ -48,7 +23,7 @@ export default function Layout({ children }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    smoothScrollTop(520);
+    smoothScrollTo(0, 520);
   }, [pathname]);
 
   useEffect(() => {

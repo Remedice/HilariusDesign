@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-export function useParallaxField({ desktopOffset = 28, mobileOffset = 12 } = {}) {
+export function useParallaxField({ desktopOffset = 28, mobileOffset = 8 } = {}) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -28,8 +28,9 @@ export function useParallaxField({ desktopOffset = 28, mobileOffset = 12 } = {})
     };
 
     const updateScrollTarget = () => {
-      if (reducedMotionQuery.matches) return;
       const rect = container.getBoundingClientRect();
+      container.classList.toggle("isParallaxScrolled", rect.top < -12);
+      if (reducedMotionQuery.matches) return;
       targetProgress = clamp(-rect.top / Math.max(rect.height * 0.72, 1), 0, 1);
     };
 
@@ -101,6 +102,7 @@ export function useParallaxField({ desktopOffset = 28, mobileOffset = 12 } = {})
       mobileQuery.removeEventListener?.("change", handlePreferenceChange);
       reducedMotionQuery.removeEventListener?.("change", handlePreferenceChange);
       if (frameId) window.cancelAnimationFrame(frameId);
+      container.classList.remove("isParallaxScrolled");
       resetLayers();
     };
   }, [desktopOffset, mobileOffset]);
