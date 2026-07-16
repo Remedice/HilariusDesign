@@ -22,13 +22,18 @@ export default function HomeHero() {
 
   const handlePortfolioClick = (event) => {
     const portfolio = document.getElementById("portfolio");
-    if (!portfolio) return;
+    const portfolioTitle = document.getElementById("portfolioTitle");
+    if (!portfolio || !portfolioTitle) return;
 
     event.preventDefault();
     const headerHeight =
       document.querySelector(".header")?.getBoundingClientRect().height ?? 0;
+    const topMargin = window.matchMedia("(max-width: 860px)").matches ? 24 : 32;
     const top =
-      portfolio.getBoundingClientRect().top + window.scrollY - headerHeight - 24;
+      portfolioTitle.getBoundingClientRect().top +
+      window.scrollY -
+      headerHeight -
+      topMargin;
 
     window.history.pushState(null, "", "#portfolio");
     smoothScrollTo(Math.max(0, top), 680);

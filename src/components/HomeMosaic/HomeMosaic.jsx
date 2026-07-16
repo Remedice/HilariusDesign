@@ -70,7 +70,6 @@ export default function HomeMosaic({ tiles }) {
             </div>
             <div className="mosaicCaption">
               <div className="mosaicCaptionContent">
-                {t.meta ? <div className="mosaicCaptionMeta">{t.meta}</div> : null}
                 <div className="mosaicCaptionLabel">{t.label}</div>
                 {t.sub ? <div className="mosaicCaptionSub">{t.sub}</div> : null}
               </div>

@@ -566,7 +566,7 @@ export const routesConfig = {
         depth: 1.3,
         shiftX: -1,
         shiftY: 0,
-        sizes: "13vw",
+        sizes: "10vw",
         hideOnMobile: true
       },
       {
@@ -575,7 +575,7 @@ export const routesConfig = {
         depth: 0.85,
         shiftX: 1,
         shiftY: 0.05,
-        sizes: "(max-width: 860px) 29vw, 12vw",
+        sizes: "10vw",
         hideOnMobile: true
       },
       {

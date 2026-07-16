@@ -3,8 +3,7 @@
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import "./WorldOfBoard.css";
 
-// "World of Board" wordmark, one <path> per letter (reading order),
-// so the intro can reveal it letter by letter. Subtitles fade in as blocks.
+// "World of Board" wordmark, kept as paths so it stays sharp at every size.
 const WORD_PATHS = [
   "M37.42,34.34h37.98s13.96,62.49,13.96,62.49l13.8-62.49h36.36s13.8,62.49,13.8,62.49l13.96-62.49h37.98s-31.65,112-31.65,112h-37.33s-14.93-63.3-14.93-63.3l-14.93,63.3h-37.33s-31.65-112-31.65-112Z",
   "M214.03,90.51c0-36.68,25.97-58.11,60.87-58.11s60.87,21.43,60.87,58.11-25.97,57.78-60.87,57.78c-34.9,0-60.87-21.26-60.87-57.78ZM298.76,90.18c0-15.42-9.25-26.14-23.86-26.14-14.45,0-23.86,10.72-23.86,26.14,0,15.74,9.41,26.46,23.86,26.46,14.61,0,23.86-10.71,23.86-26.45Z",

@@ -32,7 +32,6 @@ export default function Home() {
         src: coverFor(cat.slug),
         label: pick(cat, "title"),
         sub: pick(cat, "subtitle"),
-        meta: `${pick(routesConfig.copy.home, "categoryLabel")} ${String(i + 1).padStart(2, "0")}`,
         action: pick(routesConfig.copy.home, "hoverHint")
       }));
   }, [pick, lang]);

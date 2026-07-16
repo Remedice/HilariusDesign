@@ -3,7 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   row-gap: clamp(24px, 3vw, 44px);
-  align-items: start;
+  align-items: stretch;
 }
 
 /* Staggered entrance per tile */
@@ -37,7 +37,8 @@
 .mosaicTile {
   text-decoration: none;
   color: var(--text);
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .mosaicTile.isLink { cursor: pointer; }
@@ -97,25 +98,18 @@
 
 /* Caption below image, appears on hover */
 .mosaicCaption {
+  flex: 1;
   padding: 14px 0 0;
-  min-height: 118px;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .mosaicCaptionLabel {
-  margin-top: 5px;
   font-size: 1.0625rem;
   letter-spacing: 0.01em;
   opacity: 0.94;
-}
-
-.mosaicCaptionMeta {
-  color: var(--muted);
-  font-size: 0.6875rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .mosaicCaptionSub {
@@ -131,7 +125,7 @@
   align-items: center;
   gap: 6px;
   margin-top: auto;
-  padding-top: 18px;
+  padding-top: 12px;
   color: var(--text);
   font-size: 0.6875rem;
   letter-spacing: 0.1em;
@@ -174,7 +168,7 @@
 
   .mosaicCaptionLabel { font-size: 1rem; }
   .mosaicCaptionSub { font-size: 0.875rem; }
-  .mosaicCaptionAction { margin-top: 0; padding-top: 16px; }
+  .mosaicCaptionAction { margin-top: 12px; padding-top: 0; }
 }
 
 @media (hover: none) and (pointer: coarse) {

@@ -11,7 +11,6 @@ export const texts = {
         portfolioTitle: "Portfolio",
         portfolioIntro:
           "Kies een categorie en ontdek daarbinnen de afzonderlijke producten en ontwerpen.",
-        categoryLabel: "Categorie",
         viewPortfolio: "Bekijk het portfolio",
         hoverHint: "Bekijk categorie",
         extraLabel: "Uitgelicht"
@@ -26,7 +25,6 @@ export const texts = {
         portfolioTitle: "Portfolio",
         portfolioIntro:
           "Choose a category, then explore the individual products and designs within it.",
-        categoryLabel: "Category",
         viewPortfolio: "View the portfolio",
         hoverHint: "View category",
         extraLabel: "Featured"
@@ -41,7 +39,6 @@ export const texts = {
         portfolioTitle: "Portfolio",
         portfolioIntro:
           "Wählen Sie eine Kategorie und entdecken Sie darin die einzelnen Produkte und Entwürfe.",
-        categoryLabel: "Kategorie",
         viewPortfolio: "Portfolio ansehen",
         hoverHint: "Kategorie ansehen",
         extraLabel: "Highlight"
@@ -56,7 +53,6 @@ export const texts = {
         portfolioTitle: "Portfolio",
         portfolioIntro:
           "Choisissez une catégorie, puis découvrez les produits et créations qu'elle contient.",
-        categoryLabel: "Catégorie",
         viewPortfolio: "Voir le portfolio",
         hoverHint: "Voir la catégorie",
         extraLabel: "Sélection"
@@ -71,7 +67,6 @@ export const texts = {
         portfolioTitle: "Portfolio",
         portfolioIntro:
           "Elija una categoría y descubra los productos y diseños que contiene.",
-        categoryLabel: "Categoría",
         viewPortfolio: "Ver el portfolio",
         hoverHint: "Ver categoría",
         extraLabel: "Destacado"

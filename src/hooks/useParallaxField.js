@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-export function useParallaxField({ desktopOffset = 28, mobileOffset = 8 } = {}) {
+export function useParallaxField({ desktopOffset = 18, mobileOffset = 5 } = {}) {
   const containerRef = useRef(null);
 
   useEffect(() => {
