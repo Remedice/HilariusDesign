@@ -4,8 +4,17 @@ export const SITE_URL = "https://www.hilariusdesign.nl";
 
 export const SITE_NAME = "Hilarius Design";
 
-// Default share image: cardboard trucks (flagship product).
-export const OG_IMAGE = `${SITE_URL}/images/transport/vrachtwagens/vrachtwagens2-2.webp`;
+// Default share image: cardboard trucks (flagship product), cropped to the 1.91:1 card
+// that LinkedIn, WhatsApp and Slack render.
+//
+// Deliberately a JPEG, not the WebP the rest of the site uses. LinkedIn's image proxy only
+// documents JPG, PNG and GIF, and it silently drops a WebP: the post then shows a bare link
+// with no picture. Same story for the explicit width and height below. Without them the
+// scraper has to fetch and measure the file before it can lay the card out, and the first
+// share of a URL is exactly when it gives up quickest.
+export const OG_IMAGE = `${SITE_URL}/og.jpg`;
+export const OG_IMAGE_WIDTH = 1200;
+export const OG_IMAGE_HEIGHT = 630;
 
 // Internal lang code -> hreflang code (nl region-qualified per spec).
 const HREFLANG = { nl: "nl-NL", en: "en", de: "de", fr: "fr", es: "es" };
@@ -64,7 +73,14 @@ export function buildMetadata({ lang, path, title, description }) {
       title: ogTitle,
       description,
       locale: OG_LOCALE[lang] ?? "nl_NL",
-      images: [{ url: OG_IMAGE, alt: ogTitle }]
+      images: [
+        {
+          url: OG_IMAGE,
+          width: OG_IMAGE_WIDTH,
+          height: OG_IMAGE_HEIGHT,
+          alt: ogTitle
+        }
+      ]
     },
     twitter: {
       card: "summary_large_image",
